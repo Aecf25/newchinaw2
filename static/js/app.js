@@ -135,7 +135,7 @@ combos1.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -253,7 +253,7 @@ entremeses1.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -369,7 +369,7 @@ arroz.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -484,7 +484,7 @@ arrozsalt.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -599,7 +599,7 @@ ChopSuey.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -714,7 +714,7 @@ chowmein.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -829,7 +829,7 @@ Lomein.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -944,7 +944,7 @@ fideos.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1059,7 +1059,7 @@ pollos.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1174,7 +1174,7 @@ carnes.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1289,7 +1289,7 @@ CerdoyCamaron.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1404,7 +1404,7 @@ fuyung.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1519,7 +1519,7 @@ Vegetales.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1634,7 +1634,7 @@ Sopas.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1749,7 +1749,7 @@ Bebidas.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1864,7 +1864,7 @@ extras.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2vw)";
+        cuerpopagina.style.filter = "blur(.2rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"

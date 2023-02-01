@@ -3,14 +3,6 @@ const pintarcarrito = () => {
     modalcontainer.innerHTML = "";
     modalcontainer.style.display = "flex";
 
-    const modalheader = document.createElement("div")
-    modalheader.className = "modal-header"
-    modalheader.innerHTML = `
-    <h1 class= "modal-header-title">Mi Pedido</h1>
-
-    `;
-    modalcontainer.append(modalheader);
-
     const modalbutton = document.createElement("h1");
     modalbutton.innerText = "x";
     modalbutton.className = "modal-header-button";
@@ -29,7 +21,37 @@ const pintarcarrito = () => {
         cuerpopagina.style.filter = "blur(0vw)";
 
     });
-    modalheader.append(modalbutton);
+    modalcontainer.append(modalbutton);
+
+    const modalheader = document.createElement("div")
+    modalheader.className = "modal-header"
+    modalheader.innerHTML = `
+    <h1 class= "modal-header-title">Mi Pedido</h1>
+
+    `;
+    modalcontainer.append(modalheader);
+
+
+    const fondodivcarrito = document.createElement("div");
+    if (carrito.length > 0){
+    fondodivcarrito.className = "fondodivcarrito";
+    modalcontainer.append(fondodivcarrito);}
+
+    const totalcesta = document.createElement("div");
+    totalcesta.className = "total-cesta"
+    fondodivcarrito.append(totalcesta)
+
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
+    const totalbuy = document.createElement("div");
+    if (carrito.length > 0) {
+        totalbuy.className = "total-content"
+        totalbuy.innerHTML = `
+        Total a Pagar: Ref. ${total} 
+        `
+    }
+    ;
+    totalcesta.append(totalbuy);
+
 
     const modaltabladesc = document.createElement("div");
     modaltabladesc.className = "modaltitulotabla"
@@ -44,6 +66,11 @@ const pintarcarrito = () => {
     };
     modalcontainer.append(modaltabladesc);
 
+    
+    const tabladeproductos = document.createElement("div");
+    tabladeproductos.className="tabladeproductos"
+    modalcontainer.append(tabladeproductos)
+
     carrito.forEach((product) => {
         let carritocontent = document.createElement("div")
         carritocontent.className = "modal-content";
@@ -56,7 +83,7 @@ const pintarcarrito = () => {
         
         `;
 
-        modalcontainer.append(carritocontent);
+        tabladeproductos.append(carritocontent);
 
         let eliminar = document.createElement("span");
         eliminar.innerText = "🗑";
@@ -82,7 +109,7 @@ const pintarcarrito = () => {
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
         menoscantidad.innerHTML = `
-        <p>_</p>`;
+        <p>-</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -98,22 +125,8 @@ const pintarcarrito = () => {
 
 
     /* "el" es cualquier variable q representa los items o productos. "acc" es el total que empieza en 0 y se van sumando los precios*/
-    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
-
-    const totalbuy = document.createElement("div");
-    if (carrito.length > 0) {
-        totalbuy.className = "total-content"
-        totalbuy.innerHTML = `
-        Total a Pagar: Ref. ${total} 
-        `
-    }
-    ;
-    modalcontainer.append(totalbuy);
 
 
-    const fondodivcarrito = document.createElement("div");
-    fondodivcarrito.className = "fondodivcarrito";
-    modalcontainer.append(fondodivcarrito);
 
     const limpiarcarrito = document.createElement("button");
     limpiarcarrito.className = "botonlimpiar";
@@ -126,7 +139,7 @@ const pintarcarrito = () => {
     });
     fondodivcarrito.append(limpiarcarrito);
 
-    const suscribirpedido = document.createElement("button");
+    const suscribirpedido = document.createElement("a");
     suscribirpedido.className = "botoninscribir";
     suscribirpedido.innerText = "REALIZAR PEDIDO";
     suscribirpedido.addEventListener("click", () =>{
@@ -134,7 +147,26 @@ const pintarcarrito = () => {
         for (let i = 0; i< carrito.length; i++){
             productosalwha.push(carrito[i].nombre, "; " ," cantidad: " ,carrito[i].cantidad, '%0A');
         } 
-        window.location.href = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[",]+/g, '') + '%0A' + "Total: Ref. " + total 
+        suscribirpedido.href = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[",]+/g, '') + '%0A' + "Total: Ref. " + total 
+        suscribirpedido.target = "_blank"
+        setTimeout(() => {
+            carrito = [];
+            savelocal();
+            pintarcarrito();
+            carritocestacontar();
+            modalcontainer.style.opacity = "0"
+            modalcontainer.style.transition = "opacity 1s"
+            modalcontainer.style.transition = "all 2s"
+            modalcontainer.style.transform = "translateY(-150%)"
+    
+    
+    
+    
+            cuerpopagina.style.transition = "filter 1s"
+            cuerpopagina.style.filter = "blur(0vw)";
+        },);
+    
+    
     } )
     fondodivcarrito.append(suscribirpedido);
 
@@ -153,7 +185,7 @@ el carrito, solo este archivo (carritopendiente.js) se queda en el layout para q
 
 
 vercarritolayout.addEventListener("click", () => {
-    cuerpopagina.style.filter = "blur(.2vw)";
+    cuerpopagina.style.filter = "blur(.2rem)";
     modalcontainer.style.opacity = "1";
     modalcontainer.style.transform = "translateY(5%)"
     modalcontainer.style.transform = "translateX(5%)"
