@@ -51,20 +51,20 @@ header {
 .container-fluid .navbar-nav .nav-item {
     margin: auto;
     margin-left: 5vw;
-    margin-right: 10vw;
+    margin-right: 5vw;
     padding: 0;
 }
 
 .container-fluid .navbar-nav .nav-item .nav-link {
     color: white;
     -webkit-text-stroke: .07rem aliceblue;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: all 1s ease;
 }
 
 .container-fluid .navbar-nav .nav-item .nav-link:hover {
     -webkit-text-stroke: .1rem rgba(137, 137, 255, 0.555);
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 
 }
 
@@ -1222,7 +1222,7 @@ header {
         cursor: pointer;
     }
 
-    body #subheader #ListadePedido {
+    body #subheader #ListadePedido{
         display: inline-block;
         padding-right: 5rem;
         font-size: .7rem;
@@ -1231,6 +1231,19 @@ header {
         left: 80%;
         top: 2.5rem;
         -webkit-text-stroke: .05rem aqua;
+        cursor: pointer;
+    }
+
+    body #subheader #ListadePedido{
+        text-decoration: none;
+        -webkit-text-stroke: .05rem aqua;
+        transition: all 1s ease;
+    }
+
+    body #subheader #ListadePedido:hover {
+        text-decoration: none;
+        -webkit-text-stroke: .07rem aquamarine;
+        font-size: 1.03rem;
     }
 
     body #subheader a {
@@ -1359,6 +1372,19 @@ header {
         left: 80%;
         top: 2.5rem;
         -webkit-text-stroke: .05rem aqua;
+        cursor: pointer;
+    }
+
+    body #subheader #ListadePedido{
+        text-decoration: none;
+        -webkit-text-stroke: .05rem aqua;
+        transition: all 1s ease;
+    }
+
+    body #subheader #ListadePedido:hover {
+        text-decoration: none;
+        -webkit-text-stroke: .07rem aquamarine;
+        font-size: 1.03rem;
     }
 
     body #subheader a {
@@ -1485,6 +1511,19 @@ header {
         right: 6.5vw;
         top: 2.5vw;
         -webkit-text-stroke: .05vw aqua;
+        cursor: pointer;
+    }
+
+    body #subheader #ListadePedido{
+        text-decoration: none;
+        -webkit-text-stroke: .05rem aqua;
+        transition: all 2s ease;
+    }
+
+    body #subheader #ListadePedido:hover {
+        text-decoration: none;
+        -webkit-text-stroke: .07rem aquamarine;
+        font-size: .9rem;
     }
 
     body #subheader a {
@@ -2969,12 +3008,6 @@ body .containerseccion div button:hover span:nth-child(5) p {
         width: 5%;
     }
     
-    body .modal-container .modaltitulotabla .textocarritolimpio {
-        font-weight: 900;
-        margin: auto;
-        font-size: 1rem;
-        font-family: verdana;
-    }
     
     body .tabladeproductos{
         width: 100%;
@@ -4452,321 +4485,6 @@ body .containerseccion div button:hover span:nth-child(5) p {
     }
 }
 
-@media (min-width: 600px) and (max-width: 999px) and (min-height: 500px) and (max-height:100vw){
-    body .modal-container {
-        width: 80%;
-        margin: auto;
-        max-height: 70%;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        overflow: auto;
-        z-index: 9;
-        top: 10%;
-        left: 5%;
-        border-radius: 5%;
-        box-shadow: inset .4vw .4vw 5vw black;
-        transition: all 1s;
-        opacity: 0;
-    }
-    
-    body .modal-container::-webkit-scrollbar {
-        display: none;
-    }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
-    body .modal-container .modal-header {
-        color: black;
-        margin-bottom: -5rem;
-    }
-    
-    body .modal-container .modal-header h1 {
-        font-size: 2.5rem;
-        font-weight: 800;
-        font-style: italic;
-    }
-    
-    body .modal-container .modal-header-button {
-        color: red;
-        position: sticky;
-        top: 0;
-        left: 92%;
-        cursor: pointer;
-        font-size: 2.5rem;
-        font-weight: 800;
-        font-style: italic;
-        z-index: 1;
-    }
-    
-    body .modal-container .modal-header-button:hover {
-        -webkit-text-stroke: .3vw rgb(255, 37, 37);
-    }
-    
-    body .modal-container .modaltitulotabla {
-        display: inline-flex;
-        width: 100%;
-       
-    }
-    
-    body .modal-container .modaltitulotabla h2 {
-        font-size: 1.2rem;
-        font-weight: 700;
-        font-family: gill sans;
-
-    }
-    
-    body .modal-container .modaltitulotabla #descprod {
-        position: absolute;
-        margin-left: 25%;
-    }
-    
-    body .modal-container .modaltitulotabla #cantprod {
-        position: absolute;
-        margin-left: 55%;
-    }
-    
-    body .modal-container .modaltitulotabla #totalprod {
-        position: absolute;
-        margin-left: 77%;
-        width: 5%;
-    }
-    
-    body .modal-container .modaltitulotabla .textocarritolimpio {
-        font-weight: 900;
-        margin: auto;
-        font-size: 1rem;
-        font-family: verdana;
-    }
-    
-    body .tabladeproductos{
-        width: 100%;
-        margin: auto;
-        display: inline-block;
-        font-family: fantasy;
-        margin-bottom: 4rem;
-        margin-top: 4rem;
-    }
-
-    body .tabladeproductos::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modal-container .modal-content {
-        width: 90%;
-        flex-direction: column;
-        margin-bottom: 3rem;
-        font-family: fantasy;
-        margin-left: 5%;
-    
-    }
-    
-    body .modal-container .modal-content img {
-        width: 20%;
-        height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
-        border-radius: 5%;
-    }
-    
-    body .modal-container .modal-content h3 {
-        display: inline-flex;
-        position: absolute;
-        left: 25%;
-        font-size: 1rem;
-        max-height: 1.3rem;
-        max-width: 20%;
-        overflow: scroll;
-    }
-    
-    body .modal-container .modal-content h3::-webkit-scrollbar {
-        display: none;
-    }
-    
-    body .modal-container .modal-content #descripcion {
-        display: inline-flex;
-        position: absolute;
-        left: 25%;
-        text-align: justify;
-        top: 1.5rem;
-        line-height: 100%;
-        overflow: hidden;
-        max-height: 1.5rem;
-        font-size: .75rem;
-        max-width: 25%;
-        overflow: scroll;
-    }
-    
-    body .modal-container .modal-content #descripcion::-webkit-scrollbar {
-        display: none;
-    }
-    
-    
-    body .modal-container .modal-content #costound {
-        display: inline-flex;
-        position: absolute;
-        left: 80%;
-        width: 20%;
-        top: 20%;
-        font-size: 1rem;
-        font-family: times new roman;
-        font-weight: 900;
-    }
-    
-    body .modal-container .modal-content #cantund {
-        display: inline-flex;
-        position: absolute;
-        left: 60%;
-        width: 20%;
-        top: 20%;
-        font-size: 1rem;
-        font-family: times new roman;
-        font-weight: 900;
-    }
-    
-    body .modal-container .modal-content .bttnplus {
-        position: absolute;
-        left: 64%;
-        width: 1rem;
-        height: 1rem;
-        font-size: 1rem;
-        top: 25%;
-        padding: 0;
-        border: none;
-        overflow: hidden;
-        background: red;
-        border-top-right-radius: .5rem;
-        border-bottom-right-radius: .5rem;
-    
-    
-    }
-    
-    body .modal-container .modal-content .bttnplus p {
-        position: absolute;
-        top: -20%;
-        left: 20%;
-        background: red;
-        border-radius: 1rem;
-        text-align: center;
-        font-size: 1rem;
-        color: white;
-    }
-    
-    
-    
-    body .modal-container .modal-content button p {
-        border-radius: 100%;
-    }
-    
-    
-    
-    body .modal-container .modal-content .bttnmin {
-        position: absolute;
-        left: 56%;
-        width: 1rem;
-        height: 1rem;
-        font-size: 1rem;
-        top: 25%;
-        padding: 0;
-        border: none;
-        overflow: hidden;
-        background: red;
-        border-top-left-radius: .5rem;
-        border-bottom-left-radius: .5rem;
-    }
-    
-    body .modal-container .modal-content .bttnmin p {
-        position: absolute;
-        top: -25%;
-        left: 40%;
-        background: red;
-        border-radius: 1rem;
-        text-align: center;
-        font-size: 1rem;
-        color: white;
-        font-weight: 800;
-    }
-    
-    
-    body .modal-container .modal-content .deleteprod {
-        position: absolute;
-        right: 0;
-        top: 5%;
-        font-size: 1.2rem;
-        font-weight: 600;
-        cursor: pointer;
-    }
-    
-    
-    body .modal-container .total-content {
-        font-size: 1rem;
-        font-weight: 900;
-        font-style: italic;
-        margin-left: 22.5vw;
-        margin-bottom: 1rem;
-    }
-    
-
-    body .modal-container .fondodivcarrito {
-        width: 100%;
-        text-align: center;
-        position: sticky;
-        top: 80%;
-        z-index: 1;
-        padding-bottom: 2vw;
-        box-shadow: inset .4vw .4vw 10vw rgb(188, 229, 243);
-    }
-    
-    body .modal-container .fondodivcarrito .botoninscribir {
-        width: 30%;
-        border-radius: .5rem;
-        background: red;
-        padding-top: .6rem;
-        padding-bottom: .6rem;
-        font-weight: 700;
-        font-family: verdana;
-        font-size: .9rem;
-        margin-left: 2rem;
-        border: none;
-        color: WHITE;
-        cursor: pointer;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-decoration: none;
-    }
-    
-    body .modal-container .fondodivcarrito .botonlimpiar {
-        width: 30%;
-        border-radius: .5rem;
-        background: red;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        font-weight: 700;
-        font-family: verdana;
-        font-size: .9rem;
-        margin-right: 2rem;
-        border: none;
-        color: WHITE;
-    
-    }
-    
-    body .modal-container .fondodivcarrito .botonlimpiar:hover {
-        border: .1vw solid black;
-        border-style: inset;
-    
-    }
-    
-    body .modal-container .fondodivcarrito .botoninscribir:hover {
-        border: .1vw solid black;
-        border-style: inset;
-    
-    }
-}
-
 @media (min-width: 600px) and (max-width: 999px) and (min-height:100.01vw) and (max-height: 149.99vw){
     body .modal-container {
         width: 80%;
@@ -5721,6 +5439,64 @@ body .containerseccion div button:hover span:nth-child(5) p {
 
 }
 
+body .modal-container .modaltitulotabla .textocarritolimpio {
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    padding-top: 8rem;
+    font-weight: 900;
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: verdana;
+}
+
+.botoninicio{
+    position: sticky;
+    font-weight: 900;
+    top: 80%;
+    left: 90%;
+    text-align: center;
+    font-size: .8rem;
+    font-family: gill sans;
+    text-decoration: none;
+    color: black;
+    background: rgba(1, 160, 1, 0.397) ;
+    border-radius: 100%;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+
+.botoninicio{
+    animation-name: parpadeo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1.0; }
+}
+  
+@-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1.0; }
+}
+  
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1.0; }
+}
 
 
 
