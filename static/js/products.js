@@ -81,7 +81,7 @@ const combos1 = [
         id: 1,
         nombre: "Combo 1",
         precio: 8.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1BnMhALomRDTWxUIdBKxhfW8OoxxQDcqu",
         desc: "Arroz Especial <br/>Lumpia <br/> Pollo Agridulce.",
         cantidad: 1
     },
@@ -89,7 +89,7 @@ const combos1 = [
         id: 2,
         nombre: "Combo 2",
         precio: 8.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1F0qmGljZipb4NhMSxdc36Pv_o1tY7tOd",
         desc: "Arroz Especial <br/>  Lumpia (1) <br/> Costilla Asada (1).",
         cantidad: 1
     },
@@ -97,7 +97,7 @@ const combos1 = [
         id: 3,
         nombre: "Combo 3",
         precio: 8.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1Xcs4es08eqIRDUNIrbOsagVASNvw_tPK",
         desc: "Arroz Especial <br/> Pollo Agridulce <br/> Costilla Asada (1).",
         cantidad: 1
     },
@@ -105,7 +105,7 @@ const combos1 = [
         id: 4,
         nombre: "Combo 4",
         precio: 9.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1mb2NMjGLbNGt7BCpDn83u8uya2d7tDgn",
         desc: "Arroz Especial <br/> Lumpia (1) <br/> Pollo Agridulce <br/> Costilla Asada (1).",
         cantidad: 1
     },
@@ -655,7 +655,7 @@ const carnes = [
         id: 71,
         nombre: "Carne con Jojoticos chinos", 
         precio: 13.00,
-        img: "http://drive.google.com/uc?export=view&id=1V3Q5DF6VmrUl4zBuCMcCaFAZb6YB0zge",
+        img: "http://drive.google.com/uc?export=view&id=1Xkp6weBDYYi4jw2PCwPf-636pn-0laYW",
         desc: "Carne de Res en lonjas con Jojoticos chinos.",
         cantidad: 1
     },
@@ -663,7 +663,7 @@ const carnes = [
         id: 72,
         nombre: "Carne con Champiñones", 
         precio: 13.00,
-        img: "http://drive.google.com/uc?export=view&id=1V3Q5DF6VmrUl4zBuCMcCaFAZb6YB0zge",
+        img: "http://drive.google.com/uc?export=view&id=17GBGQq0IbSZWeockNjSq2FpykpfcpVs2",
         desc: "Carne de Res en lonjas con Trozos de Champiñón.",
         cantidad: 1
     },
@@ -671,15 +671,15 @@ const carnes = [
         id: 73,
         nombre: "Carne Encebollada", 
         precio: 12.00,
-        img: "http://drive.google.com/uc?export=view&id=1V3Q5DF6VmrUl4zBuCMcCaFAZb6YB0zge",
+        img: "http://drive.google.com/uc?export=view&id=1cOx9xEkVuN6d7thtJJ9ZfNN6dK6KJC2B",
         desc: "Carne de Res en lonjas con Cebolla en Trozos.",
         cantidad: 1
     },
     {
         id: 74,
         nombre: "Carne con Pimienta Negra", 
-        precio: 12.00,
-        img: "http://drive.google.com/uc?export=view&id=1V3Q5DF6VmrUl4zBuCMcCaFAZb6YB0zge",
+        precio: 12.00, 
+        img: "http://drive.google.com/uc?export=view&id=1xqdVwAsUj06GA5PXaATzCZ0EFA6-ZGh4",
         desc: "Carne de Res adobado principalmente con Pimienta Negra.",
         cantidad: 1
     },

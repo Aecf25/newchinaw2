@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: -webkit-linear-gradient(rgb(179, 1, 1), gold);
+    background-image: -webkit-linear-gradient(rgb(179, 1, 1), gold);
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,15 +33,62 @@ header {
     overflow: hidden;
 }
 
-
 .navbar {
     background-color: rgb(54, 54, 54);
     width: 100%;
+    height: 40rem;
+    background-image: url(http://drive.google.com/uc?export=view&id=1VkTqBo2J9nKKMcth5lLw71T8hVtO_-o0); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+}
+
+.container-fluid{
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+}
+
+.textotitulonw{
+    color: white;
+    margin-left: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.textotitulonw p{
+    color: white;
+    font-weight: 700;
+    font-family: tahoma;
+  
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 .11rem 0 #fff, 
+      0 .12rem  0 #2e2e2e, 
+      0 .13rem  0 #2c2c2c, 
+      0 .14rem  0 #2a2a2a, 
+      0 .15rem  0 #282828, 
+      0 .16rem  0 #262626, 
+      0 .17rem  0 #242424, 
+      0 .18rem  0 #222, 
+      0 .19rem  0 #202020, 
+      0 .20rem  0 #1e1e1e, 
+      0 .21rem  0 #1c1c1c, 
+      0 .22rem  0 #1a1a1a, 
+      0 .23rem  0 #181818, 
+      0 .24rem  0 #161616, 
+      0 .25rem  0 #141414, 
+      0 .26rem  0 #121212, 
+      0 .27rem .3rem rgba(0, 0, 0, 0.9);
+
 }
 
 .container-fluid img {
-    width: 10vw;
+    width: 7rem;
+    z-index: 1;
+    margin-top: -1rem;
 }
+
 
 .container-fluid .navbar-nav {
     margin: auto;
@@ -67,6 +114,52 @@ header {
     font-size: 1.6rem;
 
 }
+
+.textobienvnw{
+    font-size: 4rem;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.textobienvnw p{
+    font-weight: 700;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.imglogo{
+    width: 30%;
+    height: 20%;
+}
+
+
+
+
+
 
 .d-flex {
     padding-left: 15%;
@@ -766,37 +859,257 @@ header {
 }
 
 
+                                                /* Cuadro 1 Home */
 
-.nav2 {
-    background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    border: .1vw solid;
-    padding-left: 2vw;
-    padding-right: 2vw;
+.pcuadrohome{
+    box-shadow: inset .1rem .1rem 1rem .1rem black;
+    border: 1px inset black;
+    position: relative;
+    width: 100%;
+    background: white;
+    height: 40rem;
+    background-image:-webkit-linear-gradient(left,rgba(10, 148, 212, 0), rgba(255, 255, 255, 0.842)),url(http://drive.google.com/uc?export=view&id=1VkTqBo2J9nKKMcth5lLw71T8hVtO_-o0); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;
 }
 
-
-.nav2 .nav {
-    margin-left: 7vw;
-    margin-right: 7vw;
-}
-
-.nav2 .nav-item a {
-    width: 80%;
-    font-size: 1rem;
+.pcuadrohome a{
+    background: -webkit-linear-gradient(left, rgb(255, 237, 135), rgba(255, 255, 255, 0.842));
+    width:7rem;
+    padding: .3rem;
+    border:.1rem black solid;
+    border-radius: .3rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    text-decoration: none;
+    color: black;
     font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+
+}
+
+@media (max-width: 800px){
+    .pcuadrohome p{
+        width: 30%;
+        height: 80%;
+        position: absolute;
+        font-size: 1.3rem;
+        top: 10%;
+        left: 10%;
+        font-family: gill sans;
+        overflow: scroll;
+        text-align: justify;
+        padding-top: 5%;
+        
+    }
+}
+
+@media (min-width: 801px){
+    .pcuadrohome p{
+        width: 30%;
+        height: 80%;
+        position: absolute;
+        font-size: 2rem;
+        top: 10%;
+        left: 10%;
+        font-family: gill sans;
+        overflow: scroll;
+        text-align: justify;
+        padding-top: 5%;
+        
+    }
+}
+
+.pcuadrohome p::-webkit-scrollbar{
+    width: .5vw;
+    height: 0;
+}
+
+.pcuadrohome p::-webkit-scrollbar-thumb{
+    background: rgba(65, 64, 64, 0.295);
+    border-radius: .4vw;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    
+}
+
+
+.scuadrohome{
+    box-shadow: inset .1rem .1rem 1rem .1rem black;
+    border: 1px inset black;
+    position: relative;
+    width: 100%;
+    background: white;
+    height: 40rem;
+    background-image:-webkit-linear-gradient(left,rgba(10, 148, 212, 0), rgba(255, 255, 255, 0.842)),url(http://drive.google.com/uc?export=view&id=1x1Z5Sq1wi3SIrccIXoNVwc45QjYuaHX7); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;
+}
+
+.tcuadrohome{
+    position: relative;
+    width: 100%;
+    background: -webkit-linear-gradient(top, rgb(129, 2, 2), rgba(129, 2, 2, 0.842));
+    border: 1px inset black;
+    box-shadow: inset .1rem .1rem 1rem .1rem black;
+}
+
+.tcuadrohome .botonmapa {
+    border-radius: .2rem;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.644);
+    box-shadow: inset .1rem .1rem 1rem .1rem rgb(0, 0, 0);
+}
+
+.tcuadrohome .botonmapa a{
+    text-decoration: none;
+    font-size: 1.5rem;
     color: black;
 }
 
-.nav2 .nav-item a:hover {
+.tcuadrohome .contenedormapa {
+    display: none; 
+    width: 80%; 
+    margin: auto;
+    margin-top: 3%;
+}
 
-    -webkit-text-stroke: .1rem rgb(189, 13, 13);
-    font-size: 1.25rem;
+.tcuadrohome .contenedormapa iframe{
+    height: 35rem;
+    margin-bottom: 3%;
+}
 
+                                                /* Cuadro 2 Home */
+
+                                                /* Cuadro 3 Home */
+
+
+
+
+                                        /* Barra De Busqueda del Menú */
+
+
+@media (max-width: 999px){
+    .nav2 {
+        background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border: .1vw solid;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    
+    
+    .nav2 .nav3 {
+        width: 90%;
+        text-align: center;
+        list-style: none;
+        display: inline-flex;
+        margin-left: 5%;
+        line-height: 4rem;
+        overflow-x: scroll;
+    }
+
+    .nav2 .nav3::-webkit-scrollbar{
+        height: .8rem;
+    }
+    
+    .nav2 .nav3::-webkit-scrollbar-thumb{
+        background: rgba(255, 255, 255, 0.295);
+        border-radius: .4vw;
+        border: 1px solid rgba(0, 0, 0, 0.281);
+        
+    }
+
+    .nav2 .nav-item{
+        margin-right: 5%;
+
+    }
+    
+    .nav2 .nav-item a {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: black;
+        line-height: 2rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .nav2 .nav-item img{
+
+        width: 5rem;
+        margin-bottom: -2rem;
+    }
+    
+    .nav2 .nav-item a:hover {
+    
+        -webkit-text-stroke: .05rem rgb(189, 13, 13);
+    
+    }
+}
+
+@media (min-width: 1000px){
+    .nav2 {
+        background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border: .1vw solid;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    
+    
+    .nav2 .nav3 {
+        width: 90%;
+        text-align: center;
+        list-style: none;
+        display: inline-flex;
+        margin-left: 5%;
+        line-height: 4rem;
+        overflow-x: scroll;
+    }
+
+    .nav2 .nav3::-webkit-scrollbar{
+        height: .8rem;
+    }
+    
+    .nav2 .nav3::-webkit-scrollbar-thumb{
+        background: rgba(255, 255, 255, 0.295);
+        border-radius: .4vw;
+        border: 1px solid rgba(0, 0, 0, 0.281);
+        
+    }
+
+    .nav2 .nav-item{
+        margin-right: 5%;
+
+    }
+    
+    .nav2 .nav-item a {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: black;
+        line-height: 2rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .nav2 .nav-item img{
+
+        width: 5rem;
+        margin-bottom: -2rem;
+    }
+    
+    .nav2 .nav-item a:hover {
+    
+        -webkit-text-stroke: .05rem rgb(189, 13, 13);
+    
+    }
 }
 
 
@@ -1185,7 +1498,7 @@ header {
 
 @media (max-width: 600px) {
     body #subheader {
-        background: rgb(54, 54, 54);
+        background: rgba(54, 54, 54, 0.473);
         border-top: 2px solid black;
         list-style: none;
         width: 100%;
@@ -1326,7 +1639,7 @@ header {
 
 @media (min-width: 601px) and (max-width: 999px){
     body #subheader {
-        background: rgb(54, 54, 54);
+        background: rgba(54, 54, 54, 0.473);
         border-top: 2px solid black;
         list-style: none;
         width: 100%;
@@ -1467,7 +1780,7 @@ header {
 
 @media (min-width: 1000px) {
     body #subheader {
-        background: rgb(54, 54, 54);
+        background: rgba(54, 54, 54, 0.473);
         border-top: 2px solid black;
         list-style: none;
         width: 100%;
@@ -1651,9 +1964,9 @@ body #listadecomida a {
     body .containerseccion {
         display: flex;
         width: 80%;
-        margin-left: 10vw;
         text-align: center;
         justify-content: center;
+        margin-left: 10%;
     }
 }
 
@@ -1662,8 +1975,8 @@ body #listadecomida a {
         display: inline-flex;
         width: 80%;
         text-align: center;
-        margin-left: 10vw;
-        padding-left: 2vw;
+        margin-left: 10%;
+
 
     }
 }
@@ -1673,7 +1986,7 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 10%;
         width: 80%;
-        padding-left: 4vw;
+
     }
 }
 
@@ -1682,7 +1995,7 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 10%;
         width: 80%;
-        padding-left: 6vw;
+
     }
 }
 
@@ -1691,291 +2004,543 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 10%;
         width: 80%;
-        padding-left: 4vw;
+
     }
 }
 
-body .containerseccion {
-    margin-bottom: 5vw;
-    flex-wrap: wrap;
+
+
+
+
+@media (max-width: 999px){
+
+    body .containerseccion {
+        margin-bottom: 5vw;
+        flex-wrap: wrap;
+        /* Hasta aqui para verse no centrado el resto de elementos incompletos, recordatorio se le elimino el padd a la izq
+        (Usar esto con resoluciones inferiores a 1000)*/
+        justify-content:space-evenly;
+        flex-direction:row;
+    }
+
+    body .containerseccion div {
+        margin-right: 2vw;
+        width: 11rem;
+        height: 20rem;
+        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
+        border-radius: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
+        position: relative;
+        margin-bottom: 8rem;
+    }
+    
+    body .containerseccion div:hover {
+        box-shadow: 1rem 1rem 2rem white, 1vw 1vw 2vw black
+    }
+    
+    body .containerseccion div img {
+        height: 8rem;
+        width: 11rem;
+        border-radius: 1rem;
+        padding: .2rem;
+        border-style: groove outset groove;
+        margin-top: 5%;
+    
+    
+    }
+    
+    body .containerseccion div h3 {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 800;
+        width: 100%;
+        max-height: 3.5rem;
+        overflow: scroll;
+        padding-bottom: 1rem;
+        position: absolute;
+    }
+    
+    body .containerseccion div h3::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body .containerseccion div .descproducto {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-align: justify;
+        top: 12rem;
+        left: 1rem;
+        width: 80%;
+        font-weight: 700;
+        max-height: 5rem;
+        overflow: scroll;
+        position: absolute;
+    }
+    
+    body .containerseccion div .precioproducto {
+        color: white;
+        position: absolute;
+        top: 17rem;
+        font-size: 1.2rem;
+        font-family: gill sans;
+        font-weight: 700;
+        text-align: left;
+        left: 1rem;
+        width: 50%;
+        background: red;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        border-top-right-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+        max-height: 1.8rem;
+        padding-left: .5rem;
+    }
+    
+    body .containerseccion div p::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body .containerseccion div #cont2 {
+        margin-left: 6vw
+    }
+    
+    body .containerseccion div #cont3 {
+        margin-left: 6vw
+    }
+    
+    body .containerseccion div #cont4 {
+        margin-left: 6vw
+    }
+    
+    body .containerseccion div button {
+        width: 80%;
+        height: 2.5vw;
+        text-align: center;
+        font-size: .9vw;
+        border-radius: .5vw;
+        background: red;
+        border: .1vw rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
+        overflow: hidden;
+        position: absolute;
+        bottom: -3vw;
+        left: 1.2vw;
+        font-family: verdana;
+        font-weight: 700;
+        color: white;
+    }
+    
+    body .containerseccion div button:hover {
+        box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
+        background: red;
+        width: 90%;
+        margin: auto;
+        left: .6vw;
+        bottom: -3.3vw;
+        font-size: .95vw;
+        border-radius: .5vw;
+    }
+    
+    
+    
+    body .containerseccion div button:active {
+        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+    }
+    
+    body .containerseccion div .ventanaproductoboton {
+        width: 80%;
+        height: 2.5rem;
+        text-align: center;
+        font-size: .9rem;
+        border-radius: .5rem;
+        background: red;
+        border: .1rem rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2rem .2rem 1rem black, -.2vw -.2vw 1vw white;
+        overflow: hidden;
+        position: absolute;
+        bottom: -3rem;
+        left: 1.2rem;
+        font-family: verdana;
+        font-weight: 700;
+        color: white;
+    }
+    
+    body .containerseccion div .ventanaproductoboton:hover {
+        box-shadow: .2rem .2rem 1rem white, -.2vw -.2vw 1vw black;
+        background: red;
+        width: 90%;
+        margin: auto;
+        left: .6rem;
+        bottom: -3.3rem;
+        font-size: .95rem;
+        border-radius: .5rem;
+    }
+    
+    
+    
+    body .containerseccion div .ventanaproductoboton:active {
+        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+    }
+    
+    
+    
+    
+    
+    body .containerseccion div button span {
+        position: absolute;
+        background: white;
+        transition: .5s;
+        border-style: inset;
+        border-radius: 5vw;
+        border-width: .1vw;
+    
+    }
+    
+    body .containerseccion div button span:nth-child(1) {
+        width: 100%;
+        height: .1vw;
+        top: 0;
+        left: -100%;
+    }
+    
+    body .containerseccion div button span:nth-child(2) {
+        width: 100%;
+        height: .1vw;
+        bottom: 0;
+        right: -100%
+    }
+    
+    body .containerseccion div button span:nth-child(3) {
+        width: .1vw;
+        height: 100%;
+        left: 0;
+        bottom: -100%
+    }
+    
+    body .containerseccion div button span:nth-child(4) {
+        width: .1vw;
+        height: 100%;
+        right: 0;
+        top: -100%
+    }
+    
+    
+    body .containerseccion div button:hover span:nth-child(1) {
+        left: 0;
+        transition-delay: .2s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(4) {
+        top: 0;
+        transition-delay: .4s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(2) {
+        right: 0;
+        transition-delay: .2s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(3) {
+        bottom: 0;
+        transition-delay: .4s;
+    }
+    
+    body .containerseccion div button span:nth-child(5) {
+        width: 80%;
+        height: 30%;
+        bottom: .3vw;
+        left: 1vw;
+        background: rgb(165, 165, 243);
+        border: none;
+        opacity: 0;
+        border-style: inset;
+        border-width: .1vw;
+        overflow: hidden;
+        position: absolute;
+        border: none;
+    }
+    
+    body .containerseccion div button span:nth-child(5) p {
+        font-size: .7vw;
+        font-family: verdana;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-top: -.25vw;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(5) {
+        bottom: .3vw;
+        width: 80%;
+        height: 30%;
+        background: rgb(150, 150, 221);
+        color: black;
+        text-align: center;
+        transition: all 1.5s;
+        opacity: 1;
+        overflow: hidden;
+        position: absolute;
+        border: none;
+        left: 1vw;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(5) p {
+        font-size: .7vw;
+        left: 0;
+        background: rgb(150, 150, 221);
+        text-align: center;
+        font-family: verdana;
+    }
 }
 
-body .containerseccion div {
-    margin-right: 3vw;
-    width: 11rem;
-    height: 20rem;
-    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
-    border-radius: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 1s ease;
-    box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
-    position: relative;
-    margin-bottom: 8rem;
+@media (min-width: 1000px){
+
+    body .containerseccion {
+        margin-bottom: 5vw;
+        flex-wrap: wrap;
+        /* Hasta aqui para verse no centrado el resto de elementos incompletos, recordatorio se le elimino el padd a la izq
+        (Usar esto con resoluciones inferiores a 1000)*/
+        padding-left: 6rem;
+    }
+
+    body .containerseccion div {
+        flex-basis: 11rem;
+        margin-right: 3%;
+        height: 20rem;
+        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
+        border-radius: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
+        position: relative;
+        margin-bottom: 8rem;
+    }
+    
+    body .containerseccion div:hover {
+        box-shadow: 1rem 1rem 2rem white, 1vw 1vw 2vw black
+    }
+    
+    body .containerseccion div img {
+        height: 40%;
+        width: 100%;
+        border-radius: 1rem;
+        padding: .2rem;
+        border-style: groove outset groove;
+        margin-top: 5%;
+    
+    }
+    
+    body .containerseccion div h3 {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 800;
+        width: 100%;
+        max-height: 17.5%;
+        overflow: scroll;
+        padding-bottom: 5%;
+        position: absolute;
+    }
+    
+    body .containerseccion div h3::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body .containerseccion div .descproducto {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-align: justify;
+        top: 60%;
+        left: 5%;
+        width: 80%;
+        font-weight: 700;
+        max-height: 25%;
+        overflow: scroll;
+        position: absolute;
+    }
+    
+    body .containerseccion div .precioproducto {
+        color: white;
+        position: absolute;
+        top: 85%;
+        font-size: 1.2rem;
+        font-family: gill sans;
+        font-weight: 700;
+        text-align: left;
+        left: 5%;
+        width: 50%;
+        background: red;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        border-top-right-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+        max-height: 9%;
+        padding-left: 2.5%;
+    }
+    
+    body .containerseccion div p::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body .containerseccion div .ventanaproductoboton {
+        width: 80%;
+        height: 12.5%;
+        text-align: center;
+        font-size: .9rem;
+        border-radius: .5rem;
+        background: red;
+        border: .1rem rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2rem .2rem 1rem black, -.2vw -.2vw 1vw white;
+        overflow: hidden;
+        position: absolute;
+        bottom: -15%;
+        left: 10.91%;
+        font-family: verdana;
+        font-weight: 700;
+        color: white;
+    }
+    
+    body .containerseccion div .ventanaproductoboton:hover {
+        box-shadow: .2rem .2rem 1rem white, -.2vw -.2vw 1vw black;
+        background: red;
+        width: 90%;
+        margin: auto;
+        left: 5.45%;
+        bottom: -16.5%;
+        font-size: .95rem;
+        border-radius: .5rem;
+    }
+    
+    
+    
+    body .containerseccion div .ventanaproductoboton:active {
+        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+    }
+    
+    
+    
+    
+    
+    body .containerseccion div button span {
+        position: absolute;
+        background: white;
+        transition: .5s;
+        border-style: inset;
+        border-radius: 5vw;
+        border-width: .1vw;
+    
+    }
+    
+    body .containerseccion div button span:nth-child(1) {
+        width: 100%;
+        height: .1vw;
+        top: 0;
+        left: -100%;
+    }
+    
+    body .containerseccion div button span:nth-child(2) {
+        width: 100%;
+        height: .1vw;
+        bottom: 0;
+        right: -100%
+    }
+    
+    body .containerseccion div button span:nth-child(3) {
+        width: .1vw;
+        height: 100%;
+        left: 0;
+        bottom: -100%
+    }
+    
+    body .containerseccion div button span:nth-child(4) {
+        width: .1vw;
+        height: 100%;
+        right: 0;
+        top: -100%
+    }
+    
+    
+    body .containerseccion div button:hover span:nth-child(1) {
+        left: 0;
+        transition-delay: .2s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(4) {
+        top: 0;
+        transition-delay: .4s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(2) {
+        right: 0;
+        transition-delay: .2s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(3) {
+        bottom: 0;
+        transition-delay: .4s;
+    }
+    
+    body .containerseccion div button span:nth-child(5) {
+        width: 80%;
+        height: 30%;
+        bottom: .3vw;
+        left: 1vw;
+        background: rgb(165, 165, 243);
+        border: none;
+        opacity: 0;
+        border-style: inset;
+        border-width: .1vw;
+        overflow: hidden;
+        position: absolute;
+        border: none;
+    }
+    
+    body .containerseccion div button span:nth-child(5) p {
+        font-size: .7vw;
+        font-family: verdana;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-top: -.25vw;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(5) {
+        bottom: .3vw;
+        width: 80%;
+        height: 30%;
+        background: rgb(150, 150, 221);
+        color: black;
+        text-align: center;
+        transition: all 1.5s;
+        opacity: 1;
+        overflow: hidden;
+        position: absolute;
+        border: none;
+        left: 1vw;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(5) p {
+        font-size: .7vw;
+        left: 0;
+        background: rgb(150, 150, 221);
+        text-align: center;
+        font-family: verdana;
+    }
 }
 
-body .containerseccion div:hover {
-    box-shadow: 1rem 1rem 2rem white, 1vw 1vw 2vw black
-}
-
-body .containerseccion div img {
-    height: 8rem;
-    width: 11rem;
-    border-radius: 1rem;
-    padding: .2rem;
-    border-style: groove outset groove;
-    margin-top: 5%;
 
 
-}
-
-body .containerseccion div h3 {
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 800;
-    width: 100%;
-    max-height: 3.5rem;
-    overflow: scroll;
-    padding-bottom: 1rem;
-    position: absolute;
-}
-
-body .containerseccion div h3::-webkit-scrollbar {
-    display: none;
-}
-
-body .containerseccion div .descproducto {
-    font-size: 1rem;
-    font-family: sans-serif;
-    text-align: justify;
-    top: 12rem;
-    left: 1rem;
-    width: 80%;
-    font-weight: 700;
-    max-height: 5rem;
-    overflow: scroll;
-    position: absolute;
-}
-
-body .containerseccion div .precioproducto {
-    color: white;
-    position: absolute;
-    top: 17rem;
-    font-size: 1.2rem;
-    font-family: gill sans;
-    font-weight: 700;
-    text-align: left;
-    left: 1rem;
-    width: 50%;
-    background: red;
-    border-top-left-radius: .5rem;
-    border-bottom-left-radius: .5rem;
-    border-top-right-radius: .6rem;
-    border-bottom-right-radius: .6rem;
-    max-height: 1.8rem;
-    padding-left: .5rem;
-}
-
-body .containerseccion div p::-webkit-scrollbar {
-    display: none;
-}
-
-body .containerseccion div #cont2 {
-    margin-left: 6vw
-}
-
-body .containerseccion div #cont3 {
-    margin-left: 6vw
-}
-
-body .containerseccion div #cont4 {
-    margin-left: 6vw
-}
-
-body .containerseccion div button {
-    width: 80%;
-    height: 2.5vw;
-    text-align: center;
-    font-size: .9vw;
-    border-radius: .5vw;
-    background: red;
-    border: .1vw rgb(83, 83, 83);
-    cursor: pointer;
-    transition: all 1s ease;
-    box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
-    overflow: hidden;
-    position: absolute;
-    bottom: -3vw;
-    left: 1.2vw;
-    font-family: verdana;
-    font-weight: 700;
-    color: white;
-}
-
-body .containerseccion div button:hover {
-    box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
-    background: red;
-    width: 90%;
-    margin: auto;
-    left: .6vw;
-    bottom: -3.3vw;
-    font-size: .95vw;
-    border-radius: .5vw;
-}
-
-
-
-body .containerseccion div button:active {
-    box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
-}
-
-body .containerseccion div .ventanaproductoboton {
-    width: 80%;
-    height: 2.5rem;
-    text-align: center;
-    font-size: .9rem;
-    border-radius: .5rem;
-    background: red;
-    border: .1rem rgb(83, 83, 83);
-    cursor: pointer;
-    transition: all 1s ease;
-    box-shadow: .2rem .2rem 1rem black, -.2vw -.2vw 1vw white;
-    overflow: hidden;
-    position: absolute;
-    bottom: -3rem;
-    left: 1.2rem;
-    font-family: verdana;
-    font-weight: 700;
-    color: white;
-}
-
-body .containerseccion div .ventanaproductoboton:hover {
-    box-shadow: .2rem .2rem 1rem white, -.2vw -.2vw 1vw black;
-    background: red;
-    width: 90%;
-    margin: auto;
-    left: .6rem;
-    bottom: -3.3rem;
-    font-size: .95rem;
-    border-radius: .5rem;
-}
-
-
-
-body .containerseccion div .ventanaproductoboton:active {
-    box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
-}
-
-
-
-
-
-body .containerseccion div button span {
-    position: absolute;
-    background: white;
-    transition: .5s;
-    border-style: inset;
-    border-radius: 5vw;
-    border-width: .1vw;
-
-}
-
-body .containerseccion div button span:nth-child(1) {
-    width: 100%;
-    height: .1vw;
-    top: 0;
-    left: -100%;
-}
-
-body .containerseccion div button span:nth-child(2) {
-    width: 100%;
-    height: .1vw;
-    bottom: 0;
-    right: -100%
-}
-
-body .containerseccion div button span:nth-child(3) {
-    width: .1vw;
-    height: 100%;
-    left: 0;
-    bottom: -100%
-}
-
-body .containerseccion div button span:nth-child(4) {
-    width: .1vw;
-    height: 100%;
-    right: 0;
-    top: -100%
-}
-
-
-body .containerseccion div button:hover span:nth-child(1) {
-    left: 0;
-    transition-delay: .2s;
-}
-
-body .containerseccion div button:hover span:nth-child(4) {
-    top: 0;
-    transition-delay: .4s;
-}
-
-body .containerseccion div button:hover span:nth-child(2) {
-    right: 0;
-    transition-delay: .2s;
-}
-
-body .containerseccion div button:hover span:nth-child(3) {
-    bottom: 0;
-    transition-delay: .4s;
-}
-
-body .containerseccion div button span:nth-child(5) {
-    width: 80%;
-    height: 30%;
-    bottom: .3vw;
-    left: 1vw;
-    background: rgb(165, 165, 243);
-    border: none;
-    opacity: 0;
-    border-style: inset;
-    border-width: .1vw;
-    overflow: hidden;
-    position: absolute;
-    border: none;
-}
-
-body .containerseccion div button span:nth-child(5) p {
-    font-size: .7vw;
-    font-family: verdana;
-    text-align: center;
-    overflow-wrap: break-word;
-    margin-top: -.25vw;
-}
-
-body .containerseccion div button:hover span:nth-child(5) {
-    bottom: .3vw;
-    width: 80%;
-    height: 30%;
-    background: rgb(150, 150, 221);
-    color: black;
-    text-align: center;
-    transition: all 1.5s;
-    opacity: 1;
-    overflow: hidden;
-    position: absolute;
-    border: none;
-    left: 1vw;
-}
-
-body .containerseccion div button:hover span:nth-child(5) p {
-    font-size: .7vw;
-    left: 0;
-    background: rgb(150, 150, 221);
-    text-align: center;
-    font-family: verdana;
-}
 
 /* *****************MODAL VENTANA PRODUCTO INDIVIDUAL************************ */
 

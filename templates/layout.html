@@ -15,7 +15,24 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename ='css/main.css') }}">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#hide").on('click', function () {
+                $("#element").hide();
+                $('#show').show();
+                $("#hide").hide();
+                return false;
+            });
 
+            $("#show").on('click', function () {
+                $("#element").show();
+                $('#show').hide();
+                $("#hide").show();
+                return false;
+            });
+        });
+    </script>
 </head>
 
 
@@ -25,30 +42,39 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="/"><img
-                    src="http://drive.google.com/uc?export=view&id=1x9DNvKkYJVP5-PzDIenwiS14tg-47jTS"
-                    ></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/menu">Menú</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/about">Quiénes somos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand textotitulonw" href="/">
+                        <p>Restaurant-Bar</p><img
+                            src="http://drive.google.com/uc?export=view&id=13r-qD9OsWQEKKeKvcCAAWg_gpqQphyro">
+                        <p>New China</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" style="background: rgba(255, 255, 255, 0.452);"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/menu">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">Quiénes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+                <div class="textobienvnw">
+                    <p class="primerparrafo"></p>
+                    <img class="imglogo" src="" alt="">
+                    <p class="segundoparrafo"></p>
+                </div>
+            </nav>
         </header>
 
         <div id="subheader">
@@ -57,8 +83,8 @@
                 <a href="/">Delivery</a>
             </li>
             <li id="WhatsApp">
-                <a
-                    href="https://api.whatsapp.com/send?phone=+584129851959&text=Hola, Nececito mas informacion!" target="_blank">WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=+584129851959&text=Hola, Nececito mas informacion!"
+                    target="_blank">WhatsApp</a>
             </li>
             <a id="carritomodal" class="carritomodaldisp">
                 <svg id="carrito" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -70,7 +96,8 @@
                     <p>Pedido</p>
                 </li>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=+584129851959&text=Hola, Nececito mas informacion!" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+584129851959&text=Hola, Nececito mas informacion!"
+                target="_blank">
                 <svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-whatsapp" viewBox="0 0 16 16">
                     <path
@@ -776,7 +803,7 @@
             </button>
         </div>
 
-        
+
 
 
         <div>
@@ -785,11 +812,11 @@
                 {% endblock %}
             </div>
         </div>
-        
+
 
     </div>
 
-    
+
     <div class="modal-container" id="modalventana">
     </div>
 
