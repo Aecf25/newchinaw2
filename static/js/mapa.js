@@ -28,3 +28,31 @@ function cerrarmapapeque() {
     mapadegoogleubi.style.height = "0"
 
 }
+
+let animado = document.querySelectorAll(".animacionimguno");
+function mostrarscroll() {
+    let scrollTop = document.documentElement.scrollTop;
+    for (var i=0; i < animado.length; i++) {
+        let alturaanimado = animado[i].offsetTop;
+        if(alturaanimado + 300 < scrollTop) {
+            animado[i].style.opacity = 1;
+            animado[i].style.transform = "translateX(0%)";
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarscroll)
+
+let animadodos = document.querySelectorAll(".animacionimgdos");
+function mostrarscrolldos() {
+    let scrollTopdos = document.documentElement.scrollTop;
+    for (var i=0; i < animadodos.length; i++) {
+        let alturaanimadodos = animadodos[i].offsetTop;
+        if(alturaanimadodos + 1000 < scrollTopdos) {
+            animadodos[i].style.opacity = 1;
+            animadodos[i].style.transform = "translateX(0%)";
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarscrolldos)

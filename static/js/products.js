@@ -81,7 +81,7 @@ const combos1 = [
         id: 1,
         nombre: "Combo 1",
         precio: 8.00,
-        img: "http://drive.google.com/uc?export=view&id=1BnMhALomRDTWxUIdBKxhfW8OoxxQDcqu",
+        img: "http://drive.google.com/uc?export=view&id=1QwnWLuTZyi-fthewj4xboEsqCsmkqjuN",
         desc: "Arroz Especial <br/>Lumpia <br/> Pollo Agridulce.",
         cantidad: 1
     },
@@ -105,7 +105,7 @@ const combos1 = [
         id: 4,
         nombre: "Combo 4",
         precio: 9.00,
-        img: "http://drive.google.com/uc?export=view&id=1mb2NMjGLbNGt7BCpDn83u8uya2d7tDgn",
+        img: "http://drive.google.com/uc?export=view&id=196x6BYcKovLsJgZP7pLsexI3JgsFy4G1",
         desc: "Arroz Especial <br/> Lumpia (1) <br/> Pollo Agridulce <br/> Costilla Asada (1).",
         cantidad: 1
     },
@@ -113,7 +113,7 @@ const combos1 = [
         id: 5,
         nombre: "Combo 5",
         precio: 9.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1XOpB26UOZJxiDHUQ3NSQdYrw80ZPJ4vL",
         desc: "Arroz Especial <br/> Chop Suey Esp. <br/> Pollo Agridulce <br/> Lumpia (1).",
         cantidad: 1
     },
@@ -121,7 +121,7 @@ const combos1 = [
         id: 6,
         nombre: "Combo 6",
         precio: 10,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1tX3D21cOnI799s8uZh0IMys-KHjartKU",
         desc: "Arroz Especial <br/> Chop Suey Esp. <br/> Pollo Agridulce <br/> Costilla Asada (1).",
         cantidad: 1
     },
@@ -133,7 +133,7 @@ const entremeses1 = [
         id: 7,
         nombre: "Lumpias",
         precio: 4.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1pkRrQSAcg7Ph1DheuC47sUg--wcwRLIu",
         desc: "Rollos de primavera (Par).",
         cantidad: 1
     },
@@ -141,7 +141,7 @@ const entremeses1 = [
         id: 8,
         nombre: "Wanton Frito",
         precio: 5.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=10HG-exc6htAcpKHQbTq0DHvaIgKACaDu",
         desc: "Lamina fina de masa.",
         cantidad: 1
     },
@@ -149,7 +149,7 @@ const entremeses1 = [
         id: 9,
         nombre: "Wanton Frito Relleno",
         precio: 6.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1T0c-J_XOt-oF3IHD7fOV-ay9Mmp1wtid",
         desc: "Lamina fina de masa rellena con camarón y pollo.",
         cantidad: 1
     },
@@ -157,7 +157,7 @@ const entremeses1 = [
         id: 10,
         nombre: "Pan Chino",
         precio: 1.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1B0VhC7R7BKoKgxruhbWhBLIh2onoRkh3",
         desc: "Pan a base de mantequilla y azucar (4unds).",
         cantidad: 1
     },
@@ -168,7 +168,7 @@ const arroz = [
         id: 11,
         nombre: "Arroz Frito Especial",
         precio: 7.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1hiABS8i9wiBhYkOwrZhn2wbTXVDvMyu7",
         desc: "Arroz frito con Pollo, Jamón y Cerdo asado.",
         cantidad: 1
     },
@@ -176,7 +176,7 @@ const arroz = [
         id: 12,
         nombre: "Arroz Frito con Pollo y Camarón",
         precio: 7.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1qzqaP6KUqbKBS3wkjX7YJdmsX7g4Ddqx",
         desc: "Arroz Frito con Pollo & Camarón.",
         cantidad: 1
     },
@@ -184,7 +184,7 @@ const arroz = [
         id: 13,
         nombre: "Arroz Frito con Pollo",
         precio: 7.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1yqtKvfQittmYh5YZ0MdEzQ2afpvGMoxX",
         desc: "Arroz Frito con Pollo.",
         cantidad: 1
     },
@@ -192,7 +192,7 @@ const arroz = [
         id: 14,
         nombre: "Arroz Frito con Camarón",
         precio: 8.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=18ipYPtaLHC9RYSmsoBfFq--xY_isHo5Z",
         desc: "Arroz Frito con Camarón.",
         cantidad: 1
     },
@@ -200,7 +200,7 @@ const arroz = [
         id: 15,
         nombre: "Arroz Frito con Cerdo Asado",
         precio: 7.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1TZoS6z1Sr-B1FwnkM2_8R3yt8AF9O1AI",
         desc: "Arroz Frito con Cerdo Asado.",
         cantidad: 1
     },
@@ -208,7 +208,7 @@ const arroz = [
         id: 16,
         nombre: "Arroz Frito con Cerdo Asado y Pollo",
         precio: 7.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1iuj8wLafWkrJJQeSjE_oQ4S9QiHDhO10",
         desc: "Arroz Frito con Cerdo Asado y Pollo",
         cantidad: 1
     },
@@ -216,7 +216,7 @@ const arroz = [
         id: 17,
         nombre: "Arroz Frito con Jamón",
         precio: 7.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=11skELF_5EWsud3LorHdSyNc9s40oqe-i",
         desc: "Arroz Frito con Jamón.",
         cantidad: 1
     },
@@ -224,7 +224,7 @@ const arroz = [
         id: 18,
         nombre: "Arroz Frito con Huevo",
         precio: 7.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1KwCLsKURMjoJz060gRppaHg9JZWYyz9P",
         desc: "Arroz Frito con Huevo.",
         cantidad: 1
     },
@@ -232,7 +232,7 @@ const arroz = [
         id: 19,
         nombre: "Rice Cooling",
         precio: 8.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1xhKDKpq8buIO7zOvC4m6ZrfR3MUmX19d",
         desc: "1/2 Ración de Arroz Especial </br>1/2 Ración de Chop Suey Especial.",
         cantidad: 1
     },
@@ -244,7 +244,7 @@ const arrozsalt = [
         id: 20,
         nombre: "Arroz Con Carne de Res",
         precio: 9.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1BHh4NxqYazz0m3XIGVj_kDEHhtxeoKbW",
         desc: "Arroz Salteado con Carne de Res.",
         cantidad: 1
     },
@@ -252,7 +252,7 @@ const arrozsalt = [
         id: 21,
         nombre: "Arroz con Camarón Fresco",
         precio: 10.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1pTE-_3nTsy0sPBhWnVV8p2C9ipto2IxK",
         desc: "Arroz Salteado con Camarón Fresco.",
         cantidad: 1
     },

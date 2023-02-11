@@ -34,12 +34,43 @@ header {
     overflow: hidden;
 }
 
-.navbar {
-    background-color: rgb(54, 54, 54);
-    width: 100%;
-    height: 40rem;
-    background-image: url(http://drive.google.com/uc?export=view&id=1VkTqBo2J9nKKMcth5lLw71T8hVtO_-o0); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+@media (max-width:999px){
+    .navbar {
+        background-color: rgb(54, 54, 54);
+        width: 100%;
+        height: 45rem;
+        background-image: url(http://drive.google.com/uc?export=view&id=1-hMqo0NJ-uI8kUzy3Jvp8I57jP2ofc1U); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+    }
+
+    .textobienvnw{
+        font-size: 4rem;
+        color: aliceblue;
+        margin: auto;
+        margin-top: 20rem;
+        text-align: center;
+        font-style: italic;
+    }
 }
+
+@media (min-width:1000px){
+    .navbar {
+        background-color: rgb(54, 54, 54);
+        width: 100%;
+        height: 90vh;
+        background-image: url(http://drive.google.com/uc?export=view&id=1-hMqo0NJ-uI8kUzy3Jvp8I57jP2ofc1U); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+        
+    }
+
+    .textobienvnw{
+        font-size: 4rem;
+        color: aliceblue;
+        margin: auto;
+        margin-top: 40vh;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
 
 .container-fluid{
     z-index: 1;
@@ -112,6 +143,7 @@ header {
     -webkit-text-stroke: .07rem aliceblue;
     font-size: 1.5rem;
     transition: all 1s ease;
+    padding-right: 5%;
 }
 
 .container-fluid .navbar-nav .nav-item .nav-link:hover {
@@ -120,14 +152,6 @@ header {
 
 }
 
-.textobienvnw{
-    font-size: 4rem;
-    color: aliceblue;
-    margin: auto;
-    margin-top: 15rem;
-    text-align: center;
-    font-style: italic;
-}
 
 .textobienvnw p{
     font-weight: 300;
@@ -882,7 +906,7 @@ header {
         overflow: scroll;
         color: white;
         margin: auto;
-        display: inline-block;
+        margin-top: 20%;
     }
 
     .imgcuadrounogde{
@@ -890,10 +914,11 @@ header {
     }
 
     .pcuadrohome .imgcuadrounopeq{
-        width: 80%;
-        height: 30rem;
+        width: 95%;
+        height: 25rem;
         margin: auto;
         padding: 3%;
+        display: flex;
     }
 
     .pcuadrohome .imgcuadrounopeq img{
@@ -914,7 +939,7 @@ header {
         padding-top: 3%;
         text-align: center;
         font-size: 250%;
-        font-family: Snell Roundhand;
+        font-family: didot;
         font-style: italic;
         word-spacing: 2rem;
     }
@@ -973,7 +998,7 @@ header {
     }
 
     .pcuadrohome .contenedordeinfocuadrouno{
-        width: 50%;
+        width: 100%;
         height: 100%;
     }
 
@@ -1022,19 +1047,28 @@ header {
     }
     
     .pcuadrohome .imgcuadrounogde{
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height: 80%;
+        margin: auto;
+        display: flex;
     }
 
     .pcuadrohome .imgcuadrounogde img{
         width: 100%;
-        height: 100%;
-        padding: 10%;
+        height: 60%;
+        margin: auto;
+        margin-top: 20%;
+        border-radius: 2rem;
+
     }
     
 }
 
-
+.animacionimguno{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 3s ease;
+}
 
 .pcuadrohome::-webkit-scrollbar{
     display: none;
@@ -1060,6 +1094,7 @@ header {
         position: relative;
         width: 80%;
         margin: auto;
+        margin-top: 20%;
     }
 
     .scuadrohomecontenido{
@@ -1070,8 +1105,9 @@ header {
     .scuadrohome .imagenscuadro{
         width: 100%;
         margin: auto;
-        height: 30rem; 
+        height: 25rem; 
         padding: 3%;
+        display: flex;
     }
     
     .scuadrohome .imagenscuadro img{
@@ -1101,7 +1137,7 @@ header {
 
     .scuadrohome .contenedordeinfocuadrodos h3{
         font-size: 200%;
-        font-family: Snell Roundhand;
+        font-family: didot;
         font-style: italic;
         text-align: center;
         word-wrap: normal;
@@ -1225,7 +1261,8 @@ header {
     .scuadrohome .imagenscuadro{
         width: 100%;
         margin: auto;
-        height: 100%; 
+        height: 100%;
+        display: flex; 
     }
     
     .scuadrohome .imagenscuadro img{
@@ -1332,6 +1369,13 @@ header {
     
 }
 
+.animacionimgdos{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 3s ease;
+
+}
+
 .scuadrohome .contenedordeinfocuadrodos a{
     text-decoration: none;
     color: rgb(2, 183, 255);
@@ -1362,7 +1406,7 @@ header {
         width: 80%;
         text-align: center;
         font-size: 300%;
-        font-family: Snell Roundhand;
+        font-family: didot;
         font-style: italic;
         word-spacing: 2rem;
         margin-top: 20%;
@@ -1378,6 +1422,7 @@ header {
     
     .tcuadrohome .contenedormapa{
         margin: auto;
+        display: flex;
         
     }
     
@@ -1444,7 +1489,7 @@ header {
         width: 50%;
         height: 80%;
         margin: auto;
-        
+        display: flex;
     }
     
     .tcuadrohome .contenedormapa iframe{
@@ -1466,15 +1511,14 @@ header {
 
 @media (max-width: 999px){
     .nav2 {
-        background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
+        background: #5e212973;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
         border: .1vw solid;
         padding-left: 2vw;
         padding-right: 2vw;
-        width: 95%;
-        margin-left: 2.5%;
+        width: 100%;
     }
     
     
@@ -1528,15 +1572,14 @@ header {
 
 @media (min-width: 1000px){
     .nav2 {
-        background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
+        background: #5e212973;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
         border: .1vw solid;
         padding-left: 2vw;
         padding-right: 2vw;
-        width: 95%;
-        margin-left: 2.5%;
+        width: 100%;
     }
     
     
@@ -1569,7 +1612,7 @@ header {
     .nav2 .nav-item a {
         font-size: 1.3rem;
         font-weight: 700;
-        color: black;
+        color: white;
         line-height: 2rem;
         margin-top: 1rem;
         text-transform: uppercase;
@@ -2509,13 +2552,13 @@ body #listadecomida a {
         text-align: center;
         cursor: pointer;
         transition: all 1s ease;
-        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
+        box-shadow: .1rem .1rem .2rem black, .1rem .1rem .2rem white;
         position: relative;
         margin-bottom: 8rem;
     }
     
     body .containerseccion div:hover {
-        box-shadow: 1rem 1rem 2rem white, 1vw 1vw 2vw black
+        box-shadow: .1rem .1rem .2rem white, .1rem .1rem .2rem black
     }
     
     body .containerseccion div img {
@@ -2603,7 +2646,7 @@ body #listadecomida a {
         border: .1vw rgb(83, 83, 83);
         cursor: pointer;
         transition: all 1s ease;
-        box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
+        box-shadow: .2rem .2rem .1rem black, -.2rem -.2rem .1rem white;
         overflow: hidden;
         position: absolute;
         bottom: -3vw;
@@ -2614,7 +2657,7 @@ body #listadecomida a {
     }
     
     body .containerseccion div button:hover {
-        box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
+        box-shadow: .2rem .2rem .1rem white, -.2rem -.2rem .1rem black;
         background: red;
         width: 90%;
         margin: auto;
@@ -2627,7 +2670,7 @@ body #listadecomida a {
     
     
     body .containerseccion div button:active {
-        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+        box-shadow: inset .1rem .1rem .1rem white, inset -.1rem -.1rem .1rem black
     }
     
     body .containerseccion div .ventanaproductoboton {
@@ -2640,7 +2683,7 @@ body #listadecomida a {
         border: .1rem rgb(83, 83, 83);
         cursor: pointer;
         transition: all 1s ease;
-        box-shadow: .2rem .2rem 1rem black, -.2vw -.2vw 1vw white;
+        box-shadow: .2rem .2rem 1rem black, -.2rem -.2rem .1rem white;
         overflow: hidden;
         position: absolute;
         bottom: -3rem;
@@ -2651,7 +2694,7 @@ body #listadecomida a {
     }
     
     body .containerseccion div .ventanaproductoboton:hover {
-        box-shadow: .2rem .2rem 1rem white, -.2vw -.2vw 1vw black;
+        box-shadow: .2rem .2rem 1rem white, -.2rem -.2rem .1rem black;
         background: red;
         width: 90%;
         margin: auto;
@@ -2664,7 +2707,7 @@ body #listadecomida a {
     
     
     body .containerseccion div .ventanaproductoboton:active {
-        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+        box-shadow: inset .1rem .1rem .1rem white, inset -.1rem -.1rem .1rem black
     }
     
     
@@ -2797,13 +2840,13 @@ body #listadecomida a {
         text-align: center;
         cursor: pointer;
         transition: all 1s ease;
-        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
+        box-shadow: .1rem .1rem .2rem black, .1rem .1rem .2rem white;
         position: relative;
         margin-bottom: 8rem;
     }
     
     body .containerseccion div:hover {
-        box-shadow: 1rem 1rem 2rem white, 1vw 1vw 2vw black
+        box-shadow: .1rem .1rem .2rem white, .1rem .1rem .2rem black
     }
     
     body .containerseccion div img {
@@ -2878,7 +2921,7 @@ body #listadecomida a {
         border: .1rem rgb(83, 83, 83);
         cursor: pointer;
         transition: all 1s ease;
-        box-shadow: .2rem .2rem 1rem black, -.2vw -.2vw 1vw white;
+        box-shadow: .2rem .2rem .1rem black, -.2rem .2rem .1rem white;
         overflow: hidden;
         position: absolute;
         bottom: -15%;
@@ -2889,7 +2932,7 @@ body #listadecomida a {
     }
     
     body .containerseccion div .ventanaproductoboton:hover {
-        box-shadow: .2rem .2rem 1rem white, -.2vw -.2vw 1vw black;
+        box-shadow: .2rem .2rem .1rem white, -.2rem .2rem .1rem black;
         background: red;
         width: 90%;
         margin: auto;
@@ -2902,7 +2945,7 @@ body #listadecomida a {
     
     
     body .containerseccion div .ventanaproductoboton:active {
-        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+        box-shadow: inset .1rem .1rem 1rem white, inset -.1rem .1rem 1rem black
     }
     
     
