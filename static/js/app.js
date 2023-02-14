@@ -32,12 +32,13 @@ combos1.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadeCombos1.append(content);
+
 
     let ventanaproducto = document.createElement("button");
     ventanaproducto.className = "ventanaproductoboton"
@@ -55,15 +56,17 @@ combos1.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -74,21 +77,28 @@ combos1.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -102,15 +112,64 @@ combos1.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -135,24 +194,21 @@ combos1.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
     });
 });
 
-
-
-
 entremeses1.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadeentremeses1.append(content);
 
@@ -173,15 +229,17 @@ entremeses1.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -192,21 +250,28 @@ entremeses1.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -220,15 +285,64 @@ entremeses1.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -253,22 +367,21 @@ entremeses1.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
     });
 });
 
-
 arroz.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadearroz.append(content);
 
@@ -289,15 +402,17 @@ arroz.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -308,21 +423,28 @@ arroz.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -336,15 +458,64 @@ arroz.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -369,7 +540,7 @@ arroz.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -380,10 +551,10 @@ arrozsalt.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadearrozsalt.append(content);
 
@@ -404,15 +575,17 @@ arrozsalt.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -423,21 +596,28 @@ arrozsalt.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -451,15 +631,64 @@ arrozsalt.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -484,7 +713,7 @@ arrozsalt.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -495,10 +724,10 @@ ChopSuey.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadechopsuey.append(content);
 
@@ -519,15 +748,17 @@ ChopSuey.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -538,21 +769,28 @@ ChopSuey.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -566,15 +804,64 @@ ChopSuey.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -599,7 +886,7 @@ ChopSuey.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -610,10 +897,10 @@ chowmein.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadechowmein.append(content);
 
@@ -634,15 +921,17 @@ chowmein.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -653,21 +942,28 @@ chowmein.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -681,15 +977,64 @@ chowmein.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -714,7 +1059,7 @@ chowmein.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -725,10 +1070,10 @@ Lomein.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadelomein.append(content);
 
@@ -749,15 +1094,17 @@ Lomein.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -768,21 +1115,28 @@ Lomein.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -796,15 +1150,64 @@ Lomein.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -829,7 +1232,7 @@ Lomein.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -840,10 +1243,10 @@ fideos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadefideos.append(content);
 
@@ -864,15 +1267,17 @@ fideos.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -883,21 +1288,28 @@ fideos.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -911,15 +1323,64 @@ fideos.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -944,7 +1405,7 @@ fideos.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -955,10 +1416,10 @@ pollos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadepollo.append(content);
 
@@ -979,15 +1440,17 @@ pollos.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -998,21 +1461,28 @@ pollos.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1026,15 +1496,64 @@ pollos.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1059,7 +1578,7 @@ pollos.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1070,10 +1589,10 @@ carnes.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadecarnes.append(content);
 
@@ -1094,15 +1613,17 @@ carnes.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1113,21 +1634,28 @@ carnes.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1141,15 +1669,64 @@ carnes.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1174,7 +1751,7 @@ carnes.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1185,10 +1762,10 @@ CerdoyCamaron.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadecerdo.append(content);
 
@@ -1209,15 +1786,17 @@ CerdoyCamaron.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1228,21 +1807,28 @@ CerdoyCamaron.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1256,15 +1842,64 @@ CerdoyCamaron.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1289,7 +1924,7 @@ CerdoyCamaron.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1300,10 +1935,10 @@ fuyung.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadefuyung.append(content);
 
@@ -1324,15 +1959,17 @@ fuyung.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1343,21 +1980,28 @@ fuyung.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1371,15 +2015,64 @@ fuyung.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1404,7 +2097,7 @@ fuyung.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1415,10 +2108,10 @@ Vegetales.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadevegetales.append(content);
 
@@ -1439,15 +2132,17 @@ Vegetales.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1458,21 +2153,28 @@ Vegetales.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1486,15 +2188,64 @@ Vegetales.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1519,7 +2270,7 @@ Vegetales.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1530,10 +2281,10 @@ Sopas.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadesopas.append(content);
 
@@ -1554,15 +2305,17 @@ Sopas.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1573,21 +2326,28 @@ Sopas.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1601,15 +2361,64 @@ Sopas.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1634,7 +2443,7 @@ Sopas.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1645,10 +2454,10 @@ Bebidas.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadebebidas.append(content);
 
@@ -1669,15 +2478,17 @@ Bebidas.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1688,21 +2499,28 @@ Bebidas.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1716,15 +2534,64 @@ Bebidas.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1749,7 +2616,7 @@ Bebidas.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"
@@ -1760,10 +2627,10 @@ extras.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}" loading="lazy">
+        <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
-        <p class="precioproducto">Ref. ${product.precio}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadeextras.append(content);
 
@@ -1784,15 +2651,17 @@ extras.forEach((product) => {
         modalproductoventana.innerHTML = "";
         modalproductoventana.style.display = "flex";
         const cuadroproductoindividual = document.createElement("div");
-        cuadroproductoindividual.className = "cuadroproduct"
-        cuadroproductoindividual.style.display = "flex"
-        cuadroproductoindividual.innerHTML = `
-        <img src="${product.img}">
-        <h2> ${product.nombre}</h2>
-        <p class="descproducto">${product.desc}</p>
-        <p class="cantproducto"><p class="cantproductonum">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p></p>
-        <p class="precioproducto">Ref. ${product.precio * product.cantidad}</p>`;
+        cuadroproductoindividual.className = "cuadroproduct";
+        
         modalproductoventana.append(cuadroproductoindividual);
+
+        const imgproductoindividual = document.createElement("div");
+        imgproductoindividual.className = "imgproductoindividual"
+        imgproductoindividual.innerHTML = `
+        <img src="${product.img}">
+        `;
+        cuadroproductoindividual.append(imgproductoindividual);
+        
 
 
         const modalbutton = document.createElement("h1");
@@ -1803,21 +2672,28 @@ extras.forEach((product) => {
             cerrarventana();
         });
 
-
-
         cuadroproductoindividual.append(modalbutton);
 
-        let mascantidad = document.createElement("button");
-        mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
-        mascantidad.addEventListener("click", () => {
-            product.cantidad++;
-            productoindividualventana();
-            savelocal()
-        });
+        informacionproductoind = document.createElement("div");
+        informacionproductoind.className = "informacionproductoind";
+        informacionproductoind.innerHTML = `
+        <h2> ${product.nombre}</h2>
+        <p class="descproducto">${product.desc}</p>
+        `;
+        cuadroproductoindividual.append(informacionproductoind)
 
-        cuadroproductoindividual.append(mascantidad);
+        const cuadrofinalproducto = document.createElement("div");
+        cuadrofinalproducto.className = "cuadrofinalproducto";
+        cuadrofinalproducto.style.display = "flex"
+        informacionproductoind.append(cuadrofinalproducto);
+
+        const cantidadproductoind = document.createElement("div");
+        cantidadproductoind.className = "cantidadproductoind"
+        cuadrofinalproducto.append(cantidadproductoind);
+
+        const contnumerocantidadproducto = document.createElement("div");
+        contnumerocantidadproducto.className = "contnumerocantidadproducto";
+        cantidadproductoind.append(contnumerocantidadproducto);
 
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
@@ -1831,15 +2707,64 @@ extras.forEach((product) => {
             };
 
         });
-        cuadroproductoindividual.append(menoscantidad);
+        contnumerocantidadproducto.append(menoscantidad);
 
+        const numerocantidadproducto = document.createElement("div");
+        numerocantidadproducto.className = "numerocantidadproducto";
+        numerocantidadproducto.innerHTML = `
+        <p>${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
+        `;
+
+        contnumerocantidadproducto.append(numerocantidadproducto)
+
+        let mascantidad = document.createElement("button");
+        mascantidad.className = "bttnplus"
+        mascantidad.innerHTML = `
+        <p>+</p>`;
+        mascantidad.addEventListener("click", () => {
+            product.cantidad++;
+            productoindividualventana();
+            savelocal()
+        });
+
+        contnumerocantidadproducto.append(mascantidad);
+
+        const precioproductoind = document.createElement("div");
+        precioproductoind.className = "precioproductoind";
+        
+        cuadrofinalproducto.append(precioproductoind);
+
+        const precioproducto = document.createElement("div");
+        precioproducto.className = "precioproductonum";
+
+        precioproductoind.append(precioproducto);
+
+        const precioproductopos = document.createElement("div");
+        precioproductopos.className = "precioproductopos";
+        precioproductopos.innerHTML = `
+        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        `;
+
+        precioproducto.append(precioproductopos);
+
+
+
+        const botoncomprarind = document.createElement("div");
+        botoncomprarind.className = "botoncomprarindividual";
+        cuadrofinalproducto.append(botoncomprarind);
+
+        const botoncomprarindcuadro = document.createElement("div");
+        botoncomprarindcuadro.className = "botoncomprarindcuadro";
+        botoncomprarind.append(botoncomprarindcuadro);
 
         let comprar = document.createElement("button");
         comprar.className = "botonagregar"
         comprar.innerHTML = `
         Agregar
         `;
-        cuadroproductoindividual.append(comprar);
+
+        botoncomprarindcuadro.append(comprar);
+
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
 
@@ -1864,7 +2789,7 @@ extras.forEach((product) => {
             savelocal();
             cerrarventana();
         });
-        cuerpopagina.style.filter = "blur(.2rem)";
+        cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
         modalproductoventana.style.transform = "translateY(5%)"
         modalproductoventana.style.transform = "translateX(0%)"

@@ -3,10 +3,10 @@
 const Promo1 = [
     {
         id: 200,
-        nombre: "Combo1",
+        nombre: "Vegetales con Tres Tipos de Carnes Vegetales con Tres Tipos de Carnes",
         precio: 10.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        desc: "Arroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo Agridulce",
         cantidad: 1
     },
     {
@@ -14,7 +14,7 @@ const Promo1 = [
         nombre: "Combo1",
         precio: 10.50,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        desc: "Arroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo Agridulce",
         cantidad: 1
     },
     {

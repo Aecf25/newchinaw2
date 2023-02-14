@@ -3061,7 +3061,527 @@ body #listadecomida a {
 
 /* *****************MODAL VENTANA PRODUCTO INDIVIDUAL************************ */
 
-@media (max-width: 499px) and (max-height: 500px){
+
+@media (max-width: 499px){
+    body .modalproductoventana {
+        width: 80%;
+        margin: auto;
+        height: 70%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 9;
+        top: 4rem;
+        left: 10%;
+        border-radius: 1%;
+        box-shadow: inset .4vw .4vw 5vw black;
+        transition: all 1s;
+        opacity: 0;
+        transform: translateY(-500%);
+    }
+
+    body .modalproductoventana::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modalproductoventana .cuadroproduct{
+        width: 80%;
+        height: 90%;
+        margin: auto;
+        display: inline-block;
+        position: relative;
+    }
+
+    .modalproductoventana .informacionproductoind h2{
+        max-height: 30%;
+        overflow: scroll;
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        font-style: italic;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-size: 1.7rem;
+    }
+
+    body .modalproductoventana h2::-webkit-scrollbar {
+        display: none;
+    }
+
+    body .modalproductoventana .modal-header-button {
+        color: red;
+        position: fixed;
+        left: 99%;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, 0.384);
+        align-items: center;
+        padding: .35rem;
+        top: -1.5rem;
+
+    }
+
+    body .modalproductoventana .modal-header-button:hover {
+        -webkit-text-stroke: .3vw rgb(255, 37, 37);
+        font-size: 1.1rem;
+        left: 99%;
+    }
+
+    .modalproductoventana .imgproductoindividual{
+        margin: auto;
+        height: 40%;
+        width: 100%;
+        border-bottom: .1rem rgba(0, 0, 0, 0.466) dotted;
+    }
+
+    .modalproductoventana .cuadroproduct img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        border-style: ridge;
+       
+    }
+
+    .modalproductoventana .informacionproductoind{
+        height: 60%;
+        width: 100%;
+        margin: auto;
+        position: inherit;
+    }
+
+    .modalproductoventana .informacionproductoind .descproducto{
+        width: 85%;
+        margin: auto;
+        max-height: 44%;
+        overflow: scroll;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+    
+    .modalproductoventana .cuadrofinalproducto{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 1%;
+        box-shadow: inset 0px 1px 50px 1px rgba(0, 0, 0, 0.281);
+    }
+
+
+    .modalproductoventana .cantidadproductoind{
+        position: absolute;
+        left:0;
+        width: 38.5%;
+        height: 100%;
+    }
+
+    .modalproductoventana .contnumerocantidadproducto{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .numerocantidadproducto p{
+        margin-top: 80%;
+        font-size: 1rem;
+    }
+
+    body .contnumerocantidadproducto .bttnplus {
+        height: 1.2rem;
+        padding-left: .6rem;
+        padding-right: .6rem;
+        margin-left: .2rem;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalproductoventana .numerocantidadproducto {
+        max-width: 30%;
+        font-size: 120%;
+    }
+
+    body .contnumerocantidadproducto .bttnplus p {
+        position: absolute;
+        top: -0.3rem;
+        left: 0.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+        
+    }
+
+    body .contnumerocantidadproducto .bttnmin {
+        height: 1.2rem;
+        margin-right: .2rem;
+        padding-left: .6rem;
+        padding-right: .6rem;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        left: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .contnumerocantidadproducto .bttnmin p {
+        position: absolute;
+        top:-.7rem;
+        left: 0.37rem;
+        font-size: 1rem;
+        font-weight: 900;
+        
+    }
+
+    .modalproductoventana .precioproductoind{
+        width: 26.5%;
+        height: 100%;
+        position: absolute;
+        left: 38.5%;
+    }
+
+    .modalproductoventana .precioproductoind .precioproductonum{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .precioproductopos h5{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+
+    body .modalproductoventana .descproducto::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    body .modalproductoventana .botonagregar:hover {
+        background: rgba(255, 0, 0, 0.781);
+    }
+
+    body .modalproductoventana .botonagregar:active {
+        -webkit-text-stroke: .09rem aquamarine;
+        box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
+
+    }
+
+    .modalproductoventana .botoncomprarindividual{
+        width: 34.5%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+
+    .modalproductoventana .botoncomprarindcuadro{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .modalproductoventana .botonagregar {
+        width: fit-content;
+        font-size: .8rem;
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: .2rem;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border: .1rem solid black;
+    }
+
+
+
+}
+
+@media (min-width: 500px) and (max-width: 999px) and (max-height: 75.01vw){
+    body .modalproductoventana {
+        width: 80%;
+        margin: auto;
+        height: 70%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 9;
+        top: 10%;
+        left: 10%;
+        border-radius: 1%;
+        box-shadow: inset .4vw .4vw 5vw black;
+        transition: all 1s;
+        opacity: 0;
+        transform: translateY(-500%);
+    }
+
+    body .modalproductoventana::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modalproductoventana .cuadroproduct{
+        width: 95%;
+        min-height: 95%;
+        max-height: 95%;
+        margin: auto;
+        display: flex;
+        position: relative;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalproductoventana .imgproductoindividual{
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px rgba(0, 0, 0, 0.466) dotted;
+    }
+
+    .modalproductoventana .imgproductoindividual img{
+        width: 90%;
+        height: 70%;
+    }
+
+    body .modalproductoventana h2::-webkit-scrollbar {
+        display: none;
+    }
+
+    body .modalproductoventana .modal-header-button {
+        color: red;
+        position: fixed;
+        left: 99%;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, 0.384);
+        align-items: center;
+        padding: .35rem;
+        top: -1.5rem;
+
+    }
+
+    body .modalproductoventana .modal-header-button:hover {
+        -webkit-text-stroke: .3vw rgb(255, 37, 37);
+        font-size: 1.1rem;
+        left: 99%;
+    }
+
+    .modalproductoventana .informacionproductoind{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        position: inherit;
+    }
+
+    
+    .modalproductoventana .informacionproductoind h2{
+        height: 22.5%;
+        overflow: scroll;
+        width: 90%;
+        margin: auto;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 3%;
+        font-style: italic;
+    }
+
+    .modalproductoventana .informacionproductoind .descproducto{
+        width: 85%;
+        height: 55%;
+        margin: auto;
+        overflow: scroll;
+        text-align: justify;
+        font-size: 1.3rem;
+    }
+    
+    .modalproductoventana .cuadrofinalproducto{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 1%;
+        box-shadow: inset 0px 1px 50px 1px rgba(0, 0, 0, 0.281);
+    }
+
+
+    .modalproductoventana .cantidadproductoind{
+        position: absolute;
+        left:0;
+        width: 38.5%;
+        height: 100%;
+    }
+
+    .modalproductoventana .contnumerocantidadproducto{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .numerocantidadproducto p{
+        margin-top: .85rem;
+        font-size: 3vw;
+    }
+
+    body .contnumerocantidadproducto .bttnplus {
+        width: 3vw;
+        height: 3vw;
+        margin-left: .3rem;
+        padding-left: .65vw;
+        padding-right: .65vw;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalproductoventana .numerocantidadproducto {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 30%;
+    }
+
+    body .contnumerocantidadproducto .bttnplus p {
+        position: absolute;
+        top: -0.3vw;
+        left: 0.7vw;
+        font-size: 2vw;
+        font-weight: 700;
+        
+    }
+
+    body .contnumerocantidadproducto .bttnmin {
+        width: 3vw;
+        height: 3vw;
+        padding-left: .65vw;
+        padding-right: .65vw;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        left: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .contnumerocantidadproducto .bttnmin p {
+        position: absolute;
+        top:-1.1vw;
+        left: .95vw;
+        font-size: 2vw;
+        font-weight: 900;
+        
+    }
+
+    .modalproductoventana .precioproductoind{
+        width: 26.5%;
+        height: 100%;
+        position: absolute;
+        left: 38.5%;
+    }
+
+    .modalproductoventana .precioproductoind .precioproductonum{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .precioproductopos h5{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 2.3vw;
+        padding: .2rem;
+        line-height: 1rem;
+    }
+
+
+    body .modalproductoventana .descproducto::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    body .modalproductoventana .botonagregar:hover {
+        background: rgba(255, 0, 0, 0.781);
+    }
+
+    body .modalproductoventana .botonagregar:active {
+        -webkit-text-stroke: .09rem aquamarine;
+        box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
+
+    }
+
+    .modalproductoventana .botoncomprarindividual{
+        width: 34.5%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+
+    .modalproductoventana .botoncomprarindcuadro{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .modalproductoventana .botonagregar {
+        width: fit-content;
+        font-size: 2vw;
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: .2rem;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border: .1rem solid black;
+    }
+
+
+}
+
+@media (min-width: 500px) and (max-width: 999px) and (min-height: 75.02vw){
     body .modalproductoventana {
         width: 80%;
         margin: auto;
@@ -3073,7 +3593,7 @@ body #listadecomida a {
         z-index: 9;
         top: 5rem;
         left: 10%;
-        border-radius: 3%;
+        border-radius: 1%;
         box-shadow: inset .4vw .4vw 5vw black;
         transition: all 1s;
         opacity: 0;
@@ -3084,34 +3604,23 @@ body #listadecomida a {
         display: none;
     }
 
-
-    body .modalproductoventana:hover {
-        background: rgb(188, 229, 243);
-    }
-
-
-    body .modalproductoventana div {
+    .modalproductoventana .cuadroproduct{
         width: 80%;
-        height: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    body .modalproductoventana h2 {
-        position: absolute;
-        width: 80%;
-        text-align: center;
-        font-style: italic;
-        font-size: 1.4rem;
+        height: 90%;
         margin: auto;
-        left: 10%;
-        top: 46.5%;
-        max-width: 80%;
-        max-height: 2.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .modalproductoventana .informacionproductoind h2{
+        max-height: 27%;
+        margin: auto;
         overflow: scroll;
-        font-family: sans-serif;
-        z-index: 1;
+        width: 95%;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
 
     body .modalproductoventana h2::-webkit-scrollbar {
@@ -3138,663 +3647,154 @@ body #listadecomida a {
         left: 99%;
     }
 
-    body .modalproductoventana img {
-        position: absolute;
-        top: 5%;
-        width: 80%;
+    .modalproductoventana .imgproductoindividual{
+        margin: auto;
         height: 40%;
-        border-radius: 1vw;
-        border: .2vw solid gold;
+        width: 100%;
+        border-bottom: .1rem rgba(0, 0, 0, 0.466) dotted;
     }
 
-    body .modalproductoventana .descproducto {
-        position: absolute;
-        top: 63.5%;
-        max-width: 80%;
-        font-size: 1rem;
-        font-weight: 550;
-        font-family: sans-serif;
-        max-height: 20%;
+    .modalproductoventana .cuadroproduct img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        border-style: ridge;
+    }
+
+    .modalproductoventana .informacionproductoind{
+        height: 60%;
+        width: 95%;
+        margin: auto;
+        position: inherit;
+    }
+
+    .modalproductoventana .informacionproductoind .descproducto{
+        width: 90%;
+        margin: auto;
+        max-height: 47%;
         overflow: scroll;
         text-align: justify;
+        font-size: 1.6rem;
     }
-
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modalproductoventana .precioproducto {
+    
+    .modalproductoventana .cuadrofinalproducto{
         position: absolute;
-        top: 90.5%;
-        left: 38%;
-        font-size: 1rem;
-        height: 3rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .bttnplus {
-        position: absolute;
-        height: 1.2rem;
-        top: 91%;
-        padding-left: .6rem;
-        padding-right: .7rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-        left: 27.5%;
-    }
-
-    body .modalproductoventana .bttnplus p {
-        position: absolute;
-        top: -.30rem;
-        left: .3rem;
-        font-size: 1rem;
-        font-weight: 700;
-    }
-
-    body .modalproductoventana .bttnmin {
-        position: absolute;
-        height: 1.2rem;
-        top: 91%;
-        padding-left: .6rem;
-        padding-right: .7rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-    }
-
-    body .modalproductoventana .bttnmin p {
-        position: absolute;
-        top: -.75rem;
-        left: .45rem;
-        font-size: 1rem;
-        font-weight: 900;
-    }
-
-
-
-
-    body .modalproductoventana .cantproductonum {
-        position: absolute;
-        top: 90.5%;
-        left: 19.5%;
-        font-size: 1rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .botonagregar {
-        position: absolute;
-        top: 90.5%;
-        width: 25%;
-        right: 1.5rem;
-        font-size: .7rem;
-        text-align: center;
-        font-family: sans-serif;
-        border-radius: .2rem;
-        font-weight: 700;
-        background: red;
-        color: white;
-        border: .1rem solid black;
-    }
-
-    body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
-    }
-
-    body .modalproductoventana .botonagregar:active {
-        -webkit-text-stroke: .09rem aquamarine;
-        box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
-
-    }
-}
-
-@media (max-width: 499px) and (min-height: 500.01px){
-    body .modalproductoventana {
-        width: 80%;
-        margin: auto;
-        height: 70%;
-        background: white;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
         display: flex;
-        flex-direction: column;
-        position: fixed;
-        z-index: 9;
-        top: 5rem;
-        left: 10%;
-        border-radius: 3%;
-        box-shadow: inset .4vw .4vw 5vw black;
-        transition: all 1s;
-        opacity: 0;
-        transform: translateY(-500%);
-    }
-
-    body .modalproductoventana::-webkit-scrollbar {
-        display: none;
-    }
-
-
-    body .modalproductoventana:hover {
-        background: rgb(188, 229, 243);
-    }
-
-
-    body .modalproductoventana div {
-        width: 80%;
-        height: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    body .modalproductoventana h2 {
-        position: absolute;
-        width: 80%;
-        text-align: center;
-        font-style: italic;
-        font-size: 1.7rem;
-        margin: auto;
-        left: 10%;
-        top: 46.5%;
-        max-width: 80%;
-        max-height: 4.1rem;
-        overflow: scroll;
-        font-family: sans-serif;
-        z-index: 1;
-    }
-
-    body .modalproductoventana h2::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modalproductoventana .modal-header-button {
-        color: red;
-        position: fixed;
-        left: 99%;
-        cursor: pointer;
-        font-size: 1rem;
-        border-radius: 100%;
-        background: rgba(0, 0, 0, 0.384);
+        justify-content: center;
         align-items: center;
-        padding: .35rem;
-        top: -1.5rem;
-
+        border: none;
+        border-radius: 1%;
+        box-shadow: inset 0px 1px 50px 1px rgba(0, 0, 0, 0.281);
     }
 
-    body .modalproductoventana .modal-header-button:hover {
-        -webkit-text-stroke: .3vw rgb(255, 37, 37);
-        font-size: 1.1rem;
-        left: 99%;
-    }
 
-    body .modalproductoventana img {
+    .modalproductoventana .cantidadproductoind{
         position: absolute;
-        top: 5%;
-        width: 80%;
-        height: 40%;
-        border-radius: 1vw;
-        border: .2vw solid gold;
+        left:0;
+        width: 38.5%;
+        height: 100%;
     }
 
-    body .modalproductoventana .descproducto {
-        position: absolute;
-        top: 63.5%;
-        max-width: 80%;
-        font-size: 1.2rem;
-        font-weight: 550;
-        font-family: sans-serif;
-        max-height: 20%;
-        overflow: scroll;
-        text-align: justify;
-    }
-
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modalproductoventana .precioproducto {
-        position: absolute;
-        top: 90.5%;
-        left: 38%;
-        font-size: 1rem;
-        height: 3rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .bttnplus {
-        position: absolute;
-        height: 1.2rem;
-        top: 91%;
-        padding-left: .6rem;
-        padding-right: .7rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-        left: 27.5%;
-    }
-
-    body .modalproductoventana .bttnplus p {
-        position: absolute;
-        top: -.30rem;
-        left: .3rem;
-        font-size: 1rem;
-        font-weight: 700;
-    }
-
-    body .modalproductoventana .bttnmin {
-        position: absolute;
-        height: 1.2rem;
-        top: 91%;
-        padding-left: .6rem;
-        padding-right: .7rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-    }
-
-    body .modalproductoventana .bttnmin p {
-        position: absolute;
-        top: -.75rem;
-        left: .45rem;
-        font-size: 1rem;
-        font-weight: 900;
-    }
-
-
-
-
-    body .modalproductoventana .cantproductonum {
-        position: absolute;
-        top: 90.5%;
-        left: 19.5%;
-        font-size: 1rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .botonagregar {
-        position: absolute;
-        top: 90.5%;
-        width: 25%;
-        right: 1.5rem;
-        font-size: .7rem;
-        text-align: center;
-        font-family: sans-serif;
-        border-radius: .2rem;
-        font-weight: 700;
-        background: red;
-        color: white;
-        border: .1rem solid black;
-    }
-
-    body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
-    }
-
-    body .modalproductoventana .botonagregar:active {
-        -webkit-text-stroke: .09rem aquamarine;
-        box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
-
-    }
-}
-
-@media (min-width: 500px) and (max-width: 999px) and (max-height: 500px){
-    body .modalproductoventana {
-        width: 80%;
-        margin: auto;
-        height: 80%;
-        background: white;
+    .modalproductoventana .contnumerocantidadproducto{
+        width: 100%;
+        height: 100%;
+        position: relative;
         display: flex;
-        flex-direction: column;
-        position: fixed;
-        z-index: 9;
-        top: 2rem;
-        left: 10%;
-        border-radius: 3%;
-        box-shadow: inset .4vw .4vw 5vw black;
-        transition: all 1s;
-        opacity: 0;
-        transform: translateY(-500%);
-    }
-
-    body .modalproductoventana::-webkit-scrollbar {
-        display: none;
-    }
-
-
-    body .modalproductoventana:hover {
-        background: rgb(188, 229, 243);
-    }
-
-
-    body .modalproductoventana div {
-        width: 80%;
-        height: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    body .modalproductoventana h2 {
-        width: 80%;
-        position: absolute;
-        text-align: center;
-        font-style: italic;
-        font-size: 1.7rem;
-        margin: auto;
-        left: 10%;
-        top: 48.5%;
-        max-width: 80%;
-        max-height: 3rem;
-        overflow: scroll;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana h2::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modalproductoventana .modal-header-button {
-        color: red;
-        position: fixed;
-        left: 99%;
-        cursor: pointer;
-        font-size: 1rem;
-        border-radius: 100%;
-        background: rgba(0, 0, 0, 0.384);
         align-items: center;
-        padding: .35rem;
-        top: -1.5rem;
-
+        justify-content: center;
     }
 
-    body .modalproductoventana .modal-header-button:hover {
-        -webkit-text-stroke: .3vw rgb(255, 37, 37);
-        font-size: 1.1rem;
-        left: 99%;
-    }
-
-    body .modalproductoventana img {
-        position: absolute;
-        top: 5%;
-        width: 80%;
-        height: 40%;
-        border-radius: 1vw;
-        border: .2vw solid gold;
-    }
-
-    body .modalproductoventana .descproducto {
-        position: absolute;
-        top: 65%;
-        max-width: 80%;
-        font-size: 1rem;
-        font-weight: 550;
-        font-family: sans-serif;
-        max-height: 3rem;
-        overflow: scroll;
-        text-align: justify;
-    }
-
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modalproductoventana .precioproducto {
-        position: absolute;
-        top: 88%;
-        left: 45%;
-        font-size: 1.2rem;
-        height: 3rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .bttnplus {
-        position: absolute;
-        height: 1.6rem;
-        top: 88%;
-        padding-left: .8rem;
-        padding-right: .9rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-        left: 25%;
-    }
-
-    body .modalproductoventana .bttnplus p {
-        position: absolute;
-        top: -.30rem;
-        left: .45rem;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-
-    body .modalproductoventana .bttnmin {
-        position: absolute;
-        height: 1.6rem;
-        top: 88%;
-        padding-left: .8rem;
-        padding-right: .9rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-    }
-
-    body .modalproductoventana .bttnmin p {
-        position: absolute;
-        top: -.8rem;
-        left: .6rem;
-        font-size: 1.2rem;
-        font-weight: 900;
-    }
-
-
-
-
-    body .modalproductoventana .cantproductonum {
-        position: absolute;
-        top: 87%;
-        left: 17.5%;
+    .modalproductoventana .numerocantidadproducto p{
+        margin-top: 50%;
         font-size: 1.5rem;
-        font-family: sans-serif;
     }
 
-    body .modalproductoventana .botonagregar {
-        position: absolute;
-        top: 88%;
-        width: 20%;
-        right: 3rem;
-        font-size: 1rem;
-        text-align: center;
-        font-family: sans-serif;
-        border-radius: .2rem;
-        font-weight: 700;
+    body .contnumerocantidadproducto .bttnplus {
+        width: 3vh;
+        height: 3vh;
+        margin-left: .1rem;
+        padding-left: .65vw;
+        padding-right: .65vw;
+        border: .1rem solid black;
         background: red;
         color: white;
-        border: .1rem solid black;
-    }
-
-    body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
-    }
-
-    body .modalproductoventana .botonagregar:active {
-        -webkit-text-stroke: .09rem aquamarine;
-        box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
-
-    }
-}
-
-@media (min-width: 500px) and (max-width: 999px) and (min-height: 500.01px){
-    body .modalproductoventana {
-        width: 80%;
-        margin: auto;
-        height: 80%;
-        background: white;
+        position: relative;
         display: flex;
-        flex-direction: column;
-        position: fixed;
-        z-index: 9;
-        top: 5rem;
-        left: 10%;
-        border-radius: 3%;
-        box-shadow: inset .4vw .4vw 5vw black;
-        transition: all 1s;
-        opacity: 0;
-        transform: translateY(-500%);
-    }
-
-    body .modalproductoventana::-webkit-scrollbar {
-        display: none;
-    }
-
-
-    body .modalproductoventana:hover {
-        background: rgb(188, 229, 243);
-    }
-
-
-    body .modalproductoventana div {
-        width: 80%;
-        height: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    body .modalproductoventana h2 {
-        width: 80%;
-        position: absolute;
-        text-align: center;
-        font-style: italic;
-        font-size: 2rem;
-        margin: auto;
-        left: 10%;
-        top: 50%;
-        max-width: 80%;
-        max-height: 4rem;
-        overflow: scroll;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana h2::-webkit-scrollbar {
-        display: none;
-    }
-
-    body .modalproductoventana .modal-header-button {
-        color: red;
-        position: fixed;
-        left: 99%;
-        cursor: pointer;
-        font-size: 1rem;
-        border-radius: 100%;
-        background: rgba(0, 0, 0, 0.384);
+        justify-content: center;
         align-items: center;
-        padding: .35rem;
-        top: -1.5rem;
-
     }
 
-    body .modalproductoventana .modal-header-button:hover {
-        -webkit-text-stroke: .3vw rgb(255, 37, 37);
-        font-size: 1.1rem;
-        left: 99%;
+    .modalproductoventana .numerocantidadproducto {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 30%;
     }
 
-    body .modalproductoventana img {
+    body .contnumerocantidadproducto .bttnplus p {
         position: absolute;
-        top: 5%;
-        width: 80%;
-        height: 40%;
-        border-radius: 1vw;
-        border: .2vw solid gold;
+        top: -0.3vh;
+        left: 0.7vh;
+        font-size: 2vh;
+        font-weight: 700;
+        
     }
 
-    body .modalproductoventana .descproducto {
-        position: absolute;
-        top: 65%;
-        max-width: 80%;
-        font-size: 1.5rem;
-        font-weight: 550;
-        font-family: sans-serif;
-        max-height: 7rem;
-        overflow: scroll;
-        text-align: justify;
+    body .contnumerocantidadproducto .bttnmin {
+        width: 3vh;
+        height: 3vh;
+        margin-right: -.1rem;
+        padding-left: .65vw;
+        padding-right: .65vw;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        left: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    body .contnumerocantidadproducto .bttnmin p {
+        position: absolute;
+        top:-1.1vh;
+        left: .95vh;
+        font-size: 2vh;
+        font-weight: 900;
+        
+    }
+
+    .modalproductoventana .precioproductoind{
+        width: 26.5%;
+        height: 100%;
+        position: absolute;
+        left: 38.5%;
+    }
+
+    .modalproductoventana .precioproductoind .precioproductonum{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .precioproductopos h5{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 140%;
+        line-height: 1.2rem;
+    }
+
 
     body .modalproductoventana .descproducto::-webkit-scrollbar {
         display: none;
     }
 
-    body .modalproductoventana .precioproducto {
-        position: absolute;
-        top: 90%;
-        left: 45%;
-        font-size: 1.2rem;
-        height: 3rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .bttnplus {
-        position: absolute;
-        height: 1.6rem;
-        top: 90%;
-        padding-left: .8rem;
-        padding-right: .9rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-        left: 25%;
-    }
-
-    body .modalproductoventana .bttnplus p {
-        position: absolute;
-        top: -.30rem;
-        left: .45rem;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-
-    body .modalproductoventana .bttnmin {
-        position: absolute;
-        height: 1.6rem;
-        top: 90%;
-        padding-left: .8rem;
-        padding-right: .9rem;
-        border: .1rem solid black;
-        background: red;
-        color: white;
-    }
-
-    body .modalproductoventana .bttnmin p {
-        position: absolute;
-        top: -.8rem;
-        left: .6rem;
-        font-size: 1.2rem;
-        font-weight: 900;
-    }
-
-
-
-
-    body .modalproductoventana .cantproductonum {
-        position: absolute;
-        top: 89%;
-        left: 17.5%;
-        font-size: 1.5rem;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .botonagregar {
-        position: absolute;
-        top: 90%;
-        width: 20%;
-        right: 3rem;
-        font-size: 1rem;
-        text-align: center;
-        font-family: sans-serif;
-        border-radius: .2rem;
-        font-weight: 700;
-        background: red;
-        color: white;
-        border: .1rem solid black;
-    }
 
     body .modalproductoventana .botonagregar:hover {
         background: rgba(255, 0, 0, 0.781);
@@ -3805,24 +3805,52 @@ body #listadecomida a {
         box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
 
     }
+
+    .modalproductoventana .botoncomprarindividual{
+        width: 34.5%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+
+    .modalproductoventana .botoncomprarindcuadro{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .modalproductoventana .botonagregar {
+        width: fit-content;
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: .2rem;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border: .1rem solid black;
+    }
+
+
 }
 
 @media (min-width: 1000px) {
     body .modalproductoventana {
-        width: 40vw;
-        margin-top: -2vw;
-        margin-left: 5vw;
-        max-height: 45vw;
-        min-height: 45vw;
+        width: 80%;
+        margin: auto;
+        height: 70%;
         background: white;
         display: flex;
         flex-direction: column;
         position: fixed;
         z-index: 9;
-        top: 5vw;
-        left: 25%;
-        border-radius: 3%;
-        box-shadow: inset .4vw .4vw 5vw black;
+        top: 10%;
+        left: 10%;
+        border-radius: 1%;
+        box-shadow: inset .4vw .4vw 5vw rgba(0, 0, 0, 0.493);
         transition: all 1s;
         opacity: 0;
         transform: translateY(-500%);
@@ -3833,29 +3861,32 @@ body #listadecomida a {
     }
 
 
-    body .modalproductoventana:hover {
-        background: rgb(188, 229, 243);
-    }
-
-
-    body .modalproductoventana div {
-        width: 80%;
-        height: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    body .modalproductoventana h2 {
-        text-align: center;
-        font-style: italic;
-        font-size: 2.5vw;
+    .modalproductoventana .cuadroproduct{
+        width: 95%;
+        min-height: 95%;
+        max-height: 95%;
         margin: auto;
-        margin-top: 65%;
-        max-width: 80%;
-        max-height: 8vw;
-        overflow: scroll;
-        font-family: sans-serif;
+        display: flex;
+        position: relative;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalproductoventana .imgproductoindividual{
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: .1rem rgba(0, 0, 0, 0.466) dotted;
+
+    }
+
+    .modalproductoventana .imgproductoindividual img{
+        width: 90%;
+        height: 70%;
     }
 
     body .modalproductoventana h2::-webkit-scrollbar {
@@ -3865,141 +3896,210 @@ body #listadecomida a {
     body .modalproductoventana .modal-header-button {
         color: red;
         position: fixed;
-        left: 100%;
+        left: 99%;
         cursor: pointer;
-        font-size: 1vw;
+        font-size: 1rem;
         border-radius: 100%;
         background: rgba(0, 0, 0, 0.384);
         align-items: center;
-        padding: .35vw;
-        top: -1.5vw;
+        padding: .35rem;
+        top: -1.5rem;
 
     }
 
     body .modalproductoventana .modal-header-button:hover {
         -webkit-text-stroke: .3vw rgb(255, 37, 37);
-        font-size: 1.1vw;
-        left: 100%;
+        font-size: 1.1rem;
+        left: 99%;
     }
 
-    body .modalproductoventana img {
-        position: absolute;
-        top: 5%;
-        width: 80%;
-        height: 40%;
-        border-radius: 1vw;
-        border: .2vw solid gold;
+    .modalproductoventana .informacionproductoind{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        position: inherit;
     }
 
-    body .modalproductoventana .descproducto {
-        position: absolute;
-        top: 65%;
-        max-width: 80%;
-        font-size: 1.5vw;
-        font-weight: 550;
-        font-family: sans-serif;
-        max-height: 7vw;
+    
+    .modalproductoventana .informacionproductoind h2{
+        height: 22.5%;
+        overflow: scroll;
+        width: 90%;
+        margin: auto;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 3rem;
+        font-style: italic;
+        margin-bottom: 3%;
+    }
+
+    .modalproductoventana .informacionproductoind .descproducto{
+        width: 85%;
+        height: 52%;
+        margin: auto;
         overflow: scroll;
         text-align: justify;
+        font-size: 2rem;
     }
+    
+    .modalproductoventana .cuadrofinalproducto{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 1%;
+        box-shadow: inset 0px 1px 50px 1px rgba(0, 0, 0, 0.281);
+    }
+
+
+    .modalproductoventana .cantidadproductoind{
+        position: absolute;
+        left:0;
+        width: 38.5%;
+        height: 100%;
+    }
+
+    .modalproductoventana .contnumerocantidadproducto{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .numerocantidadproducto p{
+        margin-top: .85rem;
+        font-size: 2.3vw;
+    }
+
+    body .contnumerocantidadproducto .bttnplus {
+        width: 3vw;
+        height: 3vw;
+        margin-left: .3rem;
+        padding-left: .65vw;
+        padding-right: .65vw;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalproductoventana .numerocantidadproducto {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 30%;
+    }
+
+    body .contnumerocantidadproducto .bttnplus p {
+        position: absolute;
+        top: -0.3vw;
+        left: 0.7vw;
+        font-size: 2vw;
+        font-weight: 700;
+        
+    }
+
+    body .contnumerocantidadproducto .bttnmin {
+        width: 3vw;
+        height: 3vw;
+        padding-left: .65vw;
+        padding-right: .65vw;
+        border: .1rem solid black;
+        background: red;
+        color: white;
+        left: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .contnumerocantidadproducto .bttnmin p {
+        position: absolute;
+        top:-1.1vw;
+        left: .95vw;
+        font-size: 2vw;
+        font-weight: 900;
+        
+    }
+
+    .modalproductoventana .precioproductoind{
+        width: 26.5%;
+        height: 100%;
+        position: absolute;
+        left: 38.5%;
+    }
+
+    .modalproductoventana .precioproductoind .precioproductonum{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalproductoventana .precioproductopos h5{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 2.3vw;
+        padding: .2rem;
+        line-height: 1rem;
+    }
+
 
     body .modalproductoventana .descproducto::-webkit-scrollbar {
         display: none;
     }
 
-    body .modalproductoventana .precioproducto {
-        position: absolute;
-        top: 40vw;
-        left: 17vw;
-        font-size: 1.5vw;
-        height: 3vw;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .bttnplus {
-        position: absolute;
-        height: 2vw;
-        top: 40vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        border: .1vw solid black;
-        background: red;
-        color: white;
-        left: 12vw;
-    }
-
-    body .modalproductoventana .bttnplus p {
-        position: absolute;
-        top: -.35vw;
-        left: .45vw;
-        font-size: 1.5vw;
-        font-weight: 700;
-    }
-
-    body .modalproductoventana .bttnmin {
-        position: absolute;
-        height: 2vw;
-        top: 40vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        border: .1vw solid black;
-        background: red;
-        color: white;
-    }
-
-    body .modalproductoventana .bttnmin p {
-        position: absolute;
-        top: -1vw;
-        left: .64vw;
-        font-size: 1.5vw;
-        font-weight: 900;
-    }
-
-
-    body .modalproductoventana .cantproducto {
-        position: absolute;
-        top: 40vw;
-        left: 6vw;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        border: .1vw solid black;
-        height: 2vw;
-        background: white;
-        font-size: 1.5vw;
-    }
-
-    body .modalproductoventana .cantproductonum {
-        position: absolute;
-        top: 39.8vw;
-        left: 8.25vw;
-        font-size: 1.5vw;
-        font-family: sans-serif;
-    }
-
-    body .modalproductoventana .botonagregar {
-        position: absolute;
-        top: 39.8vw;
-        width: 12vw;
-        right: 4vw;
-        font-size: 1.3vw;
-        text-align: center;
-        font-family: sans-serif;
-        border-radius: .2vw;
-        font-weight: 700;
-        background: red;
-        color: white;
-        border: .1vw solid black;
-    }
 
     body .modalproductoventana .botonagregar:hover {
         background: rgba(255, 0, 0, 0.781);
     }
 
     body .modalproductoventana .botonagregar:active {
-        -webkit-text-stroke: .09vw aquamarine;
-        box-shadow: inset .1vw .1vw .05vw black, inset -.1vw -.1vw .05vw black;
+        -webkit-text-stroke: .09rem aquamarine;
+        box-shadow: inset .1rem .1rem .05rem black, inset -.1rem -.1rem .05rem black;
 
     }
+
+    .modalproductoventana .botoncomprarindividual{
+        width: 34.5%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+
+    .modalproductoventana .botoncomprarindcuadro{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .modalproductoventana .botonagregar {
+        width: fit-content;
+        font-size: 2vw;
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: .2rem;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border: .1rem solid black;
+    }
+
+
 }
 
 
