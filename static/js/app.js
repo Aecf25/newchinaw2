@@ -32,7 +32,7 @@ combos1.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}"  loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -205,7 +205,7 @@ entremeses1.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -378,7 +378,7 @@ arroz.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -551,7 +551,7 @@ arrozsalt.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -724,7 +724,7 @@ ChopSuey.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -897,7 +897,7 @@ chowmein.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -1070,7 +1070,7 @@ Lomein.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -1243,7 +1243,7 @@ fideos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -1416,7 +1416,7 @@ pollos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -1589,7 +1589,7 @@ carnes.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -1762,7 +1762,7 @@ CerdoyCamaron.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -1935,7 +1935,7 @@ fuyung.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -2108,7 +2108,7 @@ Vegetales.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -2281,7 +2281,7 @@ Sopas.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -2454,7 +2454,7 @@ Bebidas.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>
@@ -2627,7 +2627,7 @@ extras.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>

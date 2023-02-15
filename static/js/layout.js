@@ -6,7 +6,7 @@ Promo1.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card1"
     content.innerHTML = `
-        <img src="${product.img}">
+        <img src="${product.img}" loading="lazy">
         <h3>${product.nombre}</h3>
         <p class="descproducto">${product.desc}</p>
         <p class="precioproducto">Ref ${product.precio}</p>

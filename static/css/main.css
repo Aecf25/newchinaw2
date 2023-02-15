@@ -938,9 +938,9 @@ header {
         padding-top: 3%;
         text-align: center;
         font-size: 250%;
-        font-family: didot;
-        font-style: italic;
+        font-family: 'Rudolphin Oblique', sans-serif;
         word-spacing: 2rem;
+        font-weight: 700;
     }
     
     .pcuadrohome .textopcuadro{
@@ -1008,9 +1008,9 @@ header {
         padding-bottom: 5%;
         text-align: center;
         font-size: 300%;
-        font-family: Snell Roundhand;
-        font-style: italic;
+        font-family: 'Rudolphin Oblique', sans-serif;
         word-spacing: 2rem;
+        font-weight: 700;
     }
 
     .pcuadrohome .textopcuadro{
@@ -1136,10 +1136,10 @@ header {
 
     .scuadrohome .contenedordeinfocuadrodos h3{
         font-size: 200%;
-        font-family: didot;
-        font-style: italic;
+        font-family: 'Rudolphin Oblique', sans-serif;
         text-align: center;
         word-wrap: normal;
+        font-weight: 700;
     }
     
     .scuadrohome .primertextoscuadro{
@@ -1214,6 +1214,8 @@ header {
     .scuadrohome .tercertextoscuadro h2{
         font-size: 200%;
         margin-top: 5%;
+        font-family: 'Rudolphin Oblique', sans-serif;
+        font-weight: 700;
     }
     
     .scuadrohome .tercertextoscuadro::-webkit-scrollbar{
@@ -1281,10 +1283,10 @@ header {
 
     .scuadrohome .contenedordeinfocuadrodos h3{
         font-size: 300%;
-        font-family: Snell Roundhand;
-        font-style: italic;
+        font-family: 'Rudolphin Oblique', sans-serif;
         word-spacing: 2rem;
         text-align: center;
+        font-weight: 700;
     }
 
     .scuadrohome .contenedordeinfocuadrodos p{
@@ -1352,6 +1354,8 @@ header {
     .scuadrohome .tercertextoscuadro h2{
         font-size: 2.75rem;
         margin-top: 2%;
+        font-family: 'Rudolphin Oblique', sans-serif;
+        font-weight: 700;
     }
     
     .scuadrohome .tercertextoscuadro::-webkit-scrollbar{
@@ -1405,10 +1409,10 @@ header {
         width: 80%;
         text-align: center;
         font-size: 300%;
-        font-family: didot;
-        font-style: italic;
+        font-family: 'Rudolphin Oblique', sans-serif;
         word-spacing: 2rem;
         margin-top: 20%;
+        font-weight: 700;
     }
     
     .tcuadrohome p{
@@ -1470,10 +1474,10 @@ header {
         width: 80%;
         text-align: center;
         font-size: 300%;
-        font-family: Snell Roundhand;
-        font-style: italic;
+        font-family: 'Rudolphin Oblique', sans-serif;
         word-spacing: 2rem;
         margin-top: 20%;
+        font-weight: 700;
     }
     
     .tcuadrohome p{
@@ -2572,9 +2576,9 @@ body #listadecomida a {
     
     body .containerseccion div h3 {
         font-size: 1.5rem;
-        font-family: sans-serif;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
         text-align: center;
-        font-weight: 800;
         width: 100%;
         max-height: 3.5rem;
         overflow: scroll;
@@ -2588,12 +2592,12 @@ body #listadecomida a {
     
     body .containerseccion div .descproducto {
         font-size: 1rem;
-        font-family: sans-serif;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
         text-align: justify;
         top: 12rem;
         left: 1rem;
         width: 80%;
-        font-weight: 700;
         max-height: 5rem;
         overflow: scroll;
         position: absolute;
@@ -2859,9 +2863,9 @@ body #listadecomida a {
     
     body .containerseccion div h3 {
         font-size: 1.5rem;
-        font-family: sans-serif;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
         text-align: center;
-        font-weight: 800;
         width: 100%;
         max-height: 17.5%;
         overflow: scroll;
@@ -2875,12 +2879,12 @@ body #listadecomida a {
     
     body .containerseccion div .descproducto {
         font-size: 1rem;
-        font-family: sans-serif;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
         text-align: justify;
         top: 60%;
         left: 5%;
         width: 80%;
-        font-weight: 700;
         max-height: 25%;
         overflow: scroll;
         position: absolute;
@@ -3102,7 +3106,9 @@ body #listadecomida a {
         font-style: italic;
         margin-top: 3%;
         margin-bottom: 3%;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
     }
 
     body .modalproductoventana h2::-webkit-scrollbar {
@@ -3158,6 +3164,8 @@ body #listadecomida a {
         overflow: scroll;
         text-align: justify;
         font-size: 1.5rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
     }
     
     .modalproductoventana .cuadrofinalproducto{
@@ -3193,6 +3201,7 @@ body #listadecomida a {
     .modalproductoventana .numerocantidadproducto p{
         margin-top: 80%;
         font-size: 1rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
     }
 
     body .contnumerocantidadproducto .bttnplus {
@@ -3268,6 +3277,8 @@ body #listadecomida a {
         text-align: center;
         font-size: 1rem;
         line-height: 1rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 600;
     }
 
 
@@ -3306,7 +3317,7 @@ body #listadecomida a {
         width: fit-content;
         font-size: .8rem;
         text-align: center;
-        font-family: sans-serif;
+        font-family: 'TeXGyreTermes', sans-serif; 
         border-radius: .2rem;
         font-weight: 700;
         background: red;
@@ -3342,9 +3353,9 @@ body #listadecomida a {
     }
 
     .modalproductoventana .cuadroproduct{
-        width: 95%;
-        min-height: 95%;
-        max-height: 95%;
+        width: 100%;
+        min-height: 100%;
+        max-height: 100%;
         margin: auto;
         display: flex;
         position: relative;
@@ -3358,14 +3369,15 @@ body #listadecomida a {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         border-right: 1px rgba(0, 0, 0, 0.466) dotted;
     }
 
     .modalproductoventana .imgproductoindividual img{
-        width: 90%;
-        height: 70%;
+        width: 99%;
+        height: 100%;
+        border: black double;
     }
 
     body .modalproductoventana h2::-webkit-scrollbar {
@@ -3407,9 +3419,11 @@ body #listadecomida a {
         margin: auto;
         padding-top: 5%;
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin-bottom: 3%;
         font-style: italic;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
     }
 
     .modalproductoventana .informacionproductoind .descproducto{
@@ -3419,6 +3433,8 @@ body #listadecomida a {
         overflow: scroll;
         text-align: justify;
         font-size: 1.3rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
     }
     
     .modalproductoventana .cuadrofinalproducto{
@@ -3454,12 +3470,12 @@ body #listadecomida a {
     .modalproductoventana .numerocantidadproducto p{
         margin-top: .85rem;
         font-size: 3vw;
+        font-family: 'TeXGyreTermes', sans-serif; 
     }
 
     body .contnumerocantidadproducto .bttnplus {
         width: 3vw;
         height: 3vw;
-        margin-left: .3rem;
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
@@ -3532,6 +3548,8 @@ body #listadecomida a {
         font-size: 2.3vw;
         padding: .2rem;
         line-height: 1rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 600;
     }
 
 
@@ -3570,7 +3588,7 @@ body #listadecomida a {
         width: fit-content;
         font-size: 2vw;
         text-align: center;
-        font-family: sans-serif;
+        font-family: 'TeXGyreTermes', sans-serif; 
         border-radius: .2rem;
         font-weight: 700;
         background: red;
@@ -3618,9 +3636,11 @@ body #listadecomida a {
         overflow: scroll;
         width: 95%;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-top: 3%;
         margin-bottom: 3%;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
     }
 
     body .modalproductoventana h2::-webkit-scrollbar {
@@ -3675,6 +3695,8 @@ body #listadecomida a {
         overflow: scroll;
         text-align: justify;
         font-size: 1.6rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
     }
     
     .modalproductoventana .cuadrofinalproducto{
@@ -3709,13 +3731,13 @@ body #listadecomida a {
 
     .modalproductoventana .numerocantidadproducto p{
         margin-top: 50%;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
     }
 
     body .contnumerocantidadproducto .bttnplus {
         width: 3vh;
         height: 3vh;
-        margin-left: .1rem;
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
@@ -3788,6 +3810,8 @@ body #listadecomida a {
         text-align: center;
         font-size: 140%;
         line-height: 1.2rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 600;
     }
 
 
@@ -3826,7 +3850,7 @@ body #listadecomida a {
         width: fit-content;
         font-size: 1.3rem;
         text-align: center;
-        font-family: sans-serif;
+        font-family: 'TeXGyreTermes', sans-serif; 
         border-radius: .2rem;
         font-weight: 700;
         background: red;
@@ -3862,9 +3886,9 @@ body #listadecomida a {
 
 
     .modalproductoventana .cuadroproduct{
-        width: 95%;
-        min-height: 95%;
-        max-height: 95%;
+        width: 100%;
+        min-height: 100%;
+        max-height: 100%;
         margin: auto;
         display: flex;
         position: relative;
@@ -3878,15 +3902,15 @@ body #listadecomida a {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         border-right: .1rem rgba(0, 0, 0, 0.466) dotted;
-
     }
 
     .modalproductoventana .imgproductoindividual img{
-        width: 90%;
-        height: 70%;
+        width: 99%;
+        height: 100%;
+        border: black double ;
     }
 
     body .modalproductoventana h2::-webkit-scrollbar {
@@ -3928,9 +3952,10 @@ body #listadecomida a {
         margin: auto;
         padding-top: 5%;
         text-align: center;
-        font-size: 3rem;
-        font-style: italic;
+        font-size: 2.5rem;
         margin-bottom: 3%;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
     }
 
     .modalproductoventana .informacionproductoind .descproducto{
@@ -3939,7 +3964,9 @@ body #listadecomida a {
         margin: auto;
         overflow: scroll;
         text-align: justify;
-        font-size: 2rem;
+        font-size: 1.6rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
     }
     
     .modalproductoventana .cuadrofinalproducto{
@@ -3973,14 +4000,14 @@ body #listadecomida a {
     }
 
     .modalproductoventana .numerocantidadproducto p{
-        margin-top: .85rem;
+        margin-top: .9rem;
         font-size: 2.3vw;
+        font-family: 'TeXGyreTermes', sans-serif; 
     }
 
     body .contnumerocantidadproducto .bttnplus {
         width: 3vw;
         height: 3vw;
-        margin-left: .3rem;
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
@@ -4053,6 +4080,8 @@ body #listadecomida a {
         font-size: 2.3vw;
         padding: .2rem;
         line-height: 1rem;
+        font-family: 'TeXGyreTermes', sans-serif;                                     
+        font-weight: 700;
     }
 
 
@@ -4091,7 +4120,7 @@ body #listadecomida a {
         width: fit-content;
         font-size: 2vw;
         text-align: center;
-        font-family: sans-serif;
+        font-family: 'TeXGyreTermes', sans-serif;                                     
         border-radius: .2rem;
         font-weight: 700;
         background: red;

@@ -79,15 +79,15 @@ const Promo1 = [
 const combos1 = [
     {
         id: 1,
-        nombre: "Combo 1",
+        nombre: "Combo #1",
         precio: 8.00,
         img: "http://drive.google.com/uc?export=view&id=1k4NpY58rULwDTvYRd8kuLFjmklW3mRwZ",
-        desc: "Arroz Especial <br/>Lumpia <br/> Pollo Agridulce.",
+        desc: "Arroz Especial <br/>Lumpia (1) <br/> Pollo Agridulce.",
         cantidad: 1
     },
     {
         id: 2,
-        nombre: "Combo 2",
+        nombre: "Combo #2",
         precio: 8.50,
         img: "http://drive.google.com/uc?export=view&id=1AiX2weGY14sE0maSJ4_kFDgB_iC8ZQN6",
         desc: "Arroz Especial <br/>  Lumpia (1) <br/> Costilla Asada (1).",
@@ -95,7 +95,7 @@ const combos1 = [
     },
     {
         id: 3,
-        nombre: "Combo 3",
+        nombre: "Combo #3",
         precio: 8.50,
         img: "http://drive.google.com/uc?export=view&id=1Giv83hxiQ6rGnQreGsJ1qYpmXfORQR56",
         desc: "Arroz Especial <br/> Pollo Agridulce <br/> Costilla Asada (1).",
@@ -103,7 +103,7 @@ const combos1 = [
     },
     {
         id: 4,
-        nombre: "Combo 4",
+        nombre: "Combo #4",
         precio: 9.00,
         img: "http://drive.google.com/uc?export=view&id=1xY3nPrLXnEcT4KBgSHXe5xuGq_xNn9o8",
         desc: "Arroz Especial <br/> Lumpia (1) <br/> Pollo Agridulce <br/> Costilla Asada (1).",
@@ -111,7 +111,7 @@ const combos1 = [
     },
     {
         id: 5,
-        nombre: "Combo 5",
+        nombre: "Combo #5",
         precio: 9.00,
         img: "http://drive.google.com/uc?export=view&id=1Wd2QcihvRwC9kEv68RlFt4xD1Xb56MMe",
         desc: "Arroz Especial <br/> Chop Suey Esp. <br/> Pollo Agridulce <br/> Lumpia (1).",
@@ -119,7 +119,7 @@ const combos1 = [
     },
     {
         id: 6,
-        nombre: "Combo 6",
+        nombre: "Combo #6",
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=14vRaB1OcqZEqSUntpmV9Hly2krKFjgpX",
         desc: "Arroz Especial <br/> Chop Suey Esp. <br/> Pollo Agridulce <br/> Costilla Asada (1).",
