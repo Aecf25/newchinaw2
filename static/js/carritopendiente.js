@@ -147,7 +147,7 @@ const pintarcarrito = () => {
         for (let i = 0; i< carrito.length; i++){
             productosalwha.push(carrito[i].nombre, "; " ," cantidad: " ,carrito[i].cantidad, '%0A');
         }
-        suscribirpedido.href = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",]/g, '') + '%0A' + "Total: Ref. " + total 
+        suscribirpedido.href = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total 
         suscribirpedido.target = "_blank"
         setTimeout(() => {
             modalcontainer.style.opacity = "0"

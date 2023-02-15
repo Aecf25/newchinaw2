@@ -2613,7 +2613,7 @@ body #listadecomida a {
         text-align: left;
         left: 1rem;
         width: 50%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
         border-top-right-radius: .6rem;
@@ -2644,7 +2644,7 @@ body #listadecomida a {
         text-align: center;
         font-size: .9vw;
         border-radius: .5vw;
-        background: red;
+        background: rgb(148, 19, 19);
         border: .1vw rgb(83, 83, 83);
         cursor: pointer;
         transition: all 1s ease;
@@ -2660,7 +2660,7 @@ body #listadecomida a {
     
     body .containerseccion div button:hover {
         box-shadow: .2rem .2rem .1rem white, -.2rem -.2rem .1rem black;
-        background: red;
+        background: rgb(148, 19, 19);
         width: 90%;
         margin: auto;
         left: .6vw;
@@ -2900,7 +2900,7 @@ body #listadecomida a {
         text-align: left;
         left: 5%;
         width: 50%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
         border-top-right-radius: .6rem;
@@ -2919,7 +2919,7 @@ body #listadecomida a {
         text-align: center;
         font-size: .9rem;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         border: .1rem rgb(83, 83, 83);
         cursor: pointer;
         transition: all 1s ease;
@@ -2935,7 +2935,7 @@ body #listadecomida a {
     
     body .containerseccion div .ventanaproductoboton:hover {
         box-shadow: .2rem .2rem .1rem white, -.2rem .2rem .1rem black;
-        background: red;
+        background: rgb(148, 19, 19);
         width: 90%;
         margin: auto;
         left: 5.45%;
@@ -3200,19 +3200,36 @@ body #listadecomida a {
 
     .modalproductoventana .numerocantidadproducto p{
         margin-top: 80%;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
         font-family: 'TeXGyreTermes', sans-serif; 
     }
 
     body .contnumerocantidadproducto .bttnplus {
-        height: 1.2rem;
-        padding-left: .6rem;
-        padding-right: .6rem;
+        width: 3vh;
+        height: 3vh;
         margin-left: .2rem;
+        padding-left: .5vh;
+        padding-right: .5vh;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
         position: relative;
+    }
+
+
+    body .contnumerocantidadproducto .bttnplus p{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        margin-bottom: .4rem;
+        font-size: 150%;
+        font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3220,40 +3237,37 @@ body #listadecomida a {
 
     .modalproductoventana .numerocantidadproducto {
         max-width: 30%;
-        font-size: 120%;
+        font-size: 1rem;
     }
 
-    body .contnumerocantidadproducto .bttnplus p {
-        position: absolute;
-        top: -0.3rem;
-        left: 0.25rem;
-        font-size: 1rem;
-        font-weight: 700;
-        
-    }
 
     body .contnumerocantidadproducto .bttnmin {
-        height: 1.2rem;
+        width: 3vh;
+        height: 3vh;
         margin-right: .2rem;
-        padding-left: .6rem;
-        padding-right: .6rem;
+        padding-left: .5vh;
+        padding-right: .5vh;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
-        left: 0;
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
     }
 
-    body .contnumerocantidadproducto .bttnmin p {
-        position: absolute;
-        top:-.7rem;
-        left: 0.37rem;
-        font-size: 1rem;
-        font-weight: 900;
-        
+    body .contnumerocantidadproducto .bttnmin .cuadromenostexto {
+        width: 80%;
+        height: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        margin: auto;
+        text-align: center;
+        margin-right: 12%;
     }
 
     .modalproductoventana .precioproductoind{
@@ -3275,7 +3289,7 @@ body #listadecomida a {
     .modalproductoventana .precioproductopos h5{
         margin-top: 10%;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1rem;
         font-family: 'TeXGyreTermes', sans-serif; 
         font-weight: 600;
@@ -3288,7 +3302,7 @@ body #listadecomida a {
 
 
     body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
+        background: rgba(148, 19, 19, 0.822);
     }
 
     body .modalproductoventana .botonagregar:active {
@@ -3320,7 +3334,7 @@ body #listadecomida a {
         font-family: 'TeXGyreTermes', sans-serif; 
         border-radius: .2rem;
         font-weight: 700;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         border: .1rem solid black;
     }
@@ -3479,12 +3493,14 @@ body #listadecomida a {
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .modalproductoventana .numerocantidadproducto {
@@ -3493,13 +3509,17 @@ body #listadecomida a {
         max-width: 30%;
     }
 
-    body .contnumerocantidadproducto .bttnplus p {
-        position: absolute;
-        top: -0.3vw;
-        left: 0.7vw;
-        font-size: 2vw;
+    body .contnumerocantidadproducto .bttnplus p{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        margin-bottom: 45%;
+        font-size: 140%;
         font-weight: 700;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .075rem;
     }
 
     body .contnumerocantidadproducto .bttnmin {
@@ -3508,22 +3528,27 @@ body #listadecomida a {
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         left: 0;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
 
-    body .contnumerocantidadproducto .bttnmin p {
-        position: absolute;
-        top:-1.1vw;
-        left: .95vw;
-        font-size: 2vw;
-        font-weight: 900;
-        
+    body .contnumerocantidadproducto .bttnmin .cuadromenostexto {
+        width: 80%;
+        height: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        margin: auto;
+        text-align: center;
+        margin-right: 12%;
     }
 
     .modalproductoventana .precioproductoind{
@@ -3559,7 +3584,7 @@ body #listadecomida a {
 
 
     body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
+        background: rgba(148, 19, 19, 0.815);
     }
 
     body .modalproductoventana .botonagregar:active {
@@ -3591,7 +3616,7 @@ body #listadecomida a {
         font-family: 'TeXGyreTermes', sans-serif; 
         border-radius: .2rem;
         font-weight: 700;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         border: .1rem solid black;
     }
@@ -3741,12 +3766,14 @@ body #listadecomida a {
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .modalproductoventana .numerocantidadproducto {
@@ -3755,13 +3782,17 @@ body #listadecomida a {
         max-width: 30%;
     }
 
-    body .contnumerocantidadproducto .bttnplus p {
-        position: absolute;
-        top: -0.3vh;
-        left: 0.7vh;
-        font-size: 2vh;
+    body .contnumerocantidadproducto .bttnplus p{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        margin-bottom: .5vh;
+        font-size: 170%;
         font-weight: 700;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .125rem;
     }
 
     body .contnumerocantidadproducto .bttnmin {
@@ -3771,22 +3802,27 @@ body #listadecomida a {
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         left: 0;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
 
-    body .contnumerocantidadproducto .bttnmin p {
-        position: absolute;
-        top:-1.1vh;
-        left: .95vh;
-        font-size: 2vh;
-        font-weight: 900;
-        
+    body .contnumerocantidadproducto .bttnmin .cuadromenostexto {
+        width: 80%;
+        height: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .2vh solid white;
+        margin: auto;
+        text-align: center;
+        margin-right: 12%;
     }
 
     .modalproductoventana .precioproductoind{
@@ -3821,7 +3857,7 @@ body #listadecomida a {
 
 
     body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
+        background: rgba(148, 19, 19, 0.815);
     }
 
     body .modalproductoventana .botonagregar:active {
@@ -3853,7 +3889,7 @@ body #listadecomida a {
         font-family: 'TeXGyreTermes', sans-serif; 
         border-radius: .2rem;
         font-weight: 700;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         border: .1rem solid black;
     }
@@ -4011,12 +4047,14 @@ body #listadecomida a {
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .modalproductoventana .numerocantidadproducto {
@@ -4025,13 +4063,17 @@ body #listadecomida a {
         max-width: 30%;
     }
 
-    body .contnumerocantidadproducto .bttnplus p {
-        position: absolute;
-        top: -0.3vw;
-        left: 0.7vw;
+    body .contnumerocantidadproducto .bttnplus p{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        margin-bottom: .6vw;
         font-size: 2vw;
         font-weight: 700;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .16vw;
     }
 
     body .contnumerocantidadproducto .bttnmin {
@@ -4040,22 +4082,27 @@ body #listadecomida a {
         padding-left: .65vw;
         padding-right: .65vw;
         border: .1rem solid black;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         left: 0;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
 
-    body .contnumerocantidadproducto .bttnmin p {
-        position: absolute;
-        top:-1.1vw;
-        left: .95vw;
-        font-size: 2vw;
-        font-weight: 900;
-        
+    body .contnumerocantidadproducto .bttnmin .cuadromenostexto {
+        width: 80%;
+        height: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .2vh solid white;
+        margin: auto;
+        text-align: center;
+        margin-right: 12%;
     }
 
     .modalproductoventana .precioproductoind{
@@ -4091,7 +4138,7 @@ body #listadecomida a {
 
 
     body .modalproductoventana .botonagregar:hover {
-        background: rgba(255, 0, 0, 0.781);
+        background: rgba(148, 19, 19, 0.815);
     }
 
     body .modalproductoventana .botonagregar:active {
@@ -4123,7 +4170,7 @@ body #listadecomida a {
         font-family: 'TeXGyreTermes', sans-serif;                                     
         border-radius: .2rem;
         font-weight: 700;
-        background: red;
+        background: rgb(148, 19, 19);
         color: white;
         border: .1rem solid black;
     }
@@ -4158,11 +4205,6 @@ body #listadecomida a {
     
     body .modal-container::-webkit-scrollbar {
         display: none;
-    }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
     }
     
     body .modal-container .modal-header {
@@ -4210,7 +4252,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 53.5%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -4314,7 +4356,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -4325,7 +4367,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: .75rem;
@@ -4350,7 +4392,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -4359,7 +4401,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: .75rem;
@@ -4400,7 +4442,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -4418,7 +4460,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 40%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -4465,12 +4507,7 @@ body #listadecomida a {
     body .modal-container::-webkit-scrollbar {
         display: none;
     }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
+
     body .modal-container .modal-header {
         color: black;
         margin-bottom: -5rem;
@@ -4516,7 +4553,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 53.5%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -4626,7 +4663,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -4637,7 +4674,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: .75rem;
@@ -4662,7 +4699,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -4671,7 +4708,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: .75rem;
@@ -4712,7 +4749,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -4730,7 +4767,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 40%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -4776,11 +4813,6 @@ body #listadecomida a {
     
     body .modal-container::-webkit-scrollbar {
         display: none;
-    }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
     }
     
     body .modal-container .modal-header {
@@ -4938,7 +4970,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -4949,7 +4981,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: .75rem;
@@ -4974,7 +5006,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -4983,7 +5015,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: .75rem;
@@ -5024,7 +5056,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -5042,7 +5074,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 40%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -5090,11 +5122,6 @@ body #listadecomida a {
         display: none;
     }
     
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
     body .modal-container .modal-header {
         color: black;
         margin-bottom: -5rem;
@@ -5142,7 +5169,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 53.5%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -5252,7 +5279,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -5263,7 +5290,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -5288,7 +5315,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -5297,7 +5324,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -5338,7 +5365,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .6rem;
         padding-bottom: .6rem;
         font-weight: 700;
@@ -5356,7 +5383,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -5404,12 +5431,7 @@ body #listadecomida a {
     body .modal-container::-webkit-scrollbar {
         display: none;
     }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
+
     body .modal-container .modal-header {
         color: black;
         margin-bottom: -5rem;
@@ -5457,7 +5479,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 53.5%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -5567,7 +5589,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -5578,7 +5600,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -5603,7 +5625,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -5612,7 +5634,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -5653,7 +5675,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .6rem;
         padding-bottom: .6rem;
         font-weight: 700;
@@ -5671,7 +5693,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -5719,12 +5741,7 @@ body #listadecomida a {
     body .modal-container::-webkit-scrollbar {
         display: none;
     }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
+
     body .modal-container .modal-header {
         color: black;
         margin-bottom: -5rem;
@@ -5772,7 +5789,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 53.5%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -5882,7 +5899,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -5893,7 +5910,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -5918,7 +5935,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -5927,7 +5944,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -5968,7 +5985,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .6rem;
         padding-bottom: .6rem;
         font-weight: 700;
@@ -5986,7 +6003,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -6034,12 +6051,7 @@ body #listadecomida a {
     body .modal-container::-webkit-scrollbar {
         display: none;
     }
-    
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
+
     body .modal-container .modal-header {
         color: black;
         margin-bottom: -5rem;
@@ -6197,7 +6209,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     
@@ -6208,7 +6220,7 @@ body #listadecomida a {
         position: absolute;
         top: -20%;
         left: 20%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -6233,7 +6245,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
@@ -6242,7 +6254,7 @@ body #listadecomida a {
         position: absolute;
         top: -25%;
         left: 40%;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1rem;
         text-align: center;
         font-size: 1rem;
@@ -6283,7 +6295,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .6rem;
         padding-bottom: .6rem;
         font-weight: 700;
@@ -6301,7 +6313,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 30%;
         border-radius: .5rem;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-weight: 700;
@@ -6359,11 +6371,7 @@ body #listadecomida a {
         border-radius: 10vw;
         border: 1px solid black;
     }
-    
-    body .modal-container:hover {
-        background: rgb(188, 229, 243);
-    }
-    
+
     body .modal-container .modal-header {
         color: black;
         margin-bottom: -2rem;
@@ -6518,7 +6526,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-right-radius: .5vw;
         border-bottom-right-radius: .5vw;
     
@@ -6529,7 +6537,7 @@ body #listadecomida a {
         position: absolute;
         top: -.33vw;
         left: .35vw;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1vw;
         text-align: center;
         font-size: 1.5vw;
@@ -6554,7 +6562,7 @@ body #listadecomida a {
         padding: 0;
         border: none;
         overflow: hidden;
-        background: red;
+        background: rgb(148, 19, 19);
         border-top-left-radius: .5vw;
         border-bottom-left-radius: .5vw;
     }
@@ -6563,7 +6571,7 @@ body #listadecomida a {
         position: absolute;
         top: -.4vw;
         left: .5vw;
-        background: red;
+        background: rgb(148, 19, 19);
         border-radius: 1vw;
         text-align: center;
         font-size: 1.5vw;
@@ -6606,7 +6614,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botoninscribir {
         width: 30%;
         border-radius: .5vw;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .6vw;
         padding-bottom: .6vw;
         font-weight: 700;
@@ -6624,7 +6632,7 @@ body #listadecomida a {
     body .modal-container .fondodivcarrito .botonlimpiar {
         width: 30%;
         border-radius: .5vw;
-        background: red;
+        background: rgb(148, 19, 19);
         padding-top: .5vw;
         padding-bottom: .5vw;
         font-weight: 700;
@@ -6650,6 +6658,46 @@ body #listadecomida a {
 
 }
 
+body .modal-container .modal-header h1{
+    font-family: 'Cential Script', sans-serif;                                             
+    font-weight: 500;
+    font-style: normal;
+}
+
+body .modal-container .modaltitulotabla h2{
+    font-family: 'TeXGyreTermes', sans-serif; 
+}
+
+body .modal-container .modal-content h3 {
+    font-family: 'Cential Script', sans-serif;  
+}
+
+body .modal-container .modal-content #descripcion{
+    font-family: 'TeXGyreTermes', sans-serif; 
+}
+
+body .modal-container .modal-content #cantund {
+    font-family: 'TeXGyreTermes', sans-serif; 
+}
+
+body .modal-container .modal-content #costound {
+    font-family: 'TeXGyreTermes', sans-serif;
+}
+
+body .modal-container .total-content{
+    font-family: 'TeXGyreTermes', sans-serif;
+}
+
+body .modal-container .fondodivcarrito .botoninscribir{
+    font-family: 'TeXGyreTermes', sans-serif;
+}
+
+body .modal-container .fondodivcarrito .botonlimpiar{
+    font-family: 'TeXGyreTermes', sans-serif;
+}
+
+
+
 body .modal-container .modaltitulotabla .textocarritolimpio {
     text-align: center;
     width: 80%;
@@ -6658,21 +6706,22 @@ body .modal-container .modaltitulotabla .textocarritolimpio {
     font-weight: 900;
     margin: auto;
     font-size: 1.5rem;
-    font-family: verdana;
+    font-family: 'TeXGyreTermes', sans-serif;
 }
 
 .botoninicio{
     position: sticky;
+    font-family: 'TeXGyreTermes', sans-serif;
     font-weight: 900;
     top: 80%;
     left: 90%;
     text-align: center;
     font-size: .8rem;
-    font-family: gill sans;
     text-decoration: none;
     color: white;
     background-color: rgb(114, 47, 55);
     border-radius: 5%;
+    border: double .3rem yellow;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
     padding-left: .3rem;

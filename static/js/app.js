@@ -100,10 +100,8 @@ combos1.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -114,6 +112,11 @@ combos1.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -122,17 +125,19 @@ combos1.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -273,10 +278,8 @@ entremeses1.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -287,6 +290,11 @@ entremeses1.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -295,17 +303,19 @@ entremeses1.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -446,10 +456,8 @@ arroz.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -460,6 +468,11 @@ arroz.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -468,17 +481,19 @@ arroz.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -619,10 +634,8 @@ arrozsalt.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -633,6 +646,11 @@ arrozsalt.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -641,17 +659,19 @@ arrozsalt.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -792,10 +812,8 @@ ChopSuey.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -806,6 +824,11 @@ ChopSuey.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -814,17 +837,19 @@ ChopSuey.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -965,10 +990,8 @@ chowmein.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -979,6 +1002,11 @@ chowmein.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -987,17 +1015,19 @@ chowmein.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -1138,10 +1168,8 @@ Lomein.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -1152,6 +1180,11 @@ Lomein.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -1160,17 +1193,19 @@ Lomein.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -1311,10 +1346,8 @@ fideos.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -1325,6 +1358,11 @@ fideos.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -1333,17 +1371,19 @@ fideos.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -1484,10 +1524,8 @@ pollos.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -1498,6 +1536,11 @@ pollos.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -1506,17 +1549,19 @@ pollos.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -1657,10 +1702,8 @@ carnes.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -1671,6 +1714,11 @@ carnes.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -1679,17 +1727,19 @@ carnes.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -1830,10 +1880,8 @@ CerdoyCamaron.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -1844,6 +1892,11 @@ CerdoyCamaron.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -1852,17 +1905,19 @@ CerdoyCamaron.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -2003,10 +2058,8 @@ fuyung.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -2017,6 +2070,11 @@ fuyung.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -2025,17 +2083,19 @@ fuyung.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -2176,10 +2236,8 @@ Vegetales.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -2190,6 +2248,11 @@ Vegetales.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -2198,17 +2261,19 @@ Vegetales.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -2349,10 +2414,8 @@ Sopas.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -2363,6 +2426,11 @@ Sopas.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -2371,17 +2439,19 @@ Sopas.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -2522,10 +2592,8 @@ Bebidas.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -2536,6 +2604,11 @@ Bebidas.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -2544,17 +2617,19 @@ Bebidas.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
@@ -2695,10 +2770,8 @@ extras.forEach((product) => {
         contnumerocantidadproducto.className = "contnumerocantidadproducto";
         cantidadproductoind.append(contnumerocantidadproducto);
 
-        let menoscantidad = document.createElement("button");
+        let menoscantidad = document.createElement("a");
         menoscantidad.className = "bttnmin"
-        menoscantidad.innerHTML = `
-        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -2709,6 +2782,11 @@ extras.forEach((product) => {
         });
         contnumerocantidadproducto.append(menoscantidad);
 
+        const cuadromenostexto = document.createElement("p");
+        cuadromenostexto.className = "cuadromenostexto"
+        menoscantidad.append(cuadromenostexto);
+
+
         const numerocantidadproducto = document.createElement("div");
         numerocantidadproducto.className = "numerocantidadproducto";
         numerocantidadproducto.innerHTML = `
@@ -2717,17 +2795,19 @@ extras.forEach((product) => {
 
         contnumerocantidadproducto.append(numerocantidadproducto)
 
-        let mascantidad = document.createElement("button");
+        let mascantidad = document.createElement("a");
         mascantidad.className = "bttnplus"
-        mascantidad.innerHTML = `
-        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             productoindividualventana();
             savelocal()
         });
-
         contnumerocantidadproducto.append(mascantidad);
+
+        const cuadromastexto = document.createElement("p");
+        cuadromastexto.innerText = "+";
+        mascantidad.append(cuadromastexto);
+
 
         const precioproductoind = document.createElement("div");
         precioproductoind.className = "precioproductoind";
