@@ -3227,7 +3227,6 @@ body #listadecomida a {
         width: 90%;
         height: 70%;
         margin: auto;
-        margin-bottom: .4rem;
         font-size: 150%;
         font-weight: 700;
         display: flex;
@@ -3513,13 +3512,11 @@ body #listadecomida a {
         width: 90%;
         height: 70%;
         margin: auto;
-        margin-bottom: 45%;
         font-size: 140%;
         font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: .075rem;
     }
 
     body .contnumerocantidadproducto .bttnmin {
@@ -3786,13 +3783,11 @@ body #listadecomida a {
         width: 90%;
         height: 70%;
         margin: auto;
-        margin-bottom: .5vh;
         font-size: 170%;
         font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: .125rem;
     }
 
     body .contnumerocantidadproducto .bttnmin {
