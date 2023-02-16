@@ -4062,13 +4062,12 @@ body #listadecomida a {
         width: 90%;
         height: 70%;
         margin: auto;
-        margin-bottom: .6vw;
         font-size: 2vw;
         font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: .16vw;
+        margin-bottom: .6vw;
     }
 
     body .contnumerocantidadproducto .bttnmin {
@@ -5164,7 +5163,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 54%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -5474,7 +5473,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 54%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -5784,7 +5783,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 54%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
@@ -6094,7 +6093,7 @@ body #listadecomida a {
     
     body .modal-container .modaltitulotabla #cantprod {
         position: absolute;
-        margin-left: 55%;
+        margin-left: 53.5%;
     }
     
     body .modal-container .modaltitulotabla #totalprod {
