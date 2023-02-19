@@ -4281,7 +4281,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -4588,7 +4588,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -4895,7 +4895,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -5204,7 +5204,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -5514,7 +5514,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -5824,7 +5824,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -6134,7 +6134,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5rem .5rem .5rem yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -6451,7 +6451,7 @@ body #listadecomida a {
     body .modal-container .modal-content img {
         width: 20%;
         height: 20%;
-        box-shadow: .5vw .5vw .5vw yellow;
+        box-shadow: .5rem .5rem .5rem gray;
         border-radius: 5%;
     }
     
@@ -6758,13 +6758,12 @@ body .modal-container .modaltitulotabla .textocarritolimpio {
 footer div {
     width: 80%;
     overflow: hidden;
-    padding-bottom: 3vw;
+    padding-bottom: 1rem;
     display: flex;
     margin: auto;
     list-style: none;
     text-decoration: none;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 2rem;
 }
 
 footer img {
@@ -6777,5 +6776,5 @@ footer div a {
     text-decoration: none;
     margin: auto;
     color: black;
-
+    font-size: 130%;
 }

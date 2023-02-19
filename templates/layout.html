@@ -39,7 +39,10 @@
     <link href="https://fonts.cdnfonts.com/css/cential-script" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/balerga" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tex-gyre-termes" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/rudolphin-oblique" rel="stylesheet">            
+    <link href="https://fonts.cdnfonts.com/css/rudolphin-oblique" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
 </head>
 
 
@@ -139,7 +142,21 @@
 
     <div class="modalproductoventana" id="modalproductoventana">
     </div>
-
+    
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDgGpyM2YD21c8NG_ytKEIwQjJYNvyQ3mw",
+            authDomain: "conteopedidonw.firebaseapp.com",
+            projectId: "conteopedidonw",
+            storageBucket: "conteopedidonw.appspot.com",
+            messagingSenderId: "306884052735",
+            appId: "1:306884052735:web:9683f30d60460fb9a56eca",
+            measurementId: "G-VTZV8BF706"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.firestore();
+        var pedidoRef = database.collection("pedidos").doc("conteo");
+    </script>
     <script src="{{ url_for('static', filename ='js/mapa.js') }}"></script>
     <script src="{{ url_for('static', filename ='js/scrollup.js') }}"></script>
     <script src="{{ url_for('static', filename ='js/products.js') }}"></script>

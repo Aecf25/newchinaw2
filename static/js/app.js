@@ -201,8 +201,9 @@ combos1.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -379,8 +380,9 @@ entremeses1.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -557,8 +559,9 @@ arroz.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -735,8 +738,9 @@ arrozsalt.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -913,8 +917,9 @@ ChopSuey.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -1091,8 +1096,9 @@ chowmein.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -1269,8 +1275,9 @@ Lomein.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -1447,8 +1454,9 @@ fideos.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -1625,8 +1633,9 @@ pollos.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -1803,8 +1812,9 @@ carnes.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -1981,8 +1991,9 @@ CerdoyCamaron.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -2159,8 +2170,9 @@ fuyung.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -2337,8 +2349,9 @@ Vegetales.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -2515,8 +2528,9 @@ Sopas.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -2693,8 +2707,9 @@ Bebidas.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 
@@ -2871,7 +2886,8 @@ extras.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });

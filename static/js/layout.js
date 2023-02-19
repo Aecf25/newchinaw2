@@ -175,8 +175,9 @@ Promo1.forEach((product) => {
         });
         cuerpopagina.style.filter = "blur(.5rem)";
         modalproductoventana.style.opacity = "1";
-        modalproductoventana.style.transform = "translateY(5%)"
-        modalproductoventana.style.transform = "translateX(0%)"
+        modalproductoventana.style.transform = "translateY(5%)";
+        modalproductoventana.style.transform = "translateX(0%)";
+        modalproductoventana.style.transition = "all 1s";
     });
 });
 

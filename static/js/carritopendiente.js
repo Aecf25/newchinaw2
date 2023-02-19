@@ -11,7 +11,7 @@ const pintarcarrito = () => {
 
         modalcontainer.style.opacity = "0"
         modalcontainer.style.transition = "opacity 1s"
-        modalcontainer.style.transition = "all 2s"
+        modalcontainer.style.transition = "all 1s"
         modalcontainer.style.transform = "translateY(-150%)"
 
 
@@ -147,31 +147,29 @@ const pintarcarrito = () => {
         for (let i = 0; i< carrito.length; i++){
             productosalwha.push(carrito[i].nombre, "; " ," cantidad: " ,carrito[i].cantidad, '%0A');
         }
-        suscribirpedido.href = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total 
-        suscribirpedido.target = "_blank"
+        pedidoRef.update({
+            "ultimonumero": firebase.firestore.FieldValue.increment(1)
+        }).then(function(){
+            pedidoRef.get().then(function(doc){
+                var nuevoPedido = doc.data()["ultimonumero"];
+                var url = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total + '%0A' + 'Número de Pedido es: ' + nuevoPedido
+                window.open(url, '_blank')
+            }); 
+        });
         setTimeout(() => {
+            savelocal();
+            pintarcarrito();
+            carritocestacontar();
             modalcontainer.style.opacity = "0"
             modalcontainer.style.transition = "opacity 1s"
-            modalcontainer.style.transition = "all 2s"
+            modalcontainer.style.transition = "all 1s"
             modalcontainer.style.transform = "translateY(-150%)"
-    
-    
-    
-    
             cuerpopagina.style.transition = "filter 1s"
             cuerpopagina.style.filter = "blur(0vw)";
         },);
-    
-    
-    } )
+    });
     fondodivcarrito.append(suscribirpedido);
-
-
-
-
-
 };
-
 /* Un manera (no probada) es colocar cada script en su respectiva pagina, a excepcion de products que va en todos los
 que contengan elementos dentro de el; ademas se debe de colocar ---let carrito = []; al archivo "layout" que no contiene
 el carrito, solo este archivo (carritopendiente.js) se queda en el layout para que funcione en todos.  /*
@@ -183,9 +181,9 @@ el carrito, solo este archivo (carritopendiente.js) se queda en el layout para q
 vercarritolayout.addEventListener("click", () => {
     cuerpopagina.style.filter = "blur(.2rem)";
     modalcontainer.style.opacity = "1";
-    modalcontainer.style.transform = "translateY(5%)"
-    modalcontainer.style.transform = "translateX(5%)"
-
+    modalcontainer.style.transform = "translateY(5%)";
+    modalcontainer.style.transform = "translateX(5%)";
+    
 
     // CREA UNA CONST A VER SI TE FUNCIONA CON LA OPACITY DE 1 Y LOS DEMAS ESTILOS Y LO AGREGAS, A ESTE EVENTO 1, Y AL DE CERRAR.
     // CON EL VALOR DE 0, SINO CREAR LA FUNCION Y EJECUTARLA FUERA DE ESTO A VER SI SE PINTA BIEN CON EL IF.
@@ -250,7 +248,7 @@ const savelocal = () => {
 const cerrarventana = ("click", () => {
     modalproductoventana.style.opacity = "0"
     modalproductoventana.style.transition = "opacity 1s"
-    modalproductoventana.style.transition = "all 2s"
+    modalproductoventana.style.transition = "all 1.5s"
     modalproductoventana.style.transform = "translateY(-500%)"
 
 
@@ -260,5 +258,18 @@ const cerrarventana = ("click", () => {
     cuerpopagina.style.filter = "blur(0vw)";
 
 });
+
+window.addEventListener("keyup", function(event){
+    var codigo = event.key;
+    if (codigo == 'Escape'){
+        cerrarventana();
+        modalcontainer.style.opacity = "0"
+        modalcontainer.style.transition = "opacity 1s"
+        modalcontainer.style.transition = "all 1s"
+        modalcontainer.style.transform = "translateY(-150%)"
+        cuerpopagina.style.transition = "filter 1s"
+        cuerpopagina.style.filter = "blur(0vw)";
+    }
+}, false);
 
 
