@@ -3,74 +3,53 @@
 const Promo1 = [
     {
         id: 200,
-        nombre: "Vegetales con Tres Tipos de Carnes Vegetales con Tres Tipos de Carnes",
-        precio: 10.00,
+        nombre: "Promo #1",
+        precio: 10.50,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo Agridulce",
+        desc: "-Arroz Frito (Elección al gusto) <br/> -Lumpias (2 unds) <br/> -1/2 Pan (2 unds) <br/> -Galleta (1 unidad)",
         cantidad: 1
     },
     {
         id: 201,
-        nombre: "Combo1",
+        nombre: "Promo #2",
         precio: 10.50,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo AgridulceArroz Especial + Lumpia + Pollo Agridulce",
+        desc: "-Arroz Frito (Elección al gusto) <br/> -Costilla Asada (2 unds) <br/> -1/2 Pan (2 unds) <br/> -Galleta (1 unidad)",
         cantidad: 1
     },
     {
         id: 202,
-        nombre: "Combo1",
-        precio: 10.00,
+        nombre: "Promo #3",
+        precio: 27.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        desc: "-2 Arroz Frito (Elección al gusto) <br/> -Lumpias (2 unds) <br/> -Costilla Asada (4 unds) <br/> -Pan (4 unds) <br/> -Galletas (2 unidades)",
         cantidad: 1
     },
     {
         id: 203,
-        nombre: "Combo1",
-        precio: 10.50,
+        nombre: "Promo #4",
+        precio: 32.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        desc: "-2 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla Asada (4 unds) <br/> -Pan (4 unds) <br/> -Galletas (2 unidades)",
         cantidad: 1
     },
     {
         id: 204,
-        nombre: "Combo1",
-        precio: 10.00,
+        nombre: "Promo #5",
+        precio: 28.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        desc: "-Pollo Agridulce <br/> -Vegetales Buda <br/> -Carne ó Cerdo (Elección al gusto) <br/> -Galletas (2 unidades)",
         cantidad: 1
     },
     {
         id: 205,
-        nombre: "Combo1",
-        precio: 10.50,
+        nombre: "Promo MegaFamiliar",
+        precio: 48.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        desc: "-3 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla (Asada, Sal & Pimienta ó Miel/ajo) <br/> -Lumpias (4 unidades) <br/> -Pan (8 unidades) <br/> -Galletas (6 unidades)",
         cantidad: 1
     },
-    {
-        id: 206,
-        nombre: "Combo1",
-        precio: 10.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad: 1
-    },
-    {
-        id: 207,
-        nombre: "Combo1",
-        precio: 10.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad: 1
-    },
-
 ]
-
-
-
-
 
 
 

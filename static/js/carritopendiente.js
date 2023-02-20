@@ -46,7 +46,7 @@ const pintarcarrito = () => {
     if (carrito.length > 0) {
         totalbuy.className = "total-content"
         totalbuy.innerHTML = `
-        Total a Pagar: Ref. ${total} 
+        Total a Pagar: Ref. ${total.toFixed(2)} 
         `
     }
     ;
@@ -78,7 +78,7 @@ const pintarcarrito = () => {
         <img src= "${product.img}">
         <h3>${product.nombre}</h3>
         <p id="descripcion"> ${product.desc}</p>
-        <p id="costound">Ref. ${product.precio * product.cantidad}</p>
+        <p id="costound">Ref. ${(product.precio * product.cantidad).toFixed(2)}</p>
         <p id="cantund">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
         
         `;
@@ -152,7 +152,7 @@ const pintarcarrito = () => {
         }).then(function(){
             pedidoRef.get().then(function(doc){
                 var nuevoPedido = doc.data()["ultimonumero"];
-                var url = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total + '%0A' + 'Número de Pedido es: ' + nuevoPedido
+                var url = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total.toFixed(2) + '%0A' + 'Precio Bs Tasa BCV' + '%0A'+ 'Número de Pedido es: ' + nuevoPedido
                 window.open(url, '_blank')
             }); 
         });

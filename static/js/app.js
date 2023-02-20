@@ -2836,8 +2836,9 @@ extras.forEach((product) => {
 
         const precioproductopos = document.createElement("div");
         precioproductopos.className = "precioproductopos";
+        let multiplicaciondetotalcant = product.precio * product.cantidad;
         precioproductopos.innerHTML = `
-        <h5>Ref. ${product.precio * product.cantidad}</h5>
+        <h5>Ref. ${multiplicaciondetotalcant.toFixed(2)}</h5>
         `;
 
         precioproducto.append(precioproductopos);
