@@ -534,7 +534,367 @@ header {
 
 }
 
-@media (max-width: 999px) {
+@media (max-width: 465px) {
+
+    body div .carousel-inner {
+        background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
+        background-size: 100% 350px;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        max-height: 350px;
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .primercuadro div img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 300px;
+        border: 1px solid black;
+        border-style: groove;
+        border-radius: 1%;
+
+    }
+
+    .primercuadro div div p {
+        color: white;
+        margin-top: -250px;
+        width: 30%;
+        font-size: 75%;
+        margin-left: 55%;
+        text-align: justify;
+        background: black;
+        opacity: 0.6;
+        border-radius: 10%;
+        font-family: gill sans;
+        padding: 3%;
+    }
+
+    .segundocuadro div img {
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 8%;
+        position: relative;
+    }
+
+    .segundocuadro div div .titulosegundocuadro {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 6vw;
+        font-weight: 900;
+        font-style: italic;
+        font-family: gill sans;
+        -webkit-text-stroke: 2px gold;
+        color: black;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 5%;
+        text-align: center;
+        display: block;
+
+    }
+
+    .segundocuadro div div p {
+        position: absolute;
+        color: black;
+        font-size: 4vw;
+        font-weight: 800;
+        -webkit-text-stroke: 2px yellow;
+    }
+
+    .segundocuadro div div .textosegundocuadro1 {
+        top: 10%;
+        left: 15%;
+    }
+
+    .segundocuadro div div .textosegundocuadro2 {
+        top: 10%;
+        left: 65%;
+    }
+
+    .segundocuadro div div .textosegundocuadro3 {
+        bottom: 5%;
+        left: 15%;
+    }
+
+    .segundocuadro div div .textosegundocuadro4 {
+        bottom: -7%;
+        left: 40%;
+    }
+
+    .segundocuadro div div .textosegundocuadro5 {
+        bottom: 5%;
+        left: 65%;
+    }
+
+    .tercercuadro div iframe {
+        width: 50%;
+        height: 300px;
+        margin-left: 10%;
+        border-radius: 20%;
+        padding: 5% 5%;
+    }
+
+    .tercercuadro div div h5 {
+        position: absolute;
+        top: 10%;
+        left: 60%;
+        font-size: 5vw;
+        -webkit-text-stroke: 1px red;
+        color: white;
+    }
+
+    .tercercuadro div div p {
+        position: absolute;
+        padding-top: 5%;
+        left: 60%;
+        top: 20%;
+        text-align: justify;
+        width: 30%;
+        font-size: 100%;
+        color: white;
+    }
+
+    .cuartocuadro div div h5 {
+        position: absolute;
+        top: 5%;
+        left: 55%;
+        font-size: 150%;
+        -webkit-text-stroke: 1px red;
+        color: white;
+    }
+
+    .cuartocuadro div div p {
+        position: absolute;
+        padding-top: 35px;
+        left: 55%;
+        text-align: justify;
+        width: 30%;
+        font-size: 80%;
+        color: white;
+    }
+
+    body .img1 {
+        position: absolute;
+        height: 80px;
+        left: 20vw;
+        top: 5px;
+        border: .1vw solid black;
+        border-radius: .5vw;
+        width: 12.5%;
+    }
+
+    body .img2 {
+        position: absolute;
+        height: 80px;
+        left: 31vw;
+        top: 75px;
+        border: .1vw solid black;
+        border-radius: .5vw;
+        width: 12.5%;
+    }
+
+    body .img3 {
+        position: absolute;
+        height: 80px;
+        left: 20vw;
+        top: 145px;
+        border: .1vw solid black;
+        border-radius: .5vw;
+        width: 12.5%;
+    }
+
+    body .img4 {
+        position: absolute;
+        height: 80px;
+        left: 31vw;
+        top: 215px;
+        border: .1vw solid black;
+        border-radius: .5vw;
+        width: 12.5%;
+    }
+
+    .Menucompleto {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .titulomenus {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        padding: 3%;
+        border: .5vw goldenrod;
+        border-style: outset groove outset;
+        background: -webkit-linear-gradient(left, rgb(148, 19, 19), rgb(238, 60, 60));
+        border-bottom-right-radius: 2vw;
+        border-top-left-radius: 2vw;
+    }
+
+    .titulomenus h2 {
+        font-size: 2rem;
+        color: white;
+        -webkit-text-stroke: .1vw black;
+        font-family: fantasy;
+        font-weight: 500;
+        padding-left: 5%;
+    }
+
+
+    .Menucompleto div div #containermenu {
+        margin-left: 15%;
+        height: 25vw;
+        display: inline-flex;
+        max-width: 70%;
+        margin-bottom: 5vw;
+    }
+
+    .Menucompleto div div #containermenu .container2 {
+        width: 12vw;
+        background: -webkit-linear-gradient(bottom, gray, white);
+        border-radius: 1vw;
+        padding-bottom: 1vw;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
+    }
+
+    .Menucompleto div div #containermenu .container2:hover {
+        box-shadow: 1vw 1vw 2vw white, 1vw 1vw 2vw black
+    }
+
+
+
+    .Menucompleto div div #containermenu .container2 img {
+        height: 10vw;
+        width: 11vw;
+        border-radius: 1vw;
+        padding: .2vw;
+        border-style: groove outset groove;
+
+
+    }
+
+    .Menucompleto div div #containermenu .container2 h3 {
+        font-size: 2vw;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 800;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 p {
+        font-size: 1vw;
+        font-family: sans-serif;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 700;
+        margin-bottom: -.05vw;
+    }
+
+    .Menucompleto div div #containermenu #cont2 {
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu #cont3 {
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu #cont4 {
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu .container2 button {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-left: 5vw;
+        font-size: .9vw;
+        border-radius: .5vw;
+        margin-top: 1vw;
+        background: rgb(165, 165, 243);
+        border: 2px solid rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .Menucompleto div div #containermenu .container2 button span {
+        position: absolute;
+        background: white;
+        transition: .5s;
+        border-style: inset;
+        border-radius: 5vw;
+        border-width: .1vw;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(1) {
+        width: 100%;
+        height: .1vw;
+        top: 0;
+        left: -100%;
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(2) {
+        width: 100%;
+        height: .1vw;
+        bottom: 0;
+        right: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(3) {
+        width: .1vw;
+        height: 100%;
+        left: 0;
+        bottom: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(4) {
+        width: .1vw;
+        height: 100%;
+        right: 0;
+        top: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(1) {
+        left: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(2) {
+        right: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(4) {
+        top: 0;
+    }
+
+
+    .Menucompleto div div #containermenu .container2 button:hover {
+        box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
+    }
+
+
+
+    .Menucompleto div div #containermenu .container2 button:active {
+        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+    }
+
+
+}
+
+@media (min-width: 466px) and (max-width: 999px) {
 
     body div .carousel-inner {
         background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
@@ -2468,8 +2828,8 @@ body .titulomenus {
 body .titulomenus img {
     position: absolute;
     z-index: 0;
-    height: 6vw;
-    width: 5vw;
+    height: 60%;
+    width: 7.25%;
     right: 5vw;
     top: 1.5vw;
 }
@@ -2486,17 +2846,17 @@ body #listadecomida a {
     margin-right: 10%;
 }
 
-@media (max-width: 491px) {
+@media (max-width: 465px) {
     body .containerseccion {
         display: flex;
-        width: 80%;
+        width: 90%;
         text-align: center;
         justify-content: center;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 }
 
-@media (min-width: 492px) and (max-width: 800px) {
+@media (min-width: 466px) and (max-width: 800px) {
     body .containerseccion {
         display: inline-flex;
         width: 80%;
@@ -2519,7 +2879,7 @@ body #listadecomida a {
 @media (min-width: 1301px) and (max-width: 1600px) {
     body .containerseccion {
         display: inline-flex;
-        margin-left: 8.5%;
+        margin-left: 10%;
         width: 80%;
 
     }
@@ -2536,9 +2896,309 @@ body #listadecomida a {
 
 
 
+@media (max-width: 465px){
 
+    body .containerseccion {
+        margin-bottom: 5vw;
+        flex-wrap: wrap;
+        /* Hasta aqui para verse no centrado el resto de elementos incompletos, recordatorio se le elimino el padd a la izq
+        (Usar esto con resoluciones inferiores a 1000)*/
+        justify-content:space-evenly;
+        flex-direction:row;
+    }
 
-@media (max-width: 999px){
+    body .containerseccion div {
+        flex-basis: 47.5%;
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 8.5rem;
+        height: 20rem;
+        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
+        border-radius: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .1rem .1rem .2rem black, .1rem .1rem .2rem white;
+        position: relative;
+        margin-bottom: 8rem;
+    }
+    
+    body .containerseccion div:hover {
+        box-shadow: .1rem .1rem .2rem white, .1rem .1rem .2rem black
+    }
+    
+    body .containerseccion div img {
+        height: 40%;
+        width: 100%;
+        border-radius: 1rem;
+        padding: .2rem;
+        border-style: groove outset groove;
+    
+    }
+    
+    body .containerseccion div h3 {
+        font-size: 1.5rem;
+        font-family: 'Cential Script', sans-serif;                                             
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        max-height: 3.5rem;
+        overflow: scroll;
+        padding-bottom: 1rem;
+        position: absolute;
+        word-wrap: break-word;
+    }
+    
+    body .containerseccion div h3::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body .containerseccion div .descproducto {
+        font-size: 1rem;
+        font-family: 'TeXGyreTermes', sans-serif; 
+        font-weight: 500;
+        text-align: justify;
+        top: 12rem;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 100%;
+        max-height: 5.5rem;
+        overflow: scroll;
+        position: absolute;
+    }
+    
+    body .containerseccion div .precioproducto {
+        color: white;
+        position: absolute;
+        top: 17.75rem;
+        font-size: 1.2rem;
+        font-family: gill sans;
+        font-weight: 700;
+        text-align: left;
+        left: .5rem;
+        max-width: 70%;
+        background: rgb(148, 19, 19);
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        border-top-right-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+        max-height: 1.8rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    
+    body .containerseccion div p::-webkit-scrollbar {
+        display: flex;
+        width: .5rem;
+        overflow-x: hidden;
+        height: 0;
+        border-radius: 3rem;
+    }
+
+    body .containerseccion div p::-webkit-scrollbar-thumb{
+        background: rgba(128, 128, 128, 0.500);
+        width: 100%;
+        border-radius: 3rem;
+    }
+    
+    body .containerseccion div #cont2 {
+        margin-left: 6vw
+    }
+    
+    body .containerseccion div #cont3 {
+        margin-left: 6vw
+    }
+    
+    body .containerseccion div #cont4 {
+        margin-left: 6vw
+    }
+    
+    body .containerseccion div button {
+        width: 80%;
+        height: 2.5vw;
+        text-align: center;
+        font-size: .9vw;
+        border-radius: .5vw;
+        background: rgb(148, 19, 19);
+        border: .1vw rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2rem .2rem .1rem black, -.2rem -.2rem .1rem white;
+        overflow: hidden;
+        position: absolute;
+        bottom: -3vw;
+        left: 1.2vw;
+        font-family: verdana;
+        font-weight: 700;
+        color: white;
+    }
+    
+    body .containerseccion div button:hover {
+        box-shadow: .2rem .2rem .1rem white, -.2rem -.2rem .1rem black;
+        background: rgb(148, 19, 19);
+        width: 90%;
+        margin: auto;
+        left: .6vw;
+        bottom: -3.3vw;
+        font-size: .95vw;
+        border-radius: .5vw;
+    }
+    
+    
+    
+    body .containerseccion div button:active {
+        box-shadow: inset .1rem .1rem .1rem white, inset -.1rem -.1rem .1rem black
+    }
+    
+    body .containerseccion div .ventanaproductoboton {
+        width: 80%;
+        height: 2.5rem;
+        text-align: center;
+        font-size: .9rem;
+        border-radius: .5rem;
+        background: red;
+        border: .1rem rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2rem .2rem 1rem black, -.2rem -.2rem .1rem white;
+        overflow: hidden;
+        position: absolute;
+        bottom: -3rem;
+        left: 1.2rem;
+        font-family: verdana;
+        font-weight: 700;
+        color: white;
+    }
+    
+    body .containerseccion div .ventanaproductoboton:hover {
+        box-shadow: .2rem .2rem 1rem white, -.2rem -.2rem .1rem black;
+        background: red;
+        width: 90%;
+        margin: auto;
+        left: .6rem;
+        bottom: -3.3rem;
+        font-size: .95rem;
+        border-radius: .5rem;
+    }
+    
+    
+    
+    body .containerseccion div .ventanaproductoboton:active {
+        box-shadow: inset .1rem .1rem .1rem white, inset -.1rem -.1rem .1rem black
+    }
+    
+    
+    
+    
+    
+    body .containerseccion div button span {
+        position: absolute;
+        background: white;
+        transition: .5s;
+        border-style: inset;
+        border-radius: 5vw;
+        border-width: .1vw;
+    
+    }
+    
+    body .containerseccion div button span:nth-child(1) {
+        width: 100%;
+        height: .1vw;
+        top: 0;
+        left: -100%;
+    }
+    
+    body .containerseccion div button span:nth-child(2) {
+        width: 100%;
+        height: .1vw;
+        bottom: 0;
+        right: -100%
+    }
+    
+    body .containerseccion div button span:nth-child(3) {
+        width: .1vw;
+        height: 100%;
+        left: 0;
+        bottom: -100%
+    }
+    
+    body .containerseccion div button span:nth-child(4) {
+        width: .1vw;
+        height: 100%;
+        right: 0;
+        top: -100%
+    }
+    
+    
+    body .containerseccion div button:hover span:nth-child(1) {
+        left: 0;
+        transition-delay: .2s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(4) {
+        top: 0;
+        transition-delay: .4s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(2) {
+        right: 0;
+        transition-delay: .2s;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(3) {
+        bottom: 0;
+        transition-delay: .4s;
+    }
+    
+    body .containerseccion div button span:nth-child(5) {
+        width: 80%;
+        height: 30%;
+        bottom: .3vw;
+        left: 1vw;
+        background: rgb(165, 165, 243);
+        border: none;
+        opacity: 0;
+        border-style: inset;
+        border-width: .1vw;
+        overflow: hidden;
+        position: absolute;
+        border: none;
+    }
+    
+    body .containerseccion div button span:nth-child(5) p {
+        font-size: .7vw;
+        font-family: verdana;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-top: -.25vw;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(5) {
+        bottom: .3vw;
+        width: 80%;
+        height: 30%;
+        background: rgb(150, 150, 221);
+        color: black;
+        text-align: center;
+        transition: all 1.5s;
+        opacity: 1;
+        overflow: hidden;
+        position: absolute;
+        border: none;
+        left: 1vw;
+    }
+    
+    body .containerseccion div button:hover span:nth-child(5) p {
+        font-size: .7vw;
+        left: 0;
+        background: rgb(150, 150, 221);
+        text-align: center;
+        font-family: verdana;
+    }
+}
+
+@media (min-width: 466px) and (max-width: 999px){
 
     body .containerseccion {
         margin-bottom: 5vw;
@@ -2599,8 +3259,9 @@ body #listadecomida a {
         font-weight: 500;
         text-align: justify;
         top: 12rem;
-        left: 1rem;
-        width: 80%;
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
         max-height: 5.5rem;
         overflow: scroll;
         position: absolute;
@@ -2624,9 +3285,19 @@ body #listadecomida a {
         max-height: 1.8rem;
         padding-left: .5rem;
     }
-    
+
     body .containerseccion div p::-webkit-scrollbar {
-        display: none;
+        display: flex;
+        width: .5rem;
+        overflow-x: hidden;
+        height: 0;
+        border-radius: 3rem;
+    }
+
+    body .containerseccion div p::-webkit-scrollbar-thumb{
+        background: rgba(128, 128, 128, 0.500);
+        width: 100%;
+        border-radius: 3rem;
     }
     
     body .containerseccion div #cont2 {
@@ -2886,8 +3557,9 @@ body #listadecomida a {
         font-weight: 500;
         text-align: justify;
         top: 60%;
-        left: 10%;
-        width: 80%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
         max-height: 27.5%;
         overflow: scroll;
         position: absolute;
@@ -2910,12 +3582,24 @@ body #listadecomida a {
         border-bottom-right-radius: .6rem;
         max-height: 9%;
         padding-left: 2.5%;
+        overflow-x: hidden;
     }
     
+
     body .containerseccion div p::-webkit-scrollbar {
-        display: none;
+        display: flex;
+        width: .5rem;
+        overflow-x: hidden;
+        height: 0;
+        border-radius: 3rem;
     }
-    
+
+    body .containerseccion div p::-webkit-scrollbar-thumb{
+        background: rgba(128, 128, 128, 0.500);
+        width: 100%;
+        border-radius: 3rem;
+    }
+
     body .containerseccion div .ventanaproductoboton {
         width: 80%;
         height: 12.5%;

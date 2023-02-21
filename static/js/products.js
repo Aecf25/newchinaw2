@@ -43,7 +43,7 @@ const Promo1 = [
     },
     {
         id: 205,
-        nombre: "Promo MegaFamiliar",
+        nombre: "Promo Mega-Family",
         precio: 48.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "-3 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla (Asada, Sal & Pimienta ó Miel/ajo) <br/> -Lumpias (4 unidades) <br/> -Pan (8 unidades) <br/> -Galletas (6 unidades)",
