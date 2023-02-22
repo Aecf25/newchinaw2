@@ -20,31 +20,31 @@ const Promo1 = [
     {
         id: 202,
         nombre: "Promo #3",
-        precio: 27.00,
+        precio: 30.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "-2 Arroz Frito (Elección al gusto) <br/> -Lumpias (2 unds) <br/> -Costilla Asada (4 unds) <br/> -Pan (4 unds) <br/> -Galletas (2 unidades)",
+        desc: "-2 Arroz Frito (Elección al gusto) <br/> -Chopsuey (Elección al gusto) <br/> -Costilla Asada (4 unds) <br/> -Pan (4 unds) <br/> -Galletas (3 unidades)",
         cantidad: 1
     },
     {
         id: 203,
         nombre: "Promo #4",
-        precio: 32.00,
+        precio: 27.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "-2 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla Asada (4 unds) <br/> -Pan (4 unds) <br/> -Galletas (2 unidades)",
+        desc: "-2 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Lumpias (2 unidades) <br/> -Pan (4 unds) <br/> -Galletas (3 unidades)",
         cantidad: 1
     },
     {
         id: 204,
         nombre: "Promo #5",
-        precio: 28.00,
+        precio: 49.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
-        desc: "-Pollo Agridulce <br/> -Vegetales Buda <br/> -Carne ó Cerdo (Elección al gusto) <br/> -Galletas (2 unidades)",
+        desc: "-3 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla (Asada, Sal & Pimienta ó Miel/ajo) <br/> -Chopsuey (elección al gusto) <br/> -Pan (8 unidades) <br/> -Galletas (6 unidades)",
         cantidad: 1
     },
     {
         id: 205,
         nombre: "Promo Mega-Family",
-        precio: 48.00,
+        precio: 49.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "-3 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla (Asada, Sal & Pimienta ó Miel/ajo) <br/> -Lumpias (4 unidades) <br/> -Pan (8 unidades) <br/> -Galletas (6 unidades)",
         cantidad: 1
@@ -750,7 +750,7 @@ const CerdoyCamaron = [
         id: 87,
         nombre: "Camarones en Salsa de Ajo", 
         precio: 20.00,
-        img: "http://drive.google.com/uc?export=view&id=1V3Q5DF6VmrUl4zBuCMcCaFAZb6YB0zge",
+        img: "http://drive.google.com/uc?export=view&id=1E7liWWbpBlBQM5VL2MstEyP23XKTAy_5",
         desc: "Camarones Frescos enteros bañados en Salsa de Ajo.",
         cantidad: 1
     },

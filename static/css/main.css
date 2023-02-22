@@ -536,192 +536,6 @@ header {
 
 @media (max-width: 465px) {
 
-    body div .carousel-inner {
-        background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
-        background-size: 100% 350px;
-        background-repeat: no-repeat;
-        min-height: 350px;
-        max-height: 350px;
-        width: 100%;
-        margin-top: 4%;
-    }
-
-    .primercuadro div img {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        height: 300px;
-        border: 1px solid black;
-        border-style: groove;
-        border-radius: 1%;
-
-    }
-
-    .primercuadro div div p {
-        color: white;
-        margin-top: -250px;
-        width: 30%;
-        font-size: 75%;
-        margin-left: 55%;
-        text-align: justify;
-        background: black;
-        opacity: 0.6;
-        border-radius: 10%;
-        font-family: gill sans;
-        padding: 3%;
-    }
-
-    .segundocuadro div img {
-        width: 80%;
-        height: 300px;
-        margin-left: 10%;
-        margin-right: 10%;
-        border-radius: 8%;
-        position: relative;
-    }
-
-    .segundocuadro div div .titulosegundocuadro {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        font-size: 6vw;
-        font-weight: 900;
-        font-style: italic;
-        font-family: gill sans;
-        -webkit-text-stroke: 2px gold;
-        color: black;
-        text-decoration-style: wavy;
-        text-decoration-thickness: 5%;
-        text-align: center;
-        display: block;
-
-    }
-
-    .segundocuadro div div p {
-        position: absolute;
-        color: black;
-        font-size: 4vw;
-        font-weight: 800;
-        -webkit-text-stroke: 2px yellow;
-    }
-
-    .segundocuadro div div .textosegundocuadro1 {
-        top: 10%;
-        left: 15%;
-    }
-
-    .segundocuadro div div .textosegundocuadro2 {
-        top: 10%;
-        left: 65%;
-    }
-
-    .segundocuadro div div .textosegundocuadro3 {
-        bottom: 5%;
-        left: 15%;
-    }
-
-    .segundocuadro div div .textosegundocuadro4 {
-        bottom: -7%;
-        left: 40%;
-    }
-
-    .segundocuadro div div .textosegundocuadro5 {
-        bottom: 5%;
-        left: 65%;
-    }
-
-    .tercercuadro div iframe {
-        width: 50%;
-        height: 300px;
-        margin-left: 10%;
-        border-radius: 20%;
-        padding: 5% 5%;
-    }
-
-    .tercercuadro div div h5 {
-        position: absolute;
-        top: 10%;
-        left: 60%;
-        font-size: 5vw;
-        -webkit-text-stroke: 1px red;
-        color: white;
-    }
-
-    .tercercuadro div div p {
-        position: absolute;
-        padding-top: 5%;
-        left: 60%;
-        top: 20%;
-        text-align: justify;
-        width: 30%;
-        font-size: 100%;
-        color: white;
-    }
-
-    .cuartocuadro div div h5 {
-        position: absolute;
-        top: 5%;
-        left: 55%;
-        font-size: 150%;
-        -webkit-text-stroke: 1px red;
-        color: white;
-    }
-
-    .cuartocuadro div div p {
-        position: absolute;
-        padding-top: 35px;
-        left: 55%;
-        text-align: justify;
-        width: 30%;
-        font-size: 80%;
-        color: white;
-    }
-
-    body .img1 {
-        position: absolute;
-        height: 80px;
-        left: 20vw;
-        top: 5px;
-        border: .1vw solid black;
-        border-radius: .5vw;
-        width: 12.5%;
-    }
-
-    body .img2 {
-        position: absolute;
-        height: 80px;
-        left: 31vw;
-        top: 75px;
-        border: .1vw solid black;
-        border-radius: .5vw;
-        width: 12.5%;
-    }
-
-    body .img3 {
-        position: absolute;
-        height: 80px;
-        left: 20vw;
-        top: 145px;
-        border: .1vw solid black;
-        border-radius: .5vw;
-        width: 12.5%;
-    }
-
-    body .img4 {
-        position: absolute;
-        height: 80px;
-        left: 31vw;
-        top: 215px;
-        border: .1vw solid black;
-        border-radius: .5vw;
-        width: 12.5%;
-    }
-
-    .Menucompleto {
-        margin-bottom: 5%;
-        margin-top: 5%;
-    }
-
     .titulomenus {
         margin-left: 5%;
         margin-right: 5%;
@@ -767,6 +581,7 @@ header {
         box-shadow: 1vw 1vw 2vw white, 1vw 1vw 2vw black
     }
 
+    
 
 
     .Menucompleto div div #containermenu .container2 img {
@@ -1075,11 +890,6 @@ header {
         border: .1vw solid black;
         border-radius: .5vw;
         width: 12.5%;
-    }
-
-    .Menucompleto {
-        margin-bottom: 5%;
-        margin-top: 5%;
     }
 
     .titulomenus {
@@ -1744,8 +1554,9 @@ header {
 }
 
 .scuadrohome .contenedordeinfocuadrodos a{
-    text-decoration: none;
-    color: rgb(2, 183, 255);
+    text-decoration:underline;
+    color: gold;
+    
 }
 
 @media (max-width:700px){
@@ -2190,12 +2001,6 @@ header {
         left: 28vw;
         top: 1100%;
         width: 15%;
-    }
-
-
-    .Menucompleto {
-        margin-bottom: 5%;
-        margin-top: 5%;
     }
 
     .titulomenus {
@@ -2893,7 +2698,6 @@ body #listadecomida a {
 
     }
 }
-
 
 
 @media (max-width: 465px){
@@ -3982,9 +3786,7 @@ body #listadecomida a {
     }
 
 
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
+
 
 
     body .modalproductoventana .botonagregar:hover {
@@ -4262,11 +4064,6 @@ body #listadecomida a {
     }
 
 
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
-
-
     body .modalproductoventana .botonagregar:hover {
         background: rgba(148, 19, 19, 0.815);
     }
@@ -4531,12 +4328,6 @@ body #listadecomida a {
         font-family: 'TeXGyreTermes', sans-serif; 
         font-weight: 600;
     }
-
-
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
-
 
     body .modalproductoventana .botonagregar:hover {
         background: rgba(148, 19, 19, 0.815);
@@ -4812,12 +4603,6 @@ body #listadecomida a {
         font-weight: 700;
     }
 
-
-    body .modalproductoventana .descproducto::-webkit-scrollbar {
-        display: none;
-    }
-
-
     body .modalproductoventana .botonagregar:hover {
         background: rgba(148, 19, 19, 0.815);
     }
@@ -4859,6 +4644,20 @@ body #listadecomida a {
 
 }
 
+
+body .modalproductoventana .descproducto::-webkit-scrollbar {
+    display: flex;
+    width: .5rem;
+    overflow-x: hidden;
+    height: 0;
+    border-radius: 3rem;
+}
+
+body .modalproductoventana .descproducto::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.500);
+    width: 100%;
+    border-radius: 3rem;
+}
 
 
 
