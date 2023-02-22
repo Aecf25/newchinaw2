@@ -536,6 +536,13 @@ header {
 
 @media (max-width: 465px) {
 
+    .Menucompleto{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: rgba(0, 0, 0, 0) solid 1px ;
+    }
+
     .titulomenus {
         margin-left: 5%;
         margin-right: 5%;
@@ -2718,7 +2725,7 @@ body #listadecomida a {
         width: 8.5rem;
         height: 20rem;
         background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding-bottom: 1rem;
         text-align: center;
         cursor: pointer;
@@ -2735,7 +2742,7 @@ body #listadecomida a {
     body .containerseccion div img {
         height: 40%;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding: .2rem;
         border-style: groove outset groove;
     
@@ -3018,7 +3025,7 @@ body #listadecomida a {
         width: 11rem;
         height: 20rem;
         background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding-bottom: 1rem;
         text-align: center;
         cursor: pointer;
@@ -3035,7 +3042,7 @@ body #listadecomida a {
     body .containerseccion div img {
         height: 8.5rem;
         width: 11rem;
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding: .2rem;
         border-style: groove outset groove;
     
@@ -3311,11 +3318,11 @@ body #listadecomida a {
     }
 
     body .containerseccion div {
-        flex-basis: 12rem;
+        flex-basis: 12.5rem;
         margin-right: 3%;
         height: 20rem;
         background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding-bottom: 1rem;
         text-align: center;
         cursor: pointer;
@@ -3332,7 +3339,7 @@ body #listadecomida a {
     body .containerseccion div img {
         height: 45%;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding: .2rem;
         border-style: groove outset groove;
        
