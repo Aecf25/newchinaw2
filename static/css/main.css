@@ -2706,7 +2706,7 @@ body #listadecomida a {
     }
 }
 
-@media (min-width: 1451px) and (max-width: 1650px) {
+@media (min-width: 1451px) {
     body .containerseccion {
         display: inline-flex;
         margin-left: 10%;
@@ -2715,13 +2715,6 @@ body #listadecomida a {
     }
 }
 
-@media (min-width: 1651px) {
-    body .containerseccion {
-        display: inline-flex;
-        margin-left: 8.5%;
-        width: 80%;
-    }
-}
 
 
 @media (max-width: 465px){
