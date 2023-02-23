@@ -2679,7 +2679,7 @@ body #listadecomida a {
     }
 }
 
-@media (min-width: 801px) and (max-width: 1300px) {
+@media (min-width: 801px) and (max-width: 999px) {
     body .containerseccion {
         display: inline-flex;
         margin-left: 10%;
@@ -2688,12 +2688,30 @@ body #listadecomida a {
     }
 }
 
-@media (min-width: 1301px) and (max-width: 1600px) {
+@media (min-width: 1000px) and (max-width: 1280px) {
     body .containerseccion {
         display: inline-flex;
         margin-left: 10%;
         width: 80%;
+        padding-left: 2rem;
+    }
+}
 
+@media (min-width: 1281px) and (max-width: 1450px) {
+    body .containerseccion {
+        display: inline-flex;
+        margin-left: 10%;
+        width: 80%;
+        padding-left: 2vw;
+    }
+}
+
+@media (min-width: 1451px) and (max-width: 1600px) {
+    body .containerseccion {
+        display: inline-flex;
+        margin-left: 10%;
+        width: 80%;
+        padding-left: 2vw;
     }
 }
 
@@ -2702,7 +2720,7 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 8.5%;
         width: 80%;
-
+        padding-left: 2.5vw;
     }
 }
 
@@ -3314,12 +3332,12 @@ body #listadecomida a {
         flex-wrap: wrap;
         /* Hasta aqui para verse no centrado el resto de elementos incompletos, recordatorio se le elimino el padd a la izq
         (Usar esto con resoluciones inferiores a 1000)*/
-        padding-left: 6rem;
+        
     }
 
     body .containerseccion div {
         flex-basis: 14rem;
-        margin-right: 3%;
+        margin-right: 1.5rem;
         height: 20rem;
         background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
         border-radius: .5rem;
