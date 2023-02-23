@@ -2711,7 +2711,7 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 10%;
         width: 80%;
-        padding-left: 3rem;
+        padding-left: 6rem;
     }
 }
 
@@ -2720,7 +2720,6 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 8.5%;
         width: 80%;
-        padding-left: 2.5vw;
     }
 }
 
