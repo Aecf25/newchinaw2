@@ -2711,7 +2711,7 @@ body #listadecomida a {
         display: inline-flex;
         margin-left: 10%;
         width: 80%;
-        padding-left: 2vw;
+        padding-left: 3rem;
     }
 }
 
