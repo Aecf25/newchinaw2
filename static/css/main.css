@@ -2742,8 +2742,8 @@ body #listadecomida a {
     body .containerseccion div img {
         height: 40%;
         width: 100%;
-        border-radius: .5rem;
-        padding: .2rem;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
         border-style: groove outset groove;
     
     }
@@ -3042,8 +3042,8 @@ body #listadecomida a {
     body .containerseccion div img {
         height: 8.5rem;
         width: 11rem;
-        border-radius: .5rem;
-        padding: .2rem;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
         border-style: groove outset groove;
     
     }
@@ -3318,7 +3318,7 @@ body #listadecomida a {
     }
 
     body .containerseccion div {
-        flex-basis: 12.5rem;
+        flex-basis: 14rem;
         margin-right: 3%;
         height: 20rem;
         background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
@@ -3339,8 +3339,8 @@ body #listadecomida a {
     body .containerseccion div img {
         height: 45%;
         width: 100%;
-        border-radius: .5rem;
-        padding: .2rem;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
         border-style: groove outset groove;
        
     

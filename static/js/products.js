@@ -121,7 +121,7 @@ const entremeses1 = [
         nombre: "Wanton Frito",
         precio: 5.00,
         img: "http://drive.google.com/uc?export=view&id=1_t-a212XYYipFH-SQXYLdIIW1IBJNpon",
-        desc: "Lamina fina de masa.",
+        desc: "Lámina de masa Frita.",
         cantidad: 1
     },
     {
@@ -129,7 +129,7 @@ const entremeses1 = [
         nombre: "Wanton Frito Relleno",
         precio: 6.00,
         img: "http://drive.google.com/uc?export=view&id=131dEsgdbP-l_e9chyQ4yRASItKASHlL0",
-        desc: "Lamina fina de masa rellena con camarón y pollo.",
+        desc: "Lámina de masa rellena con camarón y pollo.",
         cantidad: 1
     },
     {
@@ -137,7 +137,7 @@ const entremeses1 = [
         nombre: "Pan Chino",
         precio: 1.50,
         img: "http://drive.google.com/uc?export=view&id=19fdrVMKrWj0-3czWXYFi1i28FIUYtYmz",
-        desc: "Pan a base de mantequilla y azucar (4unds).",
+        desc: "Pan a base de mantequilla y azúcar (4unds).",
         cantidad: 1
     },
 ]
