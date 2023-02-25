@@ -1731,14 +1731,14 @@ header {
 
     .nav2 .nav-item{
         margin-right: 5%;
-
+        color: white;
     }
     
     .nav2 .nav-item a {
-        font-size: 1.3rem;
+        color: white;
+        font-size: 1.25rem;
         font-weight: 700;
         font-family: 'TeXGyreTermes', sans-serif; 
-        color: white;
         line-height: 2rem;
         margin-top: 1rem;
         text-transform: uppercase;
