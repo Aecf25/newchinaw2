@@ -5,7 +5,7 @@ const Promo1 = [
         id: 200,
         nombre: "Promo #1",
         precio: 11.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1p7SIuFWcDozkhXqG124i_OsTUlSE5TM3",
         desc: "-Arroz Frito (Elección al gusto) <br/> -Lumpias (2 unds) <br/> -1/2 Pan (2 unds) <br/> -Refresco de 1 Litro <br/> -Galleta (1 unidad)",
         cantidad: 1
     },
@@ -13,7 +13,7 @@ const Promo1 = [
         id: 201,
         nombre: "Promo #2",
         precio: 11.50,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1X1NGh0nx6KZNfCIjicBZAdLgROtT_8xW",
         desc: "-Arroz Frito (Elección al gusto) <br/> -Costilla Asada (2 unds) <br/> -1/2 Pan (2 unds) <br/> -Refresco de 1 Litro <br/> -Galleta (1 unidad)",
         cantidad: 1
     },
@@ -21,7 +21,7 @@ const Promo1 = [
         id: 202,
         nombre: "Promo #3",
         precio: 32.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1RLIdLQWehb79mYiCh8HKvvzG9xfw7Aqi",
         desc: "-2 Arroz Frito (Elección al gusto) <br/> -Chopsuey (Elección al gusto) <br/> -Costilla Asada (4 unds) <br/> -Pan (4 unds) <br/> -Refresco de 1.5 Litros <br/> -Galletas (3 unidades)",
         cantidad: 1
     },
@@ -29,7 +29,7 @@ const Promo1 = [
         id: 203,
         nombre: "Promo #4",
         precio: 29.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1zQnHV9RXMTOjXVb0S4BqXYQs_0hAobEV",
         desc: "-2 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Lumpias (2 unidades) <br/> -Pan (4 unds) <br/> -Refresco de 1.5 Litros <br/> -Galletas (3 unidades)",
         cantidad: 1
     },
@@ -37,15 +37,15 @@ const Promo1 = [
         id: 204,
         nombre: "Promo #5",
         precio: 50.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1UnYhtMVL35pkfgPFkhOz5WKhEwVPO9KR",
         desc: "-3 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla (Asada, Sal & Pimienta ó Miel/ajo) <br/> -Chopsuey (elección al gusto) <br/> -Pan (8 unidades) <br/> -Refresco de 1.5 Litros <br/> -Galletas (6 unidades)",
         cantidad: 1
     },
     {
         id: 205,
-        nombre: "Promo Mega-Family",
+        nombre: "Promo #6",
         precio: 50.00,
-        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        img: "http://drive.google.com/uc?export=view&id=1f_o84netELIeRW-hn0722eZXe-FRlS7g",
         desc: "-3 Arroz Frito (Elección al gusto) <br/> -Pollo Agridulce <br/> -Costilla (Asada, Sal & Pimienta ó Miel/ajo) <br/> -Lumpias (4 unidades) <br/> -Pan (8 unidades) <br/> -Refresco de 1.5 Litros <br/> -Galletas (6 unidades)",
         cantidad: 1
     },
