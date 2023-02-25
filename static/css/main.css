@@ -1731,11 +1731,11 @@ header {
 
     .nav2 .nav-item{
         margin-right: 5%;
-        color: white;
+        color: whitesmoke;
     }
     
     .nav2 .nav-item a {
-        color: white;
+        color: whitesmoke;
         font-size: 1.25rem;
         font-weight: 700;
         font-family: 'TeXGyreTermes', sans-serif; 
