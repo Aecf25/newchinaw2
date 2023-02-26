@@ -913,7 +913,7 @@ const Bebidas = [
     {
         id: 108,
         nombre: "Agua", 
-        precio: 1.50,
+        precio: 2.00,
         img: "http://drive.google.com/uc?export=view&id=1EoKorxagDChZMeGPgrIce5FNVqd-4P1a",
         desc: "Presentación de 1.5 lts.",
         cantidad: 1
@@ -921,7 +921,7 @@ const Bebidas = [
     {
         id: 109,
         nombre: "Té Lipton", 
-        precio: 4.00,
+        precio: 5.00,
         img: "http://drive.google.com/uc?export=view&id=1SlMujNXmV2EuhfuSfN1UEKREJuOk2SQp",
         desc: "Presentación de 1.5 lts (Durazno ó Limón).",
         cantidad: 1
@@ -929,7 +929,7 @@ const Bebidas = [
     {
         id: 110,
         nombre: "Jugo Yukery", 
-        precio: 4.00,
+        precio: 5.00,
         img: "http://drive.google.com/uc?export=view&id=1VX0_w8LCd_B9HwCSj-elt5yUnzvqm-Ik",
         desc: "Presentación de 1.5lts (Manzana, Naranja, Naranja-Mango & Pera).",
         cantidad: 1
@@ -937,7 +937,7 @@ const Bebidas = [
     {
         id: 111,
         nombre: "Refresco de Botella", 
-        precio: 2.00,
+        precio: 2.50,
         img: "http://drive.google.com/uc?export=view&id=1bAG4h86ZbE5cXpcGh0-aEH3aIIZD6ZE-",
         desc: "Presentación de 1.5lts (Pepsi, Manzanita, Uva, Piña, Naranja, Kolita, 7up).",
         cantidad: 1
@@ -945,25 +945,25 @@ const Bebidas = [
     {
         id: 112,
         nombre: "Refresco de Botella", 
-        precio: 2.50,
+        precio: 3.00,
         img: "http://drive.google.com/uc?export=view&id=1bAG4h86ZbE5cXpcGh0-aEH3aIIZD6ZE-",
         desc: "Presentación de 2lts (Pepsi, 7up).",
         cantidad: 1
     },
     {
         id: 113,
-        nombre: "Refresco de Botella", 
-        precio: 2.50,
-        img: "http://drive.google.com/uc?export=view&id=1A2d5_HMWfQwxfYvMrqd4pYOQz77Sq8U0",
-        desc: "Coca-Cola de 1.5lts.",
+        nombre: "Agua", 
+        precio: 0.80,
+        img: "http://drive.google.com/uc?export=view&id=1EoKorxagDChZMeGPgrIce5FNVqd-4P1a",
+        desc: "Presentación de 355ml.",
         cantidad: 1
     },
     {
         id: 114,
-        nombre: "Refresco de Botella", 
-        precio: 3.00,
-        img: "http://drive.google.com/uc?export=view&id=1A2d5_HMWfQwxfYvMrqd4pYOQz77Sq8U0",
-        desc: "Coca-Cola de 2lts.",
+        nombre: "Agua", 
+        precio: 1.00,
+        img: "http://drive.google.com/uc?export=view&id=1EoKorxagDChZMeGPgrIce5FNVqd-4P1a",
+        desc: "Presentación de 600 ml.",
         cantidad: 1
     },
 ]
