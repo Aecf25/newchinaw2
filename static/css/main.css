@@ -38,11 +38,13 @@ header {
     background-image: url(http://drive.google.com/uc?export=view&id=1tEurKxpFaXpToNltAbk1GNKAYio1nKPz); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
     background-color: rgb(54, 54, 54);
     width: 100%;
+    display: block;
+    text-align: center;
 }
 
 @media (max-width:999px){
     .navbar {
-        height: 45rem;
+        min-height: 55rem;
     }
 
     .textobienvnw{
@@ -57,14 +59,15 @@ header {
 
 @media (min-width:1000px){
     .navbar {
-        height: 90vh;   
+        min-height: 80vh;   
+        position: relative;
     }
 
     .textobienvnw{
         font-size: 4rem;
         color: aliceblue;
         margin: auto;
-        margin-top: 40vh;
+        margin-top: 45vh;
         text-align: center;
         font-style: italic;
     }
@@ -73,9 +76,9 @@ header {
 
 .container-fluid{
     z-index: 1;
-    position: absolute;
-    top: 0%;
     background: rgba(0, 0, 0, 0.37);
+    position: relative;
+    margin-bottom: 13rem;
 }
 
 .textotitulonw{
@@ -156,11 +159,30 @@ header {
 
 }
 
+.textobienvnw{
+    width: 30rem;
+    max-width: 90%;
+    height: 22.5rem;
+    margin: auto;
+    position: inherit;
+    display: inline-block;
+    margin-bottom: 10rem;
 
-.textobienvnw p{
+}
+
+.contenedortitulobienv{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border: solid wheat;
+}
+
+.textobienvnw h2{
     font-weight: 300;
-    font-family: 'Rudolphin Oblique', sans-serif;
-  
+    font-family: 'GFS Artemisia', sans-serif;
+    font-size: 4rem;
+
   text-rendering: optimizeLegibility;
   color: #e0dfdc;
     letter-spacing: .1em;
@@ -184,9 +206,99 @@ header {
       0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-.textobienvnw .primerparrafo{
-    margin-top: 10%;
+.textobienvnw h4{
+    font-weight: 300;
+    font-family: 'Quasari', sans-serif;
+    font-size: 2.5rem;
+
+  text-rendering: optimizeLegibility;
+  color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
 }
+
+@media (min-width: 1000px){
+    .textobienvnw h4{
+        word-spacing: 5rem;
+    }
+}
+
+.primerparrafotextobienv{
+    position: absolute;
+    top: -10%;
+    animation-name: mover-izq-a-der;
+    animation-duration: 4s;
+}
+
+@keyframes mover-izq-a-der{
+    from {opacity: 0; transform: translateX(-100%);}
+    to {opacity: 1; transform: translateX(0%);}
+}
+
+.segundoparrafotextobienv{
+    position: absolute;
+    bottom: -12%;
+    animation-name: mover-der-a-izq;
+    animation-duration: 4s;
+}
+
+@keyframes mover-der-a-izq{
+    from {opacity: 0; transform: translateX(100%);}
+    to {opacity: 1; transform: translateX(0%);}
+}
+
+.tercerparrafotextobienv{
+    position: absolute;
+    top: -35%;
+    animation-name: mover-arriba-a-abajo;
+    animation-duration: 2s;
+}
+
+@keyframes mover-arriba-a-abajo{
+    from {opacity: 0; transform: translateY(-100%);}
+    to {opacity: 1; transform: translateY(0%);}
+}
+
+.cuartoparrafotextobienv{
+    margin-top: 15%;
+    animation-name: mover-abajo-a-arriba;
+    animation-duration: 2s;
+}
+
+@keyframes mover-abajo-a-arriba{
+    from {opacity: 0; transform: translateY(100%);}
+    to {opacity: 1; transform: translateY(0%);}
+}
+
+.imgtitulobienvw{
+    width: 100%;
+    height: 100%;
+    animation-name: aparecerimgtitulobv;
+    animation-duration: 3s;
+}
+
+@keyframes aparecerimgtitulobv{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 .imglogo{
     width: 30%;

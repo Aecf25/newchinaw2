@@ -40,9 +40,14 @@
     <link href="https://fonts.cdnfonts.com/css/balerga" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tex-gyre-termes" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/rudolphin-oblique" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/johnyokonysm" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-unicase" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/quasari" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gfs-artemisia" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1_0qsSqYFBkSpfCdCeV2ZPBa-hPWwCUye" type="image/x-icon">
+    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1_0qsSqYFBkSpfCdCeV2ZPBa-hPWwCUye"
+        type="image/x-icon">
 </head>
 
 
@@ -77,8 +82,22 @@
                     </div>
                 </div>
                 <div class="textobienvnw" id="textobienvnw">
-                    <p class="primerparrafo">Auténtica</p>
-                    <p class="segundoparrafo">Comida China</p>
+                    <div class="contenedortitulobienv">
+                        <img class="imgtitulobienvw"
+                            src="http://drive.google.com/uc?export=view&id=1MyJnYXgRmsEUx62AqGBPVGtsc-cvwbzO" alt="">
+                        <div class="primerparrafotextobienv">
+                            <h2>NEW</h2>
+                        </div>
+                        <div class="segundoparrafotextobienv">
+                            <h2>CHINA</h2>
+                        </div>
+                        <div class="tercerparrafotextobienv">
+                            <h4>Bienvenido a</h4>
+                        </div>
+                    </div>
+                    <div class="cuartoparrafotextobienv">
+                        <h4>Restaurant Bar</h4>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -129,7 +148,7 @@
 
     <div class="modalproductoventana" id="modalproductoventana">
     </div>
-    
+
     <script>
         var firebaseConfig = {
             apiKey: "AIzaSyDgGpyM2YD21c8NG_ytKEIwQjJYNvyQ3mw",
@@ -150,13 +169,14 @@
     <script src="{{ url_for('static', filename ='js/app.js') }}"></script>
     <script src="{{ url_for('static', filename ='js/layout.js') }}"></script>
     <script src="{{ url_for('static', filename ='js/carritopendiente.js') }}"></script>
-    
+
 
     <footer id="contactanosbot"
         style="color: white; padding-bottom: .5vw; padding-top: .5vw; text-align: center; background: rgba(194, 5, 5, 0.171); font-size: 1vw;">
         <div>
             <a>
-                <img src="http://drive.google.com/uc?export=view&id=1HJ5wCSNaHx5uPkzBNJGa8GeY2Dnw9Niq" alt="" class="instagram">
+                <img src="http://drive.google.com/uc?export=view&id=1HJ5wCSNaHx5uPkzBNJGa8GeY2Dnw9Niq" alt=""
+                    class="instagram">
                 <p>@RestaurantNew-China</p>
             </a>
             <a>
@@ -175,10 +195,11 @@
             </a>
         </div>
 
-            <p class="copyright">Restaurant-Bar New China S.R.L, Santa Mónica, Avenida Teresa de la Parra con calle Simón Planas, Caracas, Venezuela. <br>Todos los derechos reservados &#169</p>
-            
+        <p class="copyright">Restaurant-Bar New China S.R.L, Santa Mónica, Avenida Teresa de la Parra con calle Simón
+            Planas, Caracas, Venezuela. <br>Todos los derechos reservados &#169</p>
 
-        
+
+
     </footer>
 </body>
 
