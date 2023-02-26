@@ -3592,7 +3592,6 @@ body #listadecomida a {
         z-index: 9;
         top: 4rem;
         left: 10%;
-        border-radius: 1%;
         box-shadow: inset .4vw .4vw 5vw black;
         transition: all 1s;
         opacity: 0;
@@ -3653,14 +3652,13 @@ body #listadecomida a {
         margin: auto;
         height: 40%;
         width: 100%;
-        border-bottom: .1rem rgba(0, 0, 0, 0.466) dotted;
     }
 
     .modalproductoventana .cuadroproduct img{
         width: 100%;
         height: 100%;
         border-radius: 5%;
-        border-style: ridge;
+        border-style: double;
        
     }
 
@@ -3866,7 +3864,6 @@ body #listadecomida a {
         z-index: 9;
         top: 10%;
         left: 10%;
-        border-radius: 1%;
         box-shadow: inset .4vw .4vw 5vw black;
         transition: all 1s;
         opacity: 0;
@@ -3896,7 +3893,6 @@ body #listadecomida a {
         display: flex;
         justify-content: left;
         align-items: center;
-        border-right: 1px rgba(0, 0, 0, 0.466) dotted;
     }
 
     .modalproductoventana .imgproductoindividual img{
@@ -4140,7 +4136,6 @@ body #listadecomida a {
         z-index: 9;
         top: 5rem;
         left: 10%;
-        border-radius: 1%;
         box-shadow: inset .4vw .4vw 5vw black;
         transition: all 1s;
         opacity: 0;
@@ -4200,14 +4195,13 @@ body #listadecomida a {
         margin: auto;
         height: 40%;
         width: 100%;
-        border-bottom: .1rem rgba(0, 0, 0, 0.466) dotted;
     }
 
     .modalproductoventana .cuadroproduct img{
         width: 100%;
         height: 100%;
         border-radius: 5%;
-        border-style: ridge;
+        border-style: double;
     }
 
     .modalproductoventana .informacionproductoind{
@@ -4405,7 +4399,6 @@ body #listadecomida a {
         z-index: 9;
         top: 10%;
         left: 10%;
-        border-radius: 1%;
         box-shadow: inset .4vw .4vw 5vw rgba(0, 0, 0, 0.493);
         transition: all 1s;
         opacity: 0;
@@ -4436,7 +4429,6 @@ body #listadecomida a {
         display: flex;
         justify-content: left;
         align-items: center;
-        border-right: .1rem rgba(0, 0, 0, 0.466) dotted;
     }
 
     .modalproductoventana .imgproductoindividual img{
@@ -7296,6 +7288,7 @@ footer div {
     list-style: none;
     text-decoration: none;
     padding-top: 2rem;
+    font-family: 'TeXGyreTermes', sans-serif;
 }
 
 footer img {
@@ -7304,11 +7297,17 @@ footer img {
 }
 
 footer div a {
+    color: white;
     text-decoration: none;
     margin: auto;
     color: black;
     font-size: 130%;
 }
 
+footer div a p{
+    color: white
+}
 
-
+.copyright{
+    font-size: 130%;
+}
