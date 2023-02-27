@@ -59,7 +59,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand textotitulonw" href="/">
                         <p>Restaurant-Bar</p><img
-                            src="https://drive.google.com/uc?export=view&id=13r-qD9OsWQEKKeKvcCAAWg_gpqQphyro">
+                            src="{{ url_for('static', filename ='Imagenes/imghead/logohead.png') }}">
                         <p>New China</p>
                     </a>
                     <button class="navbar-toggler" type="button" style="background: rgba(255, 255, 255, 0.452);"
@@ -84,7 +84,7 @@
                 <div class="textobienvnw" id="textobienvnw">
                     <div class="contenedortitulobienv">
                         <img class="imgtitulobienvw"
-                            src="{{ url_for('static', filename ='Imagenes/Ppal_Pantalla.png') }}" alt="">
+                            src="{{ url_for('static', filename ='Imagenes/imghead/imgtitulo.png') }}" alt="">
                         <div class="primerparrafotextobienv">
                             <h2>NEW</h2>
                         </div>
@@ -175,21 +175,21 @@
         style="color: white; padding-bottom: .5vw; padding-top: .5vw; text-align: center; background: rgba(194, 5, 5, 0.171); font-size: 1vw;">
         <div>
             <a>
-                <img src="https://drive.google.com/uc?export=view&id=1HJ5wCSNaHx5uPkzBNJGa8GeY2Dnw9Niq" alt=""
+                <img src="{{ url_for('static', filename ='Imagenes/footer/instagram.png') }}" alt=""
                     class="instagram">
                 <p>@RestaurantNew-China</p>
             </a>
             <a>
-                <img src="https://drive.google.com/uc?export=view&id=1fucSM4YnvMR6wgxbj5coY5SF010pG4SW" alt="">
+                <img src="{{ url_for('static', filename ='Imagenes/footer/email.png') }}" alt="">
                 <p>newchina69@hotmail.com</p>
             </a>
             <a>
-                <img src="https://drive.google.com/uc?export=view&id=1jVqLgLsSdqlBnYIWh4bnDIWD0fshOVfe" alt="">
+                <img src="{{ url_for('static', filename ='Imagenes/footer/telefono.png') }}" alt="">
                 <p>Teléfono: 0212 662-4193</p>
 
             </a>
             <a href="https://api.whatsapp.com/send?phone=+584129851959&text=Hola tengo una pregunta" target="_blank">
-                <img src="https://drive.google.com/uc?export=view&id=1HxLOdBRJRjltNhMN9ATA6cvcv1pjvfNT" alt=""
+                <img src="{{ url_for('static', filename ='Imagenes/footer/whatsapp.png') }}" alt=""
                     style="border-radius: 1vw;">
                 <p>0412 561-1856</p>
             </a>

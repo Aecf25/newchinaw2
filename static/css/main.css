@@ -35,7 +35,7 @@ header {
 }
 
 .navbar{
-    background-image: url(https://drive.google.com/uc?export=view&id=1tEurKxpFaXpToNltAbk1GNKAYio1nKPz); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+    background-image: url(../Imagenes/imghead/fondoheader.jpg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
     background-color: rgb(54, 54, 54);
     width: 100%;
     display: block;
@@ -7391,9 +7391,15 @@ body .modal-container .modaltitulotabla .textocarritolimpio {
 }
 
 
+.fondomenuimg{
+    background-image: url(../Imagenes/fondomenu.png); 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+}
+
 footer div {
     width: 80%;
-    overflow: hidden;
     padding-bottom: 1rem;
     display: flex;
     margin: auto;
@@ -7401,12 +7407,25 @@ footer div {
     text-decoration: none;
     padding-top: 2rem;
     font-family: 'TeXGyreTermes', sans-serif;
+    overflow: hidden;
 }
 
-footer img {
-    width: 30%;
-    text-decoration: none;
+@media (max-width:999px){
+    footer img {
+        width: 3rem;
+        height: 3rem;
+        text-decoration: none;
+    }
 }
+
+@media (min-width:1000px){
+    footer img {
+        width: 5vw;
+        height: 5vw;
+        text-decoration: none;
+    }
+}
+
 
 footer div a {
     color: white;
