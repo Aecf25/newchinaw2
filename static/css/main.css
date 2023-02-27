@@ -35,7 +35,7 @@ header {
 }
 
 .navbar{
-    background-image: url(http://drive.google.com/uc?export=view&id=1tEurKxpFaXpToNltAbk1GNKAYio1nKPz); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+    background-image: url(https://drive.google.com/uc?export=view&id=1tEurKxpFaXpToNltAbk1GNKAYio1nKPz); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
     background-color: rgb(54, 54, 54);
     width: 100%;
     display: block;
@@ -832,7 +832,7 @@ header {
 @media (min-width: 466px) and (max-width: 999px) {
 
     body div .carousel-inner {
-        background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
+        background-image: url(https://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
         background-size: 100% 350px;
         background-repeat: no-repeat;
         min-height: 350px;
@@ -1949,7 +1949,7 @@ header {
 
 
     body div .carousel-inner {
-        background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
+        background-image: url(https://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
         background-size: 100% 700px;
         background-repeat: no-repeat;
         min-height: 700px;
