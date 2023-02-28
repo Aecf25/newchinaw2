@@ -152,7 +152,7 @@ const pintarcarrito = () => {
         }).then(function(){
             pedidoRef.get().then(function(doc){
                 var nuevoPedido = doc.data()["ultimonumero"];
-                var url = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total.toFixed(2) + '%0A' + 'Precio Bs Tasa BCV' + '%0A'+ 'Número de Pedido es: ' + nuevoPedido
+                var url = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[\[\]",#]/g, '') + '%0A' + "Total: Ref. " + total.toFixed(2) + '%0A' + 'Precio Bs Tasa BCV' + '%0A'+ 'Número de Pedido es: ' + nuevoPedido + '%0A' + 'EL PRECIO NO INCLUYE EL COSTO DEL DELIVERY.'
                 window.open(url, '_blank')
             }); 
         });
