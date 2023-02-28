@@ -51,9 +51,41 @@ header {
         font-size: 4rem;
         color: aliceblue;
         margin: auto;
-        margin-top: 20rem;
         text-align: center;
         font-style: italic;
+        width: 30rem;
+        max-width: 90%;
+        height: 22.5rem;
+        position: inherit;
+        display: inline-block;
+        margin-bottom: 10rem;
+    }
+
+    .primerparrafotextobienv{
+        position: absolute;
+        top: -10%;
+        animation-name: mover-izq-a-der;
+        animation-duration: 4s;
+    }
+
+    .segundoparrafotextobienv{
+        position: absolute;
+        bottom: -12%;
+        animation-name: mover-der-a-izq;
+        animation-duration: 4s;
+    }
+
+    .tercerparrafotextobienv{
+        position: absolute;
+        top: -35%;
+        animation-name: mover-arriba-a-abajo;
+        animation-duration: 2s;
+    }
+
+    .cuartoparrafotextobienv{
+        margin-top: 15%;
+        animation-name: mover-abajo-a-arriba;
+        animation-duration: 2s;
     }
 }
 
@@ -67,9 +99,45 @@ header {
         font-size: 4rem;
         color: aliceblue;
         margin: auto;
-        margin-top: 45vh;
         text-align: center;
         font-style: italic;
+        width: 38rem;
+        max-width: 90%;
+        height: 30rem;
+        position: inherit;
+        display: inline-block;
+        margin-bottom: 10rem;
+    }
+
+    .primerparrafotextobienv{
+        position: absolute;
+        top: -8%;
+        animation-name: mover-izq-a-der;
+        animation-duration: 4s;
+    }
+
+    .segundoparrafotextobienv{
+        position: absolute;
+        bottom: -10%;
+        animation-name: mover-der-a-izq;
+        animation-duration: 4s;
+    }
+
+    .tercerparrafotextobienv{
+        position: absolute;
+        top: -30%;
+        animation-name: mover-arriba-a-abajo;
+        animation-duration: 2s;
+    }
+
+    .cuartoparrafotextobienv{
+        margin-top: 15%;
+        animation-name: mover-abajo-a-arriba;
+        animation-duration: 2s;
+    }
+
+    .textobienvnw h4{
+        word-spacing: 5rem;
     }
 }
 
@@ -159,23 +227,12 @@ header {
 
 }
 
-.textobienvnw{
-    width: 30rem;
-    max-width: 90%;
-    height: 22.5rem;
-    margin: auto;
-    position: inherit;
-    display: inline-block;
-    margin-bottom: 10rem;
-
-}
-
 .contenedortitulobienv{
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
-    border: solid wheat;
+    border: .7rem double white;
 }
 
 .textobienvnw h2{
@@ -234,29 +291,9 @@ header {
       0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-@media (min-width: 1000px){
-    .textobienvnw h4{
-        word-spacing: 5rem;
-    }
-}
-
-.primerparrafotextobienv{
-    position: absolute;
-    top: -10%;
-    animation-name: mover-izq-a-der;
-    animation-duration: 4s;
-}
-
 @keyframes mover-izq-a-der{
     from {opacity: 0; transform: translateX(-100%);}
     to {opacity: 1; transform: translateX(0%);}
-}
-
-.segundoparrafotextobienv{
-    position: absolute;
-    bottom: -12%;
-    animation-name: mover-der-a-izq;
-    animation-duration: 4s;
 }
 
 @keyframes mover-der-a-izq{
@@ -264,22 +301,9 @@ header {
     to {opacity: 1; transform: translateX(0%);}
 }
 
-.tercerparrafotextobienv{
-    position: absolute;
-    top: -35%;
-    animation-name: mover-arriba-a-abajo;
-    animation-duration: 2s;
-}
-
 @keyframes mover-arriba-a-abajo{
     from {opacity: 0; transform: translateY(-100%);}
     to {opacity: 1; transform: translateY(0%);}
-}
-
-.cuartoparrafotextobienv{
-    margin-top: 15%;
-    animation-name: mover-abajo-a-arriba;
-    animation-duration: 2s;
 }
 
 @keyframes mover-abajo-a-arriba{
