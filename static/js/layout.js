@@ -178,6 +178,7 @@ Promo1.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 

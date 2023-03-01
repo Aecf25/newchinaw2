@@ -13,7 +13,7 @@ const pintarcarrito = () => {
         modalcontainer.style.transition = "opacity 1s"
         modalcontainer.style.transition = "all 1s"
         modalcontainer.style.transform = "translateY(-150%)"
-
+        document.body.style.overflow = "auto"
 
 
 
@@ -166,6 +166,7 @@ const pintarcarrito = () => {
             modalcontainer.style.transform = "translateY(-150%)"
             cuerpopagina.style.transition = "filter 1s"
             cuerpopagina.style.filter = "blur(0vw)";
+            document.body.style.overflow = "auto";
         },);
     });
     fondodivcarrito.append(suscribirpedido);
@@ -183,7 +184,7 @@ vercarritolayout.addEventListener("click", () => {
     modalcontainer.style.opacity = "1";
     modalcontainer.style.transform = "translateY(5%)";
     modalcontainer.style.transform = "translateX(5%)";
-    
+    document.body.style.overflow = "hidden"
 
     // CREA UNA CONST A VER SI TE FUNCIONA CON LA OPACITY DE 1 Y LOS DEMAS ESTILOS Y LO AGREGAS, A ESTE EVENTO 1, Y AL DE CERRAR.
     // CON EL VALOR DE 0, SINO CREAR LA FUNCION Y EJECUTARLA FUERA DE ESTO A VER SI SE PINTA BIEN CON EL IF.
@@ -250,7 +251,7 @@ const cerrarventana = ("click", () => {
     modalproductoventana.style.transition = "opacity 1s"
     modalproductoventana.style.transition = "all 1.5s"
     modalproductoventana.style.transform = "translateY(-500%)"
-
+    document.body.style.overflow = "auto"
 
 
 

@@ -204,6 +204,7 @@ combos1.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -383,6 +384,7 @@ entremeses1.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -562,6 +564,7 @@ arroz.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -741,6 +744,7 @@ arrozsalt.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -920,6 +924,7 @@ ChopSuey.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -1099,6 +1104,7 @@ chowmein.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -1278,6 +1284,7 @@ Lomein.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -1457,6 +1464,7 @@ fideos.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -1636,6 +1644,7 @@ pollos.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -1815,6 +1824,7 @@ carnes.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -1994,6 +2004,7 @@ CerdoyCamaron.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -2173,6 +2184,7 @@ fuyung.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -2352,6 +2364,7 @@ Vegetales.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -2531,6 +2544,7 @@ Sopas.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -2710,6 +2724,7 @@ Bebidas.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
 
@@ -2890,5 +2905,6 @@ extras.forEach((product) => {
         modalproductoventana.style.transform = "translateY(5%)";
         modalproductoventana.style.transform = "translateX(0%)";
         modalproductoventana.style.transition = "all 1s";
+        document.body.style.overflow = "hidden";
     });
 });
