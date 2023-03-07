@@ -99,7 +99,7 @@ const combos1 = [
     {
         id: 6,
         nombre: "Combo #6",
-        precio: 10,
+        precio: 9.00,
         img: "../static/Imagenes/combos/6.png",
         desc: "Arroz Especial <br/> Chop Suey Esp. <br/> Pollo Agridulce <br/> Costilla Asada (1).",
         cantidad: 1
